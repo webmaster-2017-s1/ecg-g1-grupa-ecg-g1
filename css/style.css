@@ -38,3 +38,7 @@
     position: absolute;
     left: 50%;
     margin-left: -480px; }
+
+  .embed {
+    width: 100%;
+  }
