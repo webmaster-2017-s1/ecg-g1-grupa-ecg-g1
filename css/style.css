@@ -2,7 +2,7 @@
 .box {
   position: relative;
   height: 600px;
-  background-image: url(../images/bird-bg.jpg);
+  background-image: url(../images/paralaksa_tlo.png);
   background-size: auto 600px;
   background-position: top center;
   background-attachment: fixed;
@@ -20,20 +20,21 @@
   margin-top: -50px; }
 
   .first-plan {
-    width: 960px;
-    height: 733px;
-    background-image: url(../images/fore-bird.png);
+    width: 1164px;
+    height: 816px;
+    resize: horizontal;
+    background-image: url(../images/paralaksa_collegium.png);
     background-repeat: no-repeat;
     background-position: right bottom;
     position: absolute;
-    left: 50%;
-    margin-left: -480px;
-    top: 380px; }
+    
+    margin-left: 0;
+    top: -50px; }
 
   .third-plan {
     width: 960px;
     height: 298px;
-    background-image: url(../images/back-bird.png);
+    background-image: url(../images/paralaksa_ptaki.png);
     background-repeat: no-repeat;
     background-position: top left;
     position: absolute;
