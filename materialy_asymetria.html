@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Szablon Bootstrapa</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Font Awesome, zob. How to Use: https://fontawesome.bootstrapcheatsheets.com -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/aos.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- twoje style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- brak java scriptu -->
+  <noscript>
+    Do pełnej funkcjonalności strony potrzebujesz włączonej obsługi skryptów.
+    Tu znajdziesz <a href="https://www.enable-javascript.com/pl/" target="_blank">
+    instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.
+  </noscript>
+
+  <!-- nieaktualna przeglądarka, zob. dostosowanie: https://browser-update.org/customize.html -->
+  <script>
+    var $buoop = {notify:{e:-6,f:-4,o:-4,s:-2,c:-4},insecure:true,api:5};
+    function $buo_f(){
+      var e = document.createElement("script");
+      e.src = "http://browser-update.org/update.min.js";
+      document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+  </script>
+
+  <!-- Nagłówek strony: menu, logo, breadcrumbs itp. oraz treść główna -->
+
+    <section class="content">
+      <article>
+
+            <embed type="text/html" class="embed" src="menu.html">  <!-- import kodu z innych plików html -->
+
+
+      <div>
+        <div class="row">
+          <div class="col-10">
+            <div class="jumbotron">
+              <h1 class="display-3">Materiały</h1>
+
+            <button  class="btn btn-primary btn-lg" type="button" onclick="myFunction()" name="button">Zobacz szczegóły</button>
+<button type="button"  name="button">Zobacz szczegóły</button>
+            <button type="button" name="button">Zobacz szczegóły</button>
+            <button type="button" name="button">Zobacz szczegóły</button>
+            <button type="button" name="button">Zobacz szczegóły</button>
+            <button type="button" name="button">Zobacz szczegóły</button>
+            <button type="button" name="button">Zobacz szczegóły</button>
+            <button type="button" name="button">Zobacz szczegóły</button>
+            <button type="button" name="button">Zobacz szczegóły</button>
+            <button type="button" name="button">Zobacz szczegóły</button>
+            <button type="button" name="button">Zobacz szczegóły</button>
+            </div>
+<br><br><br><br><br><br><br><br>
+              <div class="jumbotron" id="myDIV">
+                <h1 class="display-3">Edytor teksty</h1>
+                <div class="container-fluid padding" >
+                      <div class="card-columns">
+                        <div class="card" data-aos="zoom-in" data-aos-duration="600" >
+                          <img class="card-img-top" src="..." alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title that wraps to a new line</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          </div>
+                        </div>
+                        <div class="card p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+                          <blockquote class="blockquote mb-0 card-body" >
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                          </blockquote>
+                        </div>
+                        <div class="card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
+                          <img class="card-img-top" src="..." alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                        <div class="card bg-primary text-white text-center p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="900">
+                          <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                          </blockquote>
+                        </div>
+                        <div class="card text-center" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1200">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                        <div class="card p-3 text-right" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1500">
+                          <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                          </blockquote>
+                        </div>
+                        <div class="card p-3 text-right" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1800">
+                          <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                          </blockquote>
+                        </div>
+                        <div class="card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="2100">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          <div class="col-2">
+            <div class="pos-f-t">
+              <nav class="navbar navbar-dark ">
+                <button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </nav>
+              <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                  <h4 class="text-white">Materiały</h4>
+                  <span class="text-muted">Toggleable via the navbar brand.</span>
+
+                  <h4 class="text-white">Na skrótyth</h4>
+                  <span class="text-muted">Toggleable via the navbar brand.</span>
+
+                  <h4 class="text-white">Kontakt</h4>
+                  <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        </article>
+      </section>
+
+
+  <!-- Stopka strony: copyrights, dodatkowe linki itp. -->
+  <footer><embed type="text/html" class="embed" src="footer.html"></footer>
+
+  <!-- jQuery library -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/aos.js"></script>
+  <script type="text/javascript">
+    AOS.init();
+  </script>
+
+  <script>
+  function myFunction() {
+  var x = document.getElementById("myDIV");
+    if (x.style.visibility === "visible") {
+      x.style.visibility = "hidden";
+      } else {
+      x.style.visibility = "visible";
+      }
+    }
+  </script>
+
+
+</body>
+</html>
