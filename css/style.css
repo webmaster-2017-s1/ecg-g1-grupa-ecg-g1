@@ -59,6 +59,8 @@
     background: rgb(47, 47, 47);
     color: white;
     padding: 60px;
+    padding-left: 0;
+    padding-right: 0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -77,6 +79,10 @@
 
   .napisy {
     background: black;
+  }
+
+  .divbo {
+    background: rgb(72, 72, 72);
   }
 
   /* menu */
