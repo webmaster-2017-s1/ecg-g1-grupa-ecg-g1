@@ -58,10 +58,16 @@
   footer {
     background: rgb(47, 47, 47);
     color: white;
-    padding: 35px 0;
+    padding: 60px;
     position: fixed;
     bottom: 0;
     width: 100%;
+  }
+
+  .footer_index {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    height: 275px;
   }
 
   .footer-stuff {
