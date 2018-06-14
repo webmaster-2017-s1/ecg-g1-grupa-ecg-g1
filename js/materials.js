@@ -10,3 +10,19 @@ var x = document.getElementById("text_editor");
     });
   }
 }
+
+
+// funkcja do arkusza kalkulacyjnego
+function excelFunction() {
+var y = document.getElementById("spreadsheet");
+var x = document.getElementById("text_editor");
+  if (y.style.visibility === "visible") {
+    y.style.visibility = "hidden";
+    } else {
+    y.style.visibility = "visible";
+    x.style.visibility = "hidden";
+    document.querySelector('#spreadsheet').scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+}
