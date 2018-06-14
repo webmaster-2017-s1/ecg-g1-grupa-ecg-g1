@@ -1,10 +1,12 @@
 // funkcja do edytora tekstu
 function wordFunction() {
+var y = document.getElementById("spreadsheet");
 var x = document.getElementById("text_editor");
   if (x.style.visibility === "visible") {
     x.style.visibility = "hidden";
     } else {
     x.style.visibility = "visible";
+    y.style.visibility = "hidden";
     document.querySelector('#text_editor').scrollIntoView({
       behavior: 'smooth'
     });
@@ -27,6 +29,11 @@ var x = document.getElementById("text_editor");
   }
 }
 
+
+
+
+
+// przenoszenie na górę strony
 function upFunction() {
     document.querySelector('#up').scrollIntoView({
       behavior: 'smooth'

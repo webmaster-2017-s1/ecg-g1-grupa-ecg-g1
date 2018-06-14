@@ -117,3 +117,13 @@
     margin-left: auto;
     width: 300px;
   }
+
+  i {
+    color: rgb(103, 99, 99);
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+
+  i:hover{
+    color: rgb(9, 113, 201);
+  }
