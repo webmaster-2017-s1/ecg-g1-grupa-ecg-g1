@@ -26,3 +26,9 @@ var x = document.getElementById("text_editor");
     });
   }
 }
+
+function upFunction() {
+    document.querySelector('#up').scrollIntoView({
+      behavior: 'smooth'
+    });
+}
