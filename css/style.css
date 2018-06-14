@@ -69,6 +69,51 @@
     margin: 0 auto;
   }
 
-  #text_editor {
+  /* materiały */
+
+  #text_editor  {
     visibility: hidden;
+  }
+
+  #spreadsheet {
+    visibility: hidden;
+  }
+
+  #databases  {
+    visibility: hidden;
+  }
+
+  #graphics  {
+    visibility: hidden;
+  }
+
+  #internet  {
+    visibility: hidden;
+  }
+
+  #network  {
+    visibility: hidden;
+  }
+
+  #C {
+    visibility: hidden;
+  }
+
+  #python  {
+    visibility: hidden;
+  }
+
+  #materials  {
+    visibility: hidden;
+  }
+
+  #other  {
+    visibility: hidden;
+  }
+
+  .btn-secondary {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    width: 300px;
   }

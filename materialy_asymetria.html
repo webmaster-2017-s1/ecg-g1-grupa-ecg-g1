@@ -53,31 +53,78 @@
             <embed type="text/html" class="embed" src="menu.html">  <!-- import kodu z innych plików html -->
 
 
-      <div>
+      <div class="container">
         <div class="row">
-          <div class="col-10">
+          <div class="col-9">
             <div class="jumbotron">
               <h1 class="display-3">Materiały</h1>
 
-            <button  class="btn btn-primary btn-lg" type="button" onclick="myFunction()" name="button">Zobacz szczegóły</button>
-<button type="button"  name="button">Zobacz szczegóły</button>
-            <button type="button" name="button">Zobacz szczegóły</button>
-            <button type="button" name="button">Zobacz szczegóły</button>
-            <button type="button" name="button">Zobacz szczegóły</button>
-            <button type="button" name="button">Zobacz szczegóły</button>
-            <button type="button" name="button">Zobacz szczegóły</button>
-            <button type="button" name="button">Zobacz szczegóły</button>
-            <button type="button" name="button">Zobacz szczegóły</button>
-            <button type="button" name="button">Zobacz szczegóły</button>
-            <button type="button" name="button">Zobacz szczegóły</button>
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <button  class="btn btn-secondary btn-lg" type="button" onclick="wordFunction()" name="button">Edytor tekstu</button>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">Arkusz kalkulacyjny</button>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">Bazy danych</button>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">Grafika i prezentacje</button>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">Internet</button>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">Sieci</button>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">C++</button>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">Python</button>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">Materiały eCG IT</button>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">Zagadnienia do prezentacji</button>
+                </div>
+              </div>
+              </div>
             </div>
-<br><br><br><br><br><br><br><br>
+              <div class="col-3">
+                <div class="pos-f-t">
+                  <nav class="navbar navbar-dark ">
+                    <button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </nav>
+                  <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4">
+                      <h4 class="text-white">Materiały</h4>
+                      <span class="text-muted">Toggleable via the navbar brand.</span>
+
+                      <h4 class="text-white">Na skrótyth</h4>
+                      <span class="text-muted">Toggleable via the navbar brand.</span>
+
+                      <h4 class="text-white">Kontakt</h4>
+                      <span class="text-muted">Toggleable via the navbar brand.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+
+
               <div class="jumbotron" id="text_editor">
-                <h1 class="display-3">Edytor teksty</h1>
+                <h1 class="display-3">Edytor tekstu</h1>
                 <div class="container-fluid padding" >
                       <div class="card-columns">
                         <div class="card" data-aos="zoom-in" data-aos-duration="600" >
-                          <img class="card-img-top" src="..." alt="Card image cap">
+                          <img class="card-img-top" src="images/king.jpg" alt="Card image cap">
                           <div class="card-body">
                             <h5 class="card-title">Card title that wraps to a new line</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -89,7 +136,6 @@
                           </blockquote>
                         </div>
                         <div class="card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
-                          <img class="card-img-top" src="..." alt="Card image cap">
                           <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -131,32 +177,67 @@
 
 
 
-            </div>
-          <div class="col-2">
-            <div class="pos-f-t">
-              <nav class="navbar navbar-dark ">
-                <button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </nav>
-              <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                  <h4 class="text-white">Materiały</h4>
-                  <span class="text-muted">Toggleable via the navbar brand.</span>
-
-                  <h4 class="text-white">Na skrótyth</h4>
-                  <span class="text-muted">Toggleable via the navbar brand.</span>
-
-                  <h4 class="text-white">Kontakt</h4>
-                  <span class="text-muted">Toggleable via the navbar brand.</span>
+              <div class="jumbotron" id="spreadsheet">
+                <h1 class="display-3">Edytor tekstu</h1>
+                <div class="container-fluid padding" >
+                      <div class="card-columns">
+                        <div class="card" data-aos="zoom-in" data-aos-duration="600" >
+                          <img class="card-img-top" src="images/king.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title that wraps to a new line</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          </div>
+                        </div>
+                        <div class="card p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+                          <blockquote class="blockquote mb-0 card-body" >
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                          </blockquote>
+                        </div>
+                        <div class="card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                        <div class="card bg-primary text-white text-center p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="900">
+                          <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                          </blockquote>
+                        </div>
+                        <div class="card text-center" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1200">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                        <div class="card p-3 text-right" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1500">
+                          <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                          </blockquote>
+                        </div>
+                        <div class="card p-3 text-right" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1800">
+                          <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                          </blockquote>
+                        </div>
+                        <div class="card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="2100">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
+
+
+
+          </div>  <!-- div container -->
         </article>
       </section>
 
