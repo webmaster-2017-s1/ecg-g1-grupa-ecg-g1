@@ -66,14 +66,22 @@
     width: 100%;
   }
 
+  footer img {
+    width: 33%;
+  }
+
+  footer hr {
+    border-bottom: #f4f4f4 2px solid;
+  }
+
   .footer_index {
     padding-bottom: 0px;
     padding-top: 0px;
-    height: 275px;
+    height: 400px;
   }
 
   .footer-stuff {
-    max-width: 640px;
+    max-width: 1400px;
     margin: 0 auto;
     position: relative;
     bottom: -21px;
