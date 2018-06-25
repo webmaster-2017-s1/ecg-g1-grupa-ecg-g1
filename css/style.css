@@ -70,8 +70,26 @@
     width: 33%;
   }
 
+  footer a {
+    color: white;
+  }
+
+  footer a:hover {
+    color: #3776B6;
+    text-decoration: none;
+  }
+
+  footer i {
+    float: right;
+    margin-right: 2%;
+  }
+
   footer hr {
-    border-bottom: #f4f4f4 2px solid;
+    border-bottom: #f4f4f4 1px solid;
+  }
+
+  .fhr {
+    border-bottom: #3776B6 2px solid;
   }
 
   .footer_index {
@@ -93,6 +111,10 @@
 
   .divbo {
     background: rgb(72, 72, 72);
+  }
+
+  .email {
+    color: #3776B6;
   }
 
   /* menu */
