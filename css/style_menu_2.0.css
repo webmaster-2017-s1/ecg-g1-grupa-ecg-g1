@@ -1,0 +1,82 @@
+
+:root {
+  --background: rgb(47, 47, 47);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1.2em;
+  margin-top: 1.2em;
+  margin-left: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-right: 7px;
+  margin-left: 7px;
+}
+
+
+nav a:hover {
+  color: #000;
+}
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background:  #3776B6;
+    position: absolute;
+    top: -.3em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    transform: scale(1,1);
+  }
+
+  .btn-hid {
+    visibility: hidden;
+  }
+
+  .logo_menu {
+   width: 8%;
+ }
