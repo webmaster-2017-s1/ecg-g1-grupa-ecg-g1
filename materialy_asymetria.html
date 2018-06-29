@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
   <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,66 +56,47 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-9">
+          <div class="col-12">
             <div class="jumbotron" id="up">
-              <h1 class="display-3">Materiały</h1>
+              <h1 class="display-3 text-center heading">Materiały</h1>
 
               <div class="row">
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-4">
                   <button  class="btn btn-secondary btn-lg" type="button" onclick="wordFunction()" name="button">Edytor tekstu</button>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-4">
                   <button  class="btn btn-secondary btn-lg" type="button" onclick="excelFunction()" name="button">Arkusz kalkulacyjny</button>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-4">
                   <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">Bazy danych</button>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-4">
                   <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">Grafika i prezentacje</button>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-4">
                   <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">Internet</button>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-4">
                   <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">Sieci</button>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-4">
                   <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">C++</button>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-4">
                   <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">Python</button>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-4">
                   <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">Materiały eCG IT</button>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-4">
+
+                </div>
+                <div class="col-sm-12 col-md-4">
                   <button  class="btn btn-secondary btn-lg" type="button" onclick="#" name="button">Zagadnienia do prezentacji</button>
                 </div>
               </div>
               </div>
             </div>
-              <div class="col-3">
-                <div class="pos-f-t">
-                  <nav class="navbar navbar-dark ">
-                    <button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                  </nav>
-                  <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-dark p-4">
-                      <h4 class="text-white">Materiały</h4>
-                      <span class="text-muted">Toggleable via the navbar brand.</span>
-
-                      <h4 class="text-white">Na skrótyth</h4>
-                      <span class="text-muted">Toggleable via the navbar brand.</span>
-
-                      <h4 class="text-white">Kontakt</h4>
-                      <span class="text-muted">Toggleable via the navbar brand.</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
           </div>
 
 
@@ -130,10 +112,7 @@
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                           </div>
                         </div>
-                        <div class="card p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-                          <blockquote class="blockquote mb-0 card-body" >
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                          </blockquote>
+                        <div class="card p-3 hidden">
                         </div>
                         <div class="card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
                           <div class="card-body">
@@ -151,7 +130,6 @@
                           <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                           </div>
                         </div>
                         <div class="card p-3 text-right" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1500">
@@ -171,9 +149,15 @@
                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                           </div>
                         </div>
+                        <div class="card p-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+                          <blockquote class="blockquote mb-0 card-body" >
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <button class="download"><i class="fa fa-download"></i> Pobierz</button>
+                          </blockquote>
+                        </div>
                       </div>
                       <div class="text-right">
-                        <a onclick="upFunction()"><i class="fas fa-arrow-up"> Powrót na górę strony</i></a>
+                        <button  class="btn btn-secondary btn-lg back" type="button" onclick="upFunction()" name="button"><i class="fas fa-arrow-up"> Powrót na górę strony</i></button>
                       </div>
                 </div>
               </div>

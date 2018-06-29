@@ -111,19 +111,65 @@
     visibility: hidden;
   }
 
+  .heading {
+    margin-bottom: 25px;
+  }
+
   .btn-secondary {
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: auto;
-    width: 300px;
+    width: 100%;
+    /* inna wersja kolorystyczna */
+    /* background-color: #ff4c4c;
+    border-color: #ff4c4c; */
+    background-color: #387BBF;
+    border-color: #387BBF;
+    box-shadow: 0px  17px 10px -10px rgba(0,0,0,0.4);
+    font-weight: bold;
+    border-radius: 0;
   }
 
-  i {
-    color: rgb(103, 99, 99);
+  .btn-secondary:hover{
+    /* inna wersja kolorystyczna */
+    /* background-color: #f63232;
+    border-color:#f63232 */
+    background-color: #175491;
+    border-color: #175491;
+    box-shadow: 0px  37px 20px -20px rgba(0,0,0,0.2);
+    transform: translate(0px, -10px) scale(1);
+  }
+
+  .download {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    font-size: 20px;
+    display: inline-block;
+    transition: all ease-in-out 300ms;
+  }
+
+  .download:hover {
+    cursor: pointer;
+    background-color: RoyalBlue;
+  }
+
+  .back {
+    color: white;
     font-family: sans-serif;
     font-size: 20px;
+    width: 33%;
   }
 
-  i:hover{
-    color: rgb(9, 113, 201);
+  .back:hover{
+    background-color: #175491;
   }
+
+.hidden {
+  visibility: hidden;
+}
