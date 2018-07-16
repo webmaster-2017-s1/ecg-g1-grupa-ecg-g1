@@ -4,36 +4,40 @@
 <!-- Font Awesome, zob. How to Use: https://fontawesome.bootstrapcheatsheets.com -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
-<link rel="stylesheet" href="css/style.css">
-
+<link rel="stylesheet" href="css/style_menu_2.0.css">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg_dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
+  </button> -->
+  <svg width="400" height="400">
+    <circle id="circle" cx="100" cy="100" r="40" fill="none" stroke="#000" stroke-width="4"></circle>
+  </svg>
+  <img src="images/logo_stopka.png" class="d-md-block d-lg-none logo_menu">
+  <button class="btn-hid" >
   </button>
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="nav navbar-nav m-auto">
       <li class="nav-item active">
-        <a class="nav-link pr-4" href="#">Poczytaj <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Poczytaj <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link pr-4" href="#">Materiały <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Materiały <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active ">
-        <a class="nav-link pr-4" href="#">Narzędzia <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Narzędzia <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active ">
-        <a class="nav-link pr-4" href="#">Linux <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Linux <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active ">
-        <a class="nav-link pr-4" href="#">Archiwum <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Archiwum <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active ">
-        <a class="nav-link pr-4" href="#">Galerie <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Galerie <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active" >
-        <a class="nav-link pr-4" style="border-right: 0px;" href="#">Linki <span class="sr-only">(current)</span></a>
+        <a class="nav-link" style="border-right: 0px;" href="#">Linki <span class="sr-only">(current)</span></a>
       </li>
     </ul>
   </div>
@@ -41,5 +45,9 @@
 
 <!-- jQuery library -->
 <script src="js/jquery-3.3.1.min.js"></script>
+<!-- Moveit library -->
+<script src="js/moveit.js"></script>
+<!-- Hamburger JavaScript -->
+<script src="js/hamburger.js"></script>
 <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
 <script src="js/bootstrap.bundle.min.js"></script>
