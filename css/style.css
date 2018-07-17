@@ -117,47 +117,118 @@
     color: #3776B6;
   }
 
-  /* menu */
+/* hamburger */
 
-  .bg_dark {
-    background-color: #2f2f2f;
-    border: 12px solid #2f2f2f;
-      border-right: 0px;
-  }
+svg path, svg line {
+    stroke: #fff;
+    stroke-width: 6px;
+    stroke-linecap: round;
+    fill: none;
+}
+.trigger {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+
+.btn-dark {
+  background: #2F2F2F;
+  border: none;
+}
+
+.btn-dark:active {
+  background: #2F2F2F;
+    border: none;
+}
+
+.btn-dark:hover {
+  background: #2F2F2F;
+    border: none;
+}
+
+
+:root {
+  --background: rgb(47, 47, 47);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1.2em;
+  margin-top: 1.2em;
+  margin-left: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-right: 7px;
+  margin-left: 7px;
+}
+
+
+nav a:hover {
+  color: #000;
+}
 
   nav a {
-    text-transform: uppercase;
-    font-weight: bold;
-    border-right: 2px solid rgb(200, 200, 200);
-    margin-right: 20px;
+    opacity: 1;
+    position: relative;
   }
 
-  nav a:hover {
-    background-color: #393939;
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background:  #3776B6;
+    position: absolute;
+    top: -.3em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
   }
 
-  nav a .last {
-    border-right: 0px solid rgb(200, 200, 200);
+  nav a:hover::before {
+    transform: scale(1,1);
   }
 
-/* hamburger */
-svg path {
-  fill: none;
-  stroke: #000;
-  stroke-width: 4;
-  stroke-linecap: round;
-}
+  .btn-hid {
+    visibility: hidden;
+  }
 
-
-.trigger {
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  top: 5%;
-  cursor: pointer;
-}
-
-.responsive {
-  width: 80%;
-  height: 80%;
-}
+  .logo_menu {
+   width: 10%;
+ }
