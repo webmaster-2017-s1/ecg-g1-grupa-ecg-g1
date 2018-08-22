@@ -453,12 +453,13 @@
         padding: 3rem;
       }
 
-      .info2 {
+      .info_2 {
         background: var(--primary);
         box-shadow: var(--shadow);
-        display: grid;
-        grid-gap: 30px;
-        padding: 3rem;
+        padding-top: 3rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        padding-bottom: 5rem;
       }
 
       .main-div-md ul {
@@ -503,7 +504,30 @@
         padding: 3rem;
       }
 
+      .info_md_2 {
+        background: var(--primary);
+        box-shadow: var(--shadow);
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem;
+      }
+
 
       .mb-9 {
         margin-bottom: 14px;
+      }
+
+      .info_2 p {
+        font-size: 18px;
+        text-align: justify;
+        text-indent: 5%;
+        margin-bottom: 25px;
+      }
+
+      .info_md_2 p {
+        font-size: 18px;
+        text-align: justify;
+        text-indent: 5%;
+        margin-bottom: 25px;
       }
