@@ -49,7 +49,8 @@
 
 .box-tlo {
   position: relative;
-  height: 600px;
+  margin-top: 15px;
+  height: 550px;
   background-image: url(../images/paralaksa_tlo.png);
   background-size: auto 600px;
   background-position: top center;
@@ -73,7 +74,7 @@
     height: 816px;
     resize: horizontal;
 
-    background-image: url(../images/paralaksa_collegium.png);
+    background-image: url(../images/paralaksa_collegium1.png);
     background-repeat: no-repeat;
     background-position: right bottom;
     position: absolute;
@@ -192,7 +193,11 @@
         border-bottom: #f4f4f4 1px solid;
       }
 
-      .fhr {
+      .footer_p {
+        text-align: center;
+      }
+
+      .footer_hr {
         border-bottom: #3776B6 2px solid;
       }
 
