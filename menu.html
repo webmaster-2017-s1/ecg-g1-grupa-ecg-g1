@@ -4,36 +4,46 @@
 <!-- Font Awesome, zob. How to Use: https://fontawesome.bootstrapcheatsheets.com -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
 
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-lg navbar-dark bg_dark">
+  <!-- hamburger -->
+  <button class="btn btn-dark d-md-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div>
+      <svg width="100px" height="100px">
+        <path id="first" d="M 30 40 L 70 40 C 90 40 90 75 60 85 A 40 40 0 0 1 20 20 L 80 80"></path>
+        <path id="middle" d="M 30 50 L 70 50"></path>
+        <path id="second" d="M 70 60 L 30 60 C 10 60 10 20 40 15 A 40 38 0 1 1 20 80 L 80 20"></path>
+      </svg>
+      <div class="trigger"></div>
+    </div>
   </button>
-
+  <!-- /hamburger -->
+  <img src="images/logo_stopka.png" class="d-none d-sm-block d-lg-none logo_menu">
+  <button class="btn-hid" >
+  </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="nav navbar-nav m-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Poczytaj <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Materiały <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item active ">
+        <a class="nav-link" href="#">Narzędzia <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item active ">
+        <a class="nav-link" href="#">Linux <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item active ">
+        <a class="nav-link" href="#">Archiwum <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item active ">
+        <a class="nav-link" href="#">Galerie <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item active" >
+        <a class="nav-link" href="#">Linki <span class="sr-only">(current)</span></a>
       </li>
     </ul>
   </div>
@@ -41,5 +51,9 @@
 
 <!-- jQuery library -->
 <script src="js/jquery-3.3.1.min.js"></script>
+<!-- Moveit library -->
+<script src="js/moveit.js"></script>
+<!-- Hamburger JavaScript -->
+<script src="js/hamburger.js"></script>
 <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
 <script src="js/bootstrap.bundle.min.js"></script>
