@@ -2,6 +2,7 @@
     --primary: #ddd;
     --dark: rgb(47, 47, 47);
     --light: #fff;
+    --grey:rgb(226, 226, 226);
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     --blue: rgba(83, 115, 163, 0.75);
     --blue_active: rgba(56, 114, 171, 0.75);
@@ -829,4 +830,14 @@
               'top-box-w'
               'top-box-z';
             }
+          }
+
+          pre, code {
+            border: 1px solid #CCCCCC;
+            background-color: var(--grey);
+          }
+
+          pre {
+            margin-left: auto;
+            margin-right: auto;
           }
