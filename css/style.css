@@ -275,8 +275,8 @@
       display: grid;
       grid-gap: 20px;
       grid-template-areas:
-        ' top-box-a showcase top-box-b'
-        ' top-box-c showcase top-box-d';
+        'top-box-a showcase top-box-b'
+        'top-box-c showcase top-box-d';
     }
 
     .showcase {
@@ -723,3 +723,101 @@
           text-indent: 5%;
           margin-bottom: 25px;
         }
+
+
+/* archiwum */
+
+      .materials_images_archives {
+        min-width: 250px;
+        margin-top: 10px;
+      }
+
+      .top-container_archives {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-areas:
+              'top-box-m top-box-n top-box-o top-box-p'
+              'top-box-r top-box-s top-box-t top-box-u'
+              'top-box-x top-box-w top-box-z top-box-y';
+          }
+
+
+          .top-box_archives {
+            background: var(--primary);
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            box-shadow: var(--shadow);
+            max-width: 290px;
+            max-height: 270px;
+          }
+
+
+          .top-box .price {
+            font-size: 2.5rem;
+          }
+
+          .top-box-m {
+            grid-area: top-box-m;
+          }
+
+          .top-box-n {
+            grid-area: top-box-n;
+          }
+
+          .top-box-o {
+            grid-area: top-box-o;
+          }
+
+          .top-box-p {
+            grid-area: top-box-p;
+          }
+
+          .top-box-r {
+            grid-area: top-box-r;
+          }
+
+          .top-box-s {
+            grid-area: top-box-s;
+          }
+
+          .top-box-t {
+            grid-area: top-box-t;
+          }
+
+          .top-box-u {
+            grid-area: top-box-u;
+          }
+
+          .top-box-w {
+            grid-area: top-box-w;
+          }
+
+          .top-box-z {
+            grid-area: top-box-z;
+          }
+
+          @media (max-width: 700px) {
+            .top-container {
+              grid-template-areas:
+              'top-box-m top-box-n top-box-o top-box-p'
+              'top-box-r top-box-s top-box-t top-box-u'
+              'top-box-x top-box-w top-box-z top-box-y';
+            }
+          }
+
+          @media (max-width: 500px) {
+            .top-container {
+              grid-template-areas:
+              'top-box-m'
+              'top-box-n'
+              'top-box-o'
+              'top-box-p'
+              'top-box-r'
+              'top-box-s'
+              'top-box-t'
+              'top-box-u'
+              'top-box-w'
+              'top-box-z';
+            }
+          }
