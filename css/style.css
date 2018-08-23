@@ -728,8 +728,17 @@
 /* archiwum */
 
       .materials_images_archives {
-        min-width: 250px;
+        max-width: 250px;
+        max-height: : 250px;
         margin-top: 10px;
+      }
+
+      .materials_title_archives {
+        color: var(--blue);
+        font-size: 200%;
+        margin-bottom: auto;
+        margin-top: 20%;
+        margin: auto;
       }
 
       .top-container_archives {

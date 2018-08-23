@@ -61,10 +61,9 @@
             <section class="top-container_archives">
                 <div class="top-box_archives top-box-m">
                   <figure class="materials-item">
-                    <img class="materials_images_archives" src="images/koza.png" alt="materials item">
+                    <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
-                    <p class="materials-desc">Miejsce na ewentualny opis</p>
+                    <h2 class="materials-title">Ubuntu Server 12.04 LTS</h2>
                     <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
                   </figcaption>
                   <div class="materials-modal">
@@ -78,43 +77,197 @@
                         </button>
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
+                            <h2 class="materials-title">Ubuntu Server 12.04 LTS</h2>
                           </div>
                       </div>
                         <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <h3 class="materials_title_archives">Założenia wstępne</h3>
+                          <p>Serwer pełnił będzie funkcję routera, posiada dwa interfejsy sieciowe: eth0 (WAN, połączenie z internetem) adresowany przez DHCP, oraz eth1 (LAN, połączenie z siecią lokalną), adresowany statycznie. Na interfejsie WAN uruchomiona zostanie usługa NAT (translacja adresów). Na interfejsie LAN uruchomione zostaną następujące usługi: serwer DHCP, serwer DNS, transparentne proxy z filtracją treści WWW (Squid + Dansguardian). Konfiguracja taka może zostać zastosowana np. w szkolnych pracowniach.</p>
+
+
+                        <div class="main-div">
+                          <ul>
+                              <li>
+                              <a href="#">Instalacja</a>
+                            </li>
+                            <li>
+                              <a href="#">Interfejsy sieciowe</a>
+                            </li>
+                            <li>
+                              <a href="#">Dnsmasq (serwer DHCP i DNS)</a>
+                            </li>
+                            <li>
+                              <a href="#">Routing i firewall</a>
+                            </li>
+                            <li>
+                              <a href="#">Squid (serwer proxy)</a>
+                            </li>
+                            <li>
+                              <a href="#">Dansguardian (filtrowanie)</a>
+                            </li>
+                            <li>
+                              <a href="#">Monitoring</a>
+                            </li>
+                            <li>
+                              <a href="#">Dokumentacja (Linux jako serwer)</a>
+                            </li>
+                          </ul>
                         </div>
 
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
+                        <p>Uwaga: ponieważ Ubuntu oparte jest na Debianie, powyższe procedury konfiguracyjne stosują się również do tego systemu, przynajmniej w wersji Wheezy, którą z powodzeniem udało się wdrożyć.</p>
+
+
+                        <h3 class="materials_title_archives">Instalacja Ubuntu Server 12.04 LTS</h3>
+                        <h4 class="materials-title">Pobranie obrazu i przygotowanie nośnika instalacyjnegoS</h4>
+
+                        <p>Z podanego adresu: http://releases.ubuntu.com/12.04 pobieramy obraz iso płyty instalacyjnej, przy czym zalecana jest wersja 64-bitowa (AMD64). Wypalamy na płycie DVD lub przygotowujemy bootowalny klucz USB.</p>
+
+                        <h4 class="materials-title">Pobranie obrazu i przygotowanie nośnika instalacyjnego</h4>
+                        <p>Po uruchomieniu komputera instalacja przebiega w następujących krokach (por. zrzuty z instalacji):</p>
+
+                        <ol>
+                          <li>Wybór języka, wybranie opcji "Instalacja Ubuntu Server" i potwierdzenie chęci instalacji mimo nieukończonego tłumaczenia instalatora.</li>
+                          <li>Wybór lokalizacji ("Polska") oraz układu klawiatury (pomijamy wykrywanie, wybieramy kraj i układ "Polski").</li>
+                          <li>Wskazanie podstawowego interfejsu sieciowego, czyli karty sieciowej podłączonej do internetu, oraz podanie nazwy serwera. Nazwy wykrytych kart warto zanotować.</li>
+                          <li>Utworzenie konta użytkownika: podanie pełnej nazwy, loginu oraz dwukrotnie hasła (najlepiej minimum 8-znakowego).</li>
+                          <li>Odmówienie szyfrowania katalogu domowego.</li>
+                          <li>Ustawienia strefy czasowej: zatwierdzenie domyślnie wybranej strefy "Europe/Warsaw".</li>
+                          <li>Przygotowania partycji (zobacz niżej) i zapisanie zmian na dysku.</li>
+                          <li>Zainstalowanie pakietów na twardym dysku.</li>
+                          <li>Wprowadzenie danych ewentualnego serwera proxy (zazwyczaj po prostu przechodzimy dalej).</li>
+                          <li>Określenia sposobu aktualizacji. Najlepiej zatwierdzić wybór domyślny, czyli "Brak aktualizacji automatycznych".</li>
+                          <li>Wybór zestawów (ról) oprogramowania serwerowego. Wybieramy tylko "OpenSSH Server".</li>
+                          <li>Zainstalowanie boot menedżera GRUB. Potwierdzamy propozycję zainstalowania w MBR (master boot record) - najprościej i najlepiej.</li>
+                          <li>Ponowne uruchomienie komputera.</li>
+                        </ol>
+
+                        <h4 class="materials-title">Przygotowanie dysku</h4>
+                        <p>Z powyższych kroków najtrudniejsze niewątpliwie jest przygotowanie dysku, czyli podział na partycje. Przede wszystkim na instalację serwera Ubuntu najlepiej przeznaczyć cały dysk o pojemności np. 160 GB lub większej. Wszystko zależy od tego, z jakich usług będziemy chcieli korzystać. Jeżeli mamy do dyspozycji dwa dyski, drugi możemy przeznaczyć na katalog /srv, w którym można umieścić zasoby Samby, serwera www czy cache proxy. <br>
+
+                        Podczas instalacji na początku jako sposób parycjonowania można wybrać opcję "Przewodnik - cały dysk". Po wskazaniu dysku instalator zaproponuje usunięcie wszelkich istniejących partycji i - na podstawie rozmiaru dysku - utworzenie co najmniej jednej partycji podstawowej dla katalogu głównego (/) oraz co najmniej jednej partycji logicznej na przestrzeń wymiany (swap). Tak czy inaczej w oknie podglądu układ warto przejrzeć i dostosować.</p>
+
+
+                        <ul>
+                          <li><img src="images/koza.png" alt="materials item"></li>
+                          <li><img src="images/koza.png" alt="materials item"></li>
+                          <li><img src="images/koza.png" alt="materials item"></li>
+                          <li><img src="images/koza.png" alt="materials item"></li>
+                        </ul>
+
+                        <p>Po wybraniu partycji mamy możliwość usunięcia jej, określenia systemu plików, wskazania katalogu montowania, określenia etykiery czy ustawienia flagi rozruchu. Jeżeli usuniemy jakąś partycję możemy utworzyć nową podająć jej rozmiar w MB. Warto rozważyć utworzenie partycji dla następujących katalogów (zob. zrzut poniżej):</p>
+
+                        <ul>
+                        	<li>katalog główny <span class="katalog"><strong>/</strong></span> - partycja podstawowa, wystarczy 10 GB, partycję można ustawić flagę rozruchu</li>
+                        	<li>przestrzeń wymiany <strong>swap</strong> - partycja podstawowa, 2 razy ilość dostępnej pamięci w serwerze</li>
+                        	<li><span class="katalog">/home</span> - partycja logiczna, jeżeli chcielibyśmy korzystać z udostępnianych przez NFS katalogów domowych użytkowników, to jak najwięcej z pozostałego po podziale miejsca, w przeciwnym razie wystarczy np. 20 GB</li>
+                        	<li><span class="katalog">/tmp</span> - partycja logiczna, pliki tymczasowe, wystarczy np. 6 GB</li>
+                        	<li><span class="katalog">/var</span> - partycja logiczna, logi systemowe, wystarczy np. 6 GB w omawianych tu zastosowaniach (!)</li>
+                        	<li><span class="katalog">/srv</span> - partycja logiczna, np. 80-100 GB, katalog cache proxy, ogólnodostępne zasoby sieciowe (samba, ftp, serwer www)</li>
+                        </ul>
+
+                        <p>Oczywiście podane rozmiary są dobrane dla stosunkowo niedużego dysku (ok. 200 GB) i małej bądź średniej sieci (kilkadziesiąt maszyn), powinny więc proporcjonalnie zostać dostosowane. Ponadto są dopasowane do przedstawionej dalej konfiguracji serwera szkolnego. W praktyce konfiguracja na jednym dysku 160 GB bez problemu wystarcza do obsługi pracowni komputerowej (15 jednostek), natomiast konfiguracja dwóch dysków 500 GB + 200 GB działa jako serwer dostępowy dla szkolnej sieci składającej się z 80 jednostek bardzo dobrze i w zasadzie jest nadmiarowa. Generlanie od czegoś trzeba wyjść, żeby po obserwacji obciążenia serwera dokonać korekt.</p>
+
+                        <img class="materials_images_archives" src="images/koza.png" alt="materials item">
+
+                        <p>Jeżeli partycja <span class="katalog">/srv</span> miałaby się znaleźć na drugim dysku, można ją utworzyć i zamontować po zainstalowaniu systemu.</p>
+
+                        <!-- konfiguracja -->
+
+                          <h3 class="materials_title_archives">Konfiguracja interfejsów sieciowych</h3>
+				                    <p>Po instalacji może okazać się, że nazwy interfejsów niekoniecznie odpowiadają przyjętym wyżej założeniom, tzn. eth0 to WAN, a eth1 - LAN. Po wydaniu komendy # ip addr, należy sprawdzić, jakie adresy (jeśli w ogóle) otrzymały karty sieciowe. Zakładając, że nasz serwer podłączony jest np. do routera udostępniającego internet, co najmniej jedna karta powinna otrzymać adres z DHCP. Po zidentyfikowaniu interfejsów można przystąpić do konfiguracji, której dokonuje się w pliku <span class="katalog">/etc/network/interfaces</span>:</p>
+                              <pre>
+                              auto lo
+                              iface lo inet loopback
+
+                              # WAN interface
+                              auto eth0
+                              iface eth0 inet dhcp
+
+                              # LAN interface
+                              auto eth1
+                              iface eth1 inet static
+                                address 192.168.19.1
+                                network 192.168.19.0
+                                netmask 255.255.255.0
+                                broadcast 192.168.19.255
+                                dns-nameservers 192.168.19.1
+                                dns-search mojadomena.org
+                                dns-domain mojadomena.org
+                              </pre>
+                            <p>Adres interfesju eth0 nie musi być konfigurowany dynamicznie, można ustawić go na stałe wzorując się na konfiguracji interfejsu eth1. Jeżeli zachodzi potrzeba zmiany nazw przypisanych interfejsom, można to zrobić w pliku <span class="katalog">/etc/udev/rules.d/70-persistent-net.rules</span>, w którym wpisujemy właściwe nazwy w ciągu: <code>NAME="eth0"</code>.</p>
+                            <p>Po zapisaniu ustawień serwer trzeba zrestartować, a następnie sprawdzić, czy oba interfejsy otrzymały poprawne adresy (<code>ip addr</code>).</p>
+
+                            <!-- Dnsmasq  -->
+
+                            <h3 class="materials_title_archives">Dnsmasq (serwer DHCP i DNS)</h3>
+                            <h3 class="materials_title_archives">Instalacja</h3>
+
+                              <p><code>sudo apt-get install dnsmasq</code></p>
+
+                            <h3 class="materials_title_archives">Konfiguracja</h3>
+
+                              <p>Wszystkie ustawienia znajdują się w pliku <span class="katalog">/etc/dnsmasq.conf</span>, chociaż moglibyśmy umieścić je w osobnych plikach w katalogu <span class="katalog">/etc/dnsmasq.d</span>. Konfiguracja funkcjonalności serwera DHCP i DNS (cache) dla sieci lokalnej na interfejsie eth1 o adresie 192.168.19.1 przedstawia się następująco:</p>
+
+                              <pre>
+                                domain-needed
+                                bogus-priv
+                                filterwin2k
+                                # nie korzystaj z pliku /etc/resolv.conf
+                                no-resolv
+                                # serwery Open DNS (lub naszego ISP)
+                                server=208.67.222.222
+                                server=208.67.220.220
+                                # nasza domena
+                                local=/mojadomena.org/
+                                # nasłuchuj na interfejsie
+                                interface=eth1
+                                expand-hosts
+                                domain=mojadomena.org
+                                # zakres adresów
+                                dhcp-range=192.168.19.100,192.168.19.200,255.255.255.0,12h
+                                # przykład rezerwacji adresów stałych
+                                dhcp-host=00:1E:33:49:0E:C2,stacja1,192.168.19.14,12h
+                                # dodatkowe opcje
+                                dhcp-option=3,192.168.19.1 # adres routera
+                                # Opcje dla Samby w roli PDC jeżeli korzystamy
+                                #dhcp-option=19,0           # opcja ip-forwarding off
+                                #dhcp-option=44,0.0.0.0     # WINS server(s)
+                                #dhcp-option=45,0.0.0.0     # netbios datagram distribution server
+                                #dhcp-option=46,8           # netbios node type (hybrid)
+                                dhcp-option=vendor:MSFT,2,1i # zwalnianie przydzielonego adresu DHCP
+                                # serwer autorytatywny
+                                dhcp-authoritative
+                                cache-size=200
+                              </pre>
+
+                              <p>W opcjach <em>server</em> podano adresy serwerów Open DNS, ale można podać oczywiście inne. Pozostałe ustawienia są bardzo dobrze opisane w oryginalnym pliku konfiguracyjnym (warto zrobić jego kopię).</p>
+
+                              <p>Aby wszystko działało, trzeba jeszcze pamiętać o dwóch rzeczach. W pliku <span class="katalog">/etc/dhcp/dhclient.conf</span>:</p>
+
+                              <pre>
+                                supersede domain-name "mojadomena.org";
+                                prepend domain-name-servers 127.0.0.1;
+                              </pre>
+
+                              <p>	Natomiast w pliku <span class="katalog">/etc/hosts</span>, który dnsmasq propaguje do wszystkich klientów, powinna znaleźć się linia definiująca adres naszego routera (i ewentualnie serwera Samby):</p>
+
+                              <pre>
+                                #127.0.1.1 mojserwer.mojadomena.org mojserwer #to zakomentowujemy
+                                192.168.19.1 mojserwer.mojadomena.org mojserwer
+                              </pre>
+
+                              <p>Dnsmasq zużywa o wiele mniej zasobów niż tandem ISC DHCP + ISC Bind, jest też, jak widać, prostszy w konfiguracji. Przydzielone adresy przejrzymy za pomocą polecenia: <code>cat /var/lib/misc/dnsmasq.leases</code></p>
+
+                              <p>Usługę uruchamiamy standardowo, tzn. <code>sudo service dnsmasq start</code>.</p>
+
                       </div>
+
                   </div>
                   </figure>
                 </div>
                 <div class="top-box_archives top-box-n">
                   <figure class="materials-item">
-                    <img class="materials_images_archives" src="images/koza.png" alt="materials item">
+                    <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
                     <h2 class="materials-title">Edytor tekstu</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
@@ -167,7 +320,7 @@
                 </div>
                 <div class="top-box_archives top-box-o">
                   <figure class="materials-item">
-                    <img class="materials_images_archives" src="images/koza.png" alt="materials item">
+                    <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
                     <h2 class="materials-title">Edytor tekstu</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
@@ -220,7 +373,7 @@
                 </div>
                 <div class="top-box_archives top-box-p">
                   <figure class="materials-item">
-                    <img class="materials_images_archives" src="images/koza.png" alt="materials item">
+                    <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
                     <h2 class="materials-title">Edytor tekstu</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
@@ -273,7 +426,7 @@
                 </div>
                 <div class="top-box_archives top-box-r">
                   <figure class="materials-item">
-                    <img class="materials_images_archives" src="images/koza.png" alt="materials item">
+                    <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
                     <h2 class="materials-title">Edytor tekstu</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
@@ -326,7 +479,7 @@
                 </div>
                 <div class="top-box_archives top-box-s">
                   <figure class="materials-item">
-                    <img class="materials_images_archives" src="images/koza.png" alt="materials item">
+                    <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
                     <h2 class="materials-title">Edytor tekstu</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
@@ -379,7 +532,7 @@
                 </div>
                 <div class="top-box_archives top-box-t">
                   <figure class="materials-item">
-                    <img class="materials_images_archives" src="images/koza.png" alt="materials item">
+                    <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
                     <h2 class="materials-title">Edytor tekstu</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
@@ -432,7 +585,7 @@
                 </div>
                 <div class="top-box_archives top-box-u">
                   <figure class="materials-item">
-                    <img class="materials_images_archives" src="images/koza.png" alt="materials item">
+                    <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
                     <h2 class="materials-title">Edytor tekstu</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
@@ -485,7 +638,7 @@
                 </div>
                 <div class="top-box_archives top-box-w">
                   <figure class="materials-item">
-                    <img class="materials_images_archives" src="images/koza.png" alt="materials item">
+                    <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
                     <h2 class="materials-title">Edytor tekstu</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
@@ -538,7 +691,7 @@
                 </div>
                 <div class="top-box_archives top-box-z">
                   <figure class="materials-item">
-                    <img class="materials_images_archives" src="images/koza.png" alt="materials item">
+                    <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
                     <h2 class="materials-title">Edytor tekstu</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
