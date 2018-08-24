@@ -755,11 +755,12 @@
                   </div>
                   </figure>
                 </div>
+                <!-- Porteus - przenośny Linux -->
                 <div class="top-box_archives top-box-o">
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
+                    <h2 class="materials-title">Porteus - przenośny Linux</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
                     <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
                   </figcaption>
@@ -774,37 +775,65 @@
                         </button>
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
+                            <h2 class="materials-title">Porteus - przenośny Linux</h2>
+                            <p class="materials-subtitle">Poniższy tekst dotyczy Porteusa w starszej wersji 3.2.1. Nowsza opisana została <a href="https://linetc.readthedocs.io/pl/latest/porteus/index.html">tutaj.</a></p>
                           </div>
                       </div>
                         <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <p>Porteus jest odmianą Linuksa zoptymalizowaną do uruchamiania z nośników wymiennych, np. kluczy USB. Oparty jest na najstarszej dystrybucji Linuksa o nazwie Slackware.</p>
                         </div>
-
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <img src="images/porteus.jpg" >
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <p>Porteus ma budowę modularną, słada się z paczek zawierających system plików SquashFS. Na kluczu USB (płycie CD) znajduje się katalog /porteus zawierający wszystkie moduły:</p>
+                          <ul>
+                            <li>base - moduły systemu bazowego,</li>
+                            <li>modules - tu umieszczamy moduły ładowane automatycznie podczas startu,</li>
+                            <li>optional - oprogramowanie dodatkowe, ładowane na żądanie.</li>
+                          </ul>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/porteus_modules.png" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <h3>Pobieranie i nagrywanie</h3>
+                          <p>Przygotowaliśmy dwie wersje systemu do pobrania:</p>
+                          <p>Porteus_BASE - system podstawowy ze środowiskiem XFCE4, ładowane domyślnie: spolszczenie, czcionki, Geany IDE, git, Python 2.7.5, biblioteka Qt4 i PyQt4, wszystkie biblioteki wymagane przez scenariusze Python101.</p>
+                          <p>Porteus_FULL - dodatkowo profesjonalne edytory SublimeText3 i PyCharm w postaci dynamicznych modułów do załadowania.</p>
+                          <p>W systemie Windows plik iso po pobraniu nagrywamy na pendrajwa za pomocą programu Rufus – polecamy ten sposób nawet użytkownikom Linuksa ;-)</p>
+                          <p>W systemach Linux wykonujemy następujące czynności z konta roota. Po pierwsze montujemy plik iso:</p>
+                          <br>
+                          <code>
+                            # mkdir /mnt/loop
+                            <br>
+                            # mount -o loop /path/to/file.iso /mnt/loop
+                          </code>
+                          <br><br>
+                          <p>Następnie wkładamy klucz USB, na który chcemy zainstalować system. Powinien zostać zamontowany automatycznie, np. jako <code>/dev/sdb1.</code> Możemy to sprawdzić wydając polecenie: <code>mount</code>. Następnie kopiujemy katalogi /boot i /porteus na klucz USB. Na koniec uruchamiamy instalator z katalogu <code>/mnt/sdb1/boot</code> poleceniem: <code>sh Porteus.installer-for-Linux.com.</code> sh Porteus.installer-for-Linux.com.</p>
+                          <p>Dodatkowe moduły, które udostępniamy, umieszczamy w katalogu <code>modules</code>, jeśli mają być ładowane automatycznie, lub w katalogu <code>optional</code>, jeśli chcemy je ładować w miarę potrzeb. Wtedy wykorzystujemy program "Aktywuj moduł opcjonalny".</p>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <h3>Pierwsze uruchomienie</h3>
+                          <p>System błyskawicznie się uruchamia i pozwala na zachowanie wprowadzanych zmian, tj. konfiguracji, oprogramowania czy dokumentów użytkownika. W tym celu należy utworzyć specjalny plik zapisu.</p>
+                          <p>Wybieramy <code>Start/System/Porteus Setings Centre</code>, podajemy hasło roota (administratora), czyli <b>toor</b>, i klikamy ikonę dyskietki.</p>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/porteus01.png" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <p>Klikamy ikonę <b>Porteus Save Changes</b> i wybieramy opcję "I want to create a new save file" przycieskiem <b>Create.</b></p>
+                          <p>W polu "Location" kilkamy ikonę folderu i wskazujemy napęd USB. W komputerach z jednym dyskiem twardym będzie to nazwa "sdb1". Jeżeli mamy wątpliwości, możemy uruchomić <code>Start/System/Porteus system info</code>, kliknąć <code>Porteus/Boot_info</code> i sprawdzić wpis "# Booting device".</p>
                         </div>
-                      </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/porteus02.png" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>W polu "Savefile name" wpisujemy nazwę pliku, np. "porteussave.dat", rozmiar zostawiamy domyślny. Na koniec klikamy "OK".</p>
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/porteus_save.png" alt="">
+                        </div>
                   </div>
                   </figure>
                 </div>
