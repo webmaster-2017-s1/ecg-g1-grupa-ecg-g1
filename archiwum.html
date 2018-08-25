@@ -706,8 +706,8 @@
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
-                    <p class="materials-desc">Miejsce na ewentualny opis</p>
+                    <h2 class="materials-title">Debian Wheezy (instalacja)</h2>
+                    <p class="materials-desc"></p>
                     <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
                   </figcaption>
                   <div class="materials-modal">
@@ -721,37 +721,75 @@
                         </button>
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
+                            <h2 class="materials-title">Debian Wheezy (instalacja)</h2>
                             <p class="materials-subtitle">Ewentualny podtytuł</p>
                           </div>
                       </div>
                         <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <h3>Debian Wheezy (instalacja)</h3>
+                          <p>Debian to jedna z najstarszych dystrybucji Linuksa, na której bazuje cała gama innych, w tym Ubuntu. Debiana cechuje przede wszystkim stabilność, dlatego warto go zastosować, kiedy nie mamy zbyt dużo czasu na aktualizacje. Do instalacji aktualnej stabilnej wersji <b>7.0</b> o nazwie <b>Wheezy</b> potrzebny nam będzie obraz 1. płyty instalacyjnej, który pobieramy w formacie iso. Następnie przygotowujemy nośnik instalacyjny <a href="#">(CD lub USB)</a> i uruchamiamy z niego komputer. Powita nas następujący ekran:</p>
                         </div>
-
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian01.jpg" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <p>Wybieramy instalację w trybie graficznym. Na następnych ekranach lokalizujemy system, czyli wybieramy język (Polski – wystarczy wcisnąć kolejno "po"+Enter), lokalizację (Polska) i układ klawiatury (polski). Następnie wprowadzamy nazwę komputera i ewentualnie domenę (np. home.net):</p>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian02.jpg" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <p>Dalej wpisujemy dwukrotnie hasło administratora, czyli użytkownika root, a następnie podajemy pełną nazwę i nazwę (login) zwykłego użytkownika (zazwyczaj takie same) oraz hasło:</p>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian03.jpg" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian04.jpg" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <p>Po załadowaniu odpowiednich modułów rozpoczyna się najtrudniejszy etap instalacji, czyli partycjonowanie. Jeżeli Debian ma być jedynym systemem na dysku, wybieramy "Przewodnik - cały dysk", a następnie opcję z osobną partycją na katalog /home. Jeżeli jednak na dysku mamy już jakiś system, wskazujemy "Ręcznie", po czym widzimy dotychczasowy rozkład partycji na dysku:</p>
                         </div>
-                      </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian05.jpg" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>Po podświetleniu istniejącej partycji i naciśnięciu Enter możemy określić system plików i punkt montowania np. głównego systemu plików. Można też partycję usunąć i utworzyć nową. Tak czy inaczej pamiętajmy, że Linux wymaga co najmniej jednej partycji systemowej i jednej partycji wymiany. Nie muszą to być partycje podstawowe, mogą też być logiczne (por. zrzut wyrzej).Po potwierdzeniu zmian w układzie partycji rozpocznie się instalacaja:</p>
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian06.jpg" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>Po zainstalowaniu podstawowych pakietów system zaproponuje przeskanowanie dodtakowych płyt instalacyjnych, z czego rezygnujemy (Nie), po czym konfigurujemy główne repozytorium pakietów, wybierając w kolejnych oknach: "Polska", "ftp.pl.debian.org", "", "Tak". Udziału w systemie "pupularity" odmawiamy, natomiast na ekranie "Wyboru oprogramowania" zaznaczamy tylko te pozycje, z których rzeczywiście będziemy korzystać:</p>
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian07.jpg" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>Uwaga: pozostawienie zaznaczonej opcji "Podstawowe składniki środowiska graficznego Debiana" spowoduje zainstalowanie domyślnie środowiska Gnome 3.4, co – jeżeli zależy nam na wydajności – nie jest konieczne. Proponujemy odznaczyć tę opcję i później doinstalować XFCE4 (zobacz niżej). Serwer druku zaznaczamy tylko wtedy, jeżeli do komputera mamy podłączoną drukarkę. Instalacja chwilę potrwa, po czym przechodzimy do ostatniego etapu, czyli zinstalowania bootmenedżera GRUB w głównym rekordzie rozruchowym (zalecane). Zgadzamy się i po chwili kończymy instalację:</p>
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian08.jpg" alt="">
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian09.jpg" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          Po restarcie powinniśmy zobaczyć menu startowe GRUB-a. Jeżeli odznaczyliśmy opcję instalacji podstawowych składników graficznych, po uruchomieniu się systemu znajdziemy się w trybie znakowym konsoli.
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian10.jpg" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>Logujemy się na konto roota i rozpoczynamy konfigurację, tj. doinstalowanie środowiska graficznego i wybranych programów użytkowych.</p>
+                        </div>
+                        <div class="materials-content container">
+                          <h3>Zobacz</h3>
+                          <ul>
+                            <li>instalacja Debiana -<a href="#">galeria</a></li>
+                            <li> <a href="#">Konfiguracja i zarządzanie</a> Debianem</li>
+                          </ul>
+                        </div>
                   </div>
                   </figure>
                 </div>
@@ -833,6 +871,47 @@
                         </div>
                         <div class="materials-content container text-center">
                           <img src="images/porteus_save.png" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>Po zapisaniu pliku powracamy do okna "Porteus Settings Centre", w którym wybieramy <b>Edit porteus.cfg</b>. Plik ten znajduje się w katalogu <code>/boot/syslinux</code> i definiuje opcje startowe systemu. Odszukujemy pierwszy wpis "changes=/porteus" i zmieniamy na <b>changes=/porteussave.dat</b> godnie z podaną wcześniej nazwą pliku zapisu.porteus.cfg</p>
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/porteus04.png" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>Po ponownym uruchomieniu systemu wszystkie zmiany będą zapisywane. Jeżeli tworzymy lub ściągamy i zapisujemy wiele plików, warto sprawdzać ilość dostępnego miejsca w pliku zapisu:</p>
+                          <ul>
+                            <li><code>du -sh /mnt/live/memory/changes</code> - poda ilość zajętego miejsca;</li>
+                            <li><code>df -h /mnt/live/memory/changes</code> - poda ilość wolnego miejsca.</li>
+                          </ul>
+                          <p>W przypadku wyczerpywania się wolnego miejsca w pliku zapisu możemy zwiększyć jego rozmiar wybierając:</p>
+                          <ul>
+                            <li>start systemu w trybie "Always Fresh mode",</li>
+                            <li>następnie Start/System/Porteus Settings Centre/Porteus changes i opcję "Porteus Save Changes",</li>
+                            <li>później "I want to resize a save file":</li>
+                          </ul>
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/porteus05png.png" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>Uwaga: tworzony jest nowy plik zapisu w podanej lokalizacji zawierający dotychczasowe zmiany. Jeżeli zaznaczymy usunięcie dotychczasowego pliku, nowy trzeba przenieść w dotychczasowe miejsce lub zmienić ścieżkę w pliku "porteus.cfg".</p>
+                        </div>
+                        <div class="materials-content container">
+                          <h3>Moduły</h3>
+                          <ul>
+                            <li>Moduły można (de)aktywować dwukrotnym kliknięciem.</li>
+                            <li>Domyślną przeglądarką jest Palemoon, zawarta w module <code>/porteus/base/04-palemoon.xzm</code>. Jeżeli chcesz Firefoksa, pobierz moduł 04-firefox.xzm stworzony przez twórców Porteusa i zastąp nim Palemoona.</li>
+                            <li>Niektóre moduły wymagają innych, zobacz niżej.</li>
+                            <li>Dodaliśmy moduły <code>pycharm-2016.1.xzm</code> i wymagane środowisko Javy <code>jdk-8u66.xzm</code>. Oba moduły można pobrać, wgrać do katalogu <code>/porteus/optional</code> i przetestować. Uwaga: aktywuj moduły dwukrotnym kliknięciem i nie ładuj Javy w wersji 7 z modułu <code>openjre-7u95.xzm</code>.</li>
+                          </ul>
+                        </div>
+                        <div class="materials-content container">
+                          <h3>Dla zainteresowanych</h3>
+                          <ul>
+                            <li>Hasło do konta domyślnego użytkownika <b>guest</b> to... <b>guest</b>.</li>
+                            <li>Wersję systemu (32/64-bity) oraz system bazowy (np. wsparcie dla EFI, środowisko graficzne) można skonfigurować samemu na stronie Porteus Wizard.</li>
+                          </ul>
                         </div>
                   </div>
                   </figure>
