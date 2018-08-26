@@ -841,3 +841,14 @@
             margin-left: auto;
             margin-right: auto;
           }
+
+          ins {
+            color: var(--light);
+            background-color: var(--blue);
+            text-decoration: none;;
+          }
+
+          .cb {
+            width: 551px; 
+            height: 413px;
+          }
