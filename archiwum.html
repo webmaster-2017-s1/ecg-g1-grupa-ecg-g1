@@ -872,7 +872,7 @@
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
+                    <h2 class="materials-title">Debian 7 Wheezy - konfiguracja i zarządzanie.</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
                     <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
                   </figcaption>
@@ -887,37 +887,86 @@
                         </button>
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
+                            <h2 class="materials-title">Debian 7 Wheezy - konfiguracja i zarządzanie</h2>
                           </div>
                       </div>
                         <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <h3 class="materials_title_archives">Repozytoria</h3>
+                          <p>Podobnie jak w każdej innej dystrybucji Linuksa na początku należy ustawić odpowiednie repozytoria. Domyślną listę po instalacji <b>Debiana 7.0 Wheezy</b> zobaczymy po wydaniu polecenia nano <code>/etc/apt/sources.list</code>. Zmieniamy ją zgodnie z poniższym zrzutem, aby dodać kanały contrib i non-free:</p>
                         </div>
-
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian1.jpg" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <p>Aby zapisać zmiany, naciskamy CTRL+O, Enter i wychodzimy CTRL+X. Dodatkowe repozytoria dodamy po wydaniu polecenia nano <code>/etc/apt/sources.list.d/extra.list</code>:</p>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian2.jpg" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <p>Pierwsze repozytorium udostępnia aktualne pakiety programów multimedialnych. Uwaga: jeżeli chcemy mieć absolutny spokój z ewentualnymi konfliktami wersji pakietów, to zamiast testing wpisujemy wheezy. Drugie repozytorium "xfcenext" zawiera najnowszą wersję XFCE - 4.10. Repo Opery dodajemy tylko wtedy, jeżeli chcemy korzystać z tej przeglądarki. Na koniec odświeżamy bazę repozytoriów i dodajemy klucze podpisów:</p>
+                          <pre>
+                            apt-get update
+                            apt-get install deb-multimedia-keyring
+                            wget http://packages.siduction.org/base/pool/main/s/siduction-archive-keyring/siduction-archive-keyring_2013.03.29_all.deb
+                            dpkg -i siduction-archive-keyring_2013.03.29_all.deb
+                            wget -O - http://deb.opera.com/archive.key | apt-key add -
+                            apt-get update
+                          </pre>
+                          <p>Po ponownym wydaniu polecenia odświeżenia bazy repozytoriów nie powinniśmy zobaczyć już żadnych błędów podpisów GPG.</p>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <h3 class="materials_title_archives">Oprogramowanie</h3>
+                          <p>To co nastąpi dalej, zależy od tego, jakie oprogramowanie chcemy mieć w systemie. Poniższa propozycja nadaje się zarówno na starsze, jak i nowsze maszyny, zapewniając wygodne i szybkie środowisko do pracy biurowej, a także pełną obsługę multimediów.</p>
+                          <ul>
+                          	<li>Podstawowe narzędzia:<br>
+                          		<code>apt-get install mc zip unzip unrar-free sudo localepurge deborphan sysv-rc-conf ntp</code></li>
+                          	<li>Środowisko XFCE 4.10:<br>
+                          		<code>apt-get install xfce4 xfce4-terminal xfce4-taskmanager xfce4-notifyd xfce4-screenshooter xfce4-notes-plugin xfce4-datetime-plugin xarchiver thunar-archive-plugin xfburn</code></li>
+                          	<li>XServer, menedżer logowania (Lightdm) i firmware:<br>
+                          		<code>apt-get install xserver-xorg-video-vesa xserver-xorg-video-fbdev lightdm firmware-linux-free firmware-linux-nonfree</code></li>
+                          	<li>Obsługa tematów graficznych, wtyczka Flasha, Java:<br>
+                          		<code>apt-get install gtk2-engines-murrine gtk2-engines-pixbuf flashplugin-nonfree openjdk-7-jre icedtea-7-plugin</code></li>
+                          	<li>Programy użytkowe:<br>
+                          		<code>apt-get install galculator leafpad gpicview vlc libdvdcss2 deadbeef lame vorbis-tools gstreamer0.10-alsa volumeicon-alsa ttf-liberation epdfview gimp&nbsp;gvfs-backends</code></li>
+                          	<li>Przeglądarki (wszystkie lub wybraną):<br>
+                          		<code>apt-get install chromium chromium-l10n opera midori</code></li>
+                          </ul>
+                          <h4 class="materials_title_archives">Konfiguracja sudo</h4>
+                          <p>Debian inaczej niż np. Ubuntu nie umożliwia automatycznie zwykłym użytkownikom wykonywania poleceń z uprawnieniami administracyjnymi za pomocą polecenia <strong>sudo</strong> czy <strong>gksudo</strong>. Aby to zmienić wydajemy polecenie <code>visudo</code>, po czym wpisujemy w linii rozpoczynającej się od <strong>%sudo</strong> tekst <strong>NOPASSWD</strong> tak jak na zrzucie:</p>
+                          <div class="materials-content container text-center">
+                            <img src="images/debian3.jpg" alt="">
+                          </div>
+                          <p><p>Dzięki temu uprawnieni użytkownicy nie będą musieli każdorazowo podawać hasła podczas wydawania poleceń administracyjnych. Użytkownika (-ów) trzeba dodać jeszcze do grupy <strong>sudo</strong>: <code>usermod -a -G sudo nazwa_użytkownika</code>.</p></p>
+                          <h4 class="materials_title_archives">Restart i logowanie w trybie graficznym</h4>
+                          <p>Po zrestartowaniu maszyny i zalogowaniu się na utworzone podczas instalacji konto zwykłego użytkownika, zobaczymy okno dialogowe "Pierwsze uruchomienie panelu", w którym wybieramy utworzenie konfiguracji domyślnej wykorzystującej styl i ikony "Tango" oraz dwa panele na górze i dole ekranu. Jak dostosować wygląd pulpitu XFCE opisujemy tutaj.</p>
+                          <p>Jeżeli chcielibyśmy, aby domyślny wygląd i ustawienia środowiska były inne, do katalogu <span class="katalog">/etc/skel</span> musielibyśmy wgrać wybrane foldery z ustawieniami, czyli przede wszystkim folder <code>~/.config</code> i ewentualnie <code>~/.local/share/applications</code>. Oczywiście katalogi te trzeba by przygotować wcześniej na podstawie przykładowego konta.</p>
+                          <h4 class="materials_title_archives">Instalacja LibreOffice'a</h4>
+                          <p>Pakiet biurowy LibreOffice można zainstalować już po pierwszym uruchomieniu systemu w konsoli, z repozytoriów Debiana, ale w starszej wersji 3.5.4. Aby zainstalować wersję najnowszą, postępujemy zgodnie z <a href="http://ecg.vot.pl/libreoffice-install-debian" target="_blank">tą instrukcją</a>.</p>
+                          <h4 class="materials_title_archives">Instalacja Firefoxa</h4>
+                          <p>Zamiast Firefoksa w repozytoriach z powodów licencyjnych znajdziemy stabilną wersję 10.0.12 pod nazwą Iceweasel. Instalacja najnowszej wersji Firefoksa wymaga pobrania plików instalacyjnych, co można zrobić wcześniej na innej maszynie, w konsoli przy użyciu polecenia <strong>wget</strong> albo w środowisku graficznym po pierwszym zalogowaniu, ale wtedy musimy&nbsp;mieć zainstalowaną wcześniej jakąś inną przeglądarkę ;).</p>
+                          <p>Firefoksa pobieramy np. ze strony <a href="http://www.mozilla.org/pl/firefox/new/">www.mozilla.org/pl/firefox/new</a>, w katalogu <span class="katalog">~/Pobrane</span> powinien znaleźć się plik np. "firefox-20.0.tar.gz", który rozpakowujemy poleceniem: <code>tar xvf firefox-20.0.tar.gz -C /opt</code>. Aby przeglądarka była widziana w środowisku XFCE do katalogu <span class="katalog">~/.local/share/applications</span> dodajemy plik o nazwie <em>firefox.desktop</em> zawierający wpisy:</p>
+                          <pre>
+                             [Desktop Entry]
+                              Encoding=UTF-8
+                              Name=Firefox
+                              Name[pl]=Firefox
+                              Comment[pl]=Przeglądanie stron WWW
+                              GenericName[pl]=Przeglądarka WWW
+                              X-GNOME-FullName[pl]=Przeglądarka WWW Firefox
+                              Exec=/opt/firefox/firefox %u
+                              Terminal=false
+                              X-MultipleArgs=false
+                              Type=Application
+                              Icon=/opt/firefox/icons/mozicon128.png
+                              Categories=Network;WebBrowser;
+                              MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
+                              StartupWMClass=Firefox-bin
+                              StartupNotify=true
+                          </pre>
+                          <p>Wygląda to skomplikowanie, ale odpowiedni plik można utworzyć na podstawie jakiegoś pliku z katalogu <span class="katalog">/usr/share/applications</span>.</p>
+                          <p>Po przelogowaniu się w menu programów powinniśmy zobaczyć wpis&nbsp;<strong>Firefoksa</strong> w grupie <strong>Internet</strong>. Można też dodać odpowiedni aktywator do panelu lub umieścić skrót na Pulpicie.</p>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                      </div>
                   </div>
                   </figure>
                 </div>
