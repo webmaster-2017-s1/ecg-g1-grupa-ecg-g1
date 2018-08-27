@@ -892,6 +892,7 @@
                       </div>
                         <div class="materials-content container">
                           <h3 class="materials_title_archives">Repozytoria</h3>
+                          <br>
                           <p>Podobnie jak w każdej innej dystrybucji Linuksa na początku należy ustawić odpowiednie repozytoria. Domyślną listę po instalacji <b>Debiana 7.0 Wheezy</b> zobaczymy po wydaniu polecenia nano <code>/etc/apt/sources.list</code>. Zmieniamy ją zgodnie z poniższym zrzutem, aby dodać kanały contrib i non-free:</p>
                         </div>
                         <div class="materials-content container text-center">
@@ -917,6 +918,7 @@
                         </div>
                         <div class="materials-content container">
                           <h3 class="materials_title_archives">Oprogramowanie</h3>
+                          <br>
                           <p>To co nastąpi dalej, zależy od tego, jakie oprogramowanie chcemy mieć w systemie. Poniższa propozycja nadaje się zarówno na starsze, jak i nowsze maszyny, zapewniając wygodne i szybkie środowisko do pracy biurowej, a także pełną obsługę multimediów.</p>
                           <ul>
                           	<li>Podstawowe narzędzia:<br>
@@ -933,17 +935,21 @@
                           		<code>apt-get install chromium chromium-l10n opera midori</code></li>
                           </ul>
                           <h4 class="materials_title_archives">Konfiguracja sudo</h4>
+                          <br>
                           <p>Debian inaczej niż np. Ubuntu nie umożliwia automatycznie zwykłym użytkownikom wykonywania poleceń z uprawnieniami administracyjnymi za pomocą polecenia <strong>sudo</strong> czy <strong>gksudo</strong>. Aby to zmienić wydajemy polecenie <code>visudo</code>, po czym wpisujemy w linii rozpoczynającej się od <strong>%sudo</strong> tekst <strong>NOPASSWD</strong> tak jak na zrzucie:</p>
                           <div class="materials-content container text-center">
                             <img src="images/debian3.jpg" alt="">
                           </div>
                           <p><p>Dzięki temu uprawnieni użytkownicy nie będą musieli każdorazowo podawać hasła podczas wydawania poleceń administracyjnych. Użytkownika (-ów) trzeba dodać jeszcze do grupy <strong>sudo</strong>: <code>usermod -a -G sudo nazwa_użytkownika</code>.</p></p>
                           <h4 class="materials_title_archives">Restart i logowanie w trybie graficznym</h4>
+                          <br>
                           <p>Po zrestartowaniu maszyny i zalogowaniu się na utworzone podczas instalacji konto zwykłego użytkownika, zobaczymy okno dialogowe "Pierwsze uruchomienie panelu", w którym wybieramy utworzenie konfiguracji domyślnej wykorzystującej styl i ikony "Tango" oraz dwa panele na górze i dole ekranu. Jak dostosować wygląd pulpitu XFCE opisujemy tutaj.</p>
                           <p>Jeżeli chcielibyśmy, aby domyślny wygląd i ustawienia środowiska były inne, do katalogu <span class="katalog">/etc/skel</span> musielibyśmy wgrać wybrane foldery z ustawieniami, czyli przede wszystkim folder <code>~/.config</code> i ewentualnie <code>~/.local/share/applications</code>. Oczywiście katalogi te trzeba by przygotować wcześniej na podstawie przykładowego konta.</p>
                           <h4 class="materials_title_archives">Instalacja LibreOffice'a</h4>
+                          <br>
                           <p>Pakiet biurowy LibreOffice można zainstalować już po pierwszym uruchomieniu systemu w konsoli, z repozytoriów Debiana, ale w starszej wersji 3.5.4. Aby zainstalować wersję najnowszą, postępujemy zgodnie z <a href="http://ecg.vot.pl/libreoffice-install-debian" target="_blank">tą instrukcją</a>.</p>
                           <h4 class="materials_title_archives">Instalacja Firefoxa</h4>
+                          <br>
                           <p>Zamiast Firefoksa w repozytoriach z powodów licencyjnych znajdziemy stabilną wersję 10.0.12 pod nazwą Iceweasel. Instalacja najnowszej wersji Firefoksa wymaga pobrania plików instalacyjnych, co można zrobić wcześniej na innej maszynie, w konsoli przy użyciu polecenia <strong>wget</strong> albo w środowisku graficznym po pierwszym zalogowaniu, ale wtedy musimy&nbsp;mieć zainstalowaną wcześniej jakąś inną przeglądarkę ;).</p>
                           <p>Firefoksa pobieramy np. ze strony <a href="http://www.mozilla.org/pl/firefox/new/">www.mozilla.org/pl/firefox/new</a>, w katalogu <span class="katalog">~/Pobrane</span> powinien znaleźć się plik np. "firefox-20.0.tar.gz", który rozpakowujemy poleceniem: <code>tar xvf firefox-20.0.tar.gz -C /opt</code>. Aby przeglądarka była widziana w środowisku XFCE do katalogu <span class="katalog">~/.local/share/applications</span> dodajemy plik o nazwie <em>firefox.desktop</em> zawierający wpisy:</p>
                           <pre>
@@ -975,7 +981,7 @@
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
+                    <h2 class="materials-title">Debian Wheezy i LibreOffice</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
                     <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
                   </figcaption>
@@ -990,37 +996,57 @@
                         </button>
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
+                            <h2 class="materials-title">Instalacja LibreOffice'a w systemie Debian Wheezy</h2>
                             <p class="materials-subtitle">Ewentualny podtytuł</p>
                           </div>
                       </div>
                         <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <p>Opisane tutaj procedury pozwalają zainstalować (później aktualizować) najnowszą wersję pakietu biurowego LibreOffice w systemie Debian Wheezy oraz dystrybucjach, które na nim się opierają: SnowLinux czy CrunchBang. <ins>Niestety, obydwie wspomniane dystrybucje nie są rozwijane!</ins> Wersją domyślną w tych systemach jest 3.5.4 i jeżeli ją zainstalowaliśmy, należy przed upgradem ją usunąć, wydając polecenie w terminalu: <code>sudo apt-get purgelibreoffice*</code>.</p>
+                          <h3 class="materials_title_archives">Repozytoria backports</h3>
+                          <br>
+                          <p>Pierwsza możliwość, relatywnie prostsza, to wykorzystanie repozytorium backports, do którego trafiają wersje oprogramowania dostępne w wersji testowej, ale przystosowane do uruchomienia w wersji stabilnej. Do pliku <code >/etc/apt/sources.list</code> dodajemy więc poniższą linię:</p>
+                          <pre>   deb http://ftp.pl.debian.org/debian wheezy-backports main contrib non-free</pre>
+                          <p>– a następnie jako użytkownik z uprawnieniami roota (lub przez <code>sudo</code>) aktualizujemy listę dostępnych pakietów i instalujemy pakiet biurowy:</p>
+                          <pre>   apt-get updateapt-get install -t wheezy-backports libreoffice libreoffice-l10n-pl libreoffice-help-pl libreoffice-gnome libreoffice-style-sifr mythes-pl hyphen-pl --yes --force-yes</pre>
+                          <h3 class="materials_title_archives">Instalacja z archiwów</h3>
+                          <br>
+                          <p>Ze strony <a href="http://pl.libreoffice.org/pobieranie/" target="_blank">http://pl.libreoffice.org/pobieranie/</a> pobieramy ostatnią wersję LibreOffice, czyli trzy archiwa <code>.deb</code> zawierające główny instalator, tłumaczenia interfejsu i pomoc. Umieszczamy je w osobnym katalogu, np. ~/tmp. Następnie wykoujemy polecenia:</p>
+                          <pre>
+                            tar xvf LibreOffice_4.4.0_Linux_x86_deb.tar.gz
+                            tar xvf LibreOffice_4.4.0_Linux_x86_deb_langpack_pl.tar.gz
+                            tar xvf LibreOffice_4.4.0_Linux_x86_deb_helppack_pl.tar.gz
+                            dpkg -i LibreOffice_4.4.0.3_Linux_x86_deb/DEBS/*.deb
+                            dpkg -i LibreOffice_4.4.0.3_Linux_x86_deb/DEBS/desktop-integration/*.deb
+                            dpkg -i LibreOffice_4.4.0.3_Linux_x86_deb_langpack_pl/DEBS/*.deb
+                            dpkg -i LibreOffice_4.4.0.3_Linux_x86_deb_helppack_pl/DEBS/*.deb
+                          </pre>
+                          <p>Oczywiście numery wersji (np. 4.4.0) trzeba dostosować, podobnie podwersję (np. 4.4.0.3), którą najłatwiej sprawdzić otwierając któreś z archiwum w dowolnym menedżerze.To wszystko, katalog <span class="katalog">tmp</span> można opróżnić, zainstalowane pliki trafią do katalogu <code>/opt/libreoffice4.4</code> (numer końcwoy zależy od wersji).</p>
+                          <p>W środowisku XFCE4 odpowiednie wpisy pojawią się w menu w kategorii Biuro.</p>
+                          <p>W Openboksie (wykorzystywanym domyślnie przez CrunchBanga), trzeba kilka rzeczy zmienić:</p>
+                          <ol>
+                          	<li>Tworzymy dowiązanie: <code>ln -s /usr/bin/libreoffice4.4 /usr/bin/libreoffice</code></li>
+                          	<li>W pliku <span class="katalog">.config/openbox/menu.xml</span> np. po poleceniu uruchamiającym menedżer plików (thunar) dopisujemy:
+                          		<pre>
+                                &lt;item label="LibreOffice"&gt;
+                          	    &lt;action name="Execute"&gt;
+                          		  &lt;command&gt;
+                          			libreoffice
+                            		&lt;/command&gt;
+                          	    &lt;/action&gt;
+                               &lt;/item&gt;
+                              </pre>
+                          	</li>
+                          	<li>CB do uruchamiania poszczególnych składników Libry z menu "Biuro/LibreOffice" wykorzystuje skrypty z katalogu <span class="katalog">/usr/bin</span>: lowriter, localc, lodraw, loimpress, lodraw i lobase. Trzeba zadbać, aby linia <span class="katalog">cmd=/opt/libreoffice4.4/program/soffice</span> w tych plikach zawierała poprawny katalog, czyli w naszym przypadku <span class="katalog">libreoffice4.4</span>.</li>
+                          </ol>
+                          <p>Wszystkie powyższe czynności wykona prosty <a href="http://ecg.vot.pl/data/uploads/linux/skrypty/loffice.tar.gz"><strong>skrypt</strong></a>. Pobierz go, rozpakuj i wgraj do katalogu z pobranymi wcześniej archiwami .deb.tar.gz pakietu. Otwórz skrypt <code>loffice.sh</code> w dowolnym edytorze (np. <code>geany</code> albo <code>nano</code> w terminalu) i ustaw zmienne VER oraz SVER zgodnie z wersją instalowanego pakietu. Jeżeli NIE używaszCrunchBanga, zakomentuj/usuń wskazany kod ze skryptu lub wskazne pliki. Na koniec wykonaj polecenia w terminalu:</p>
+                          <pre>
+                            cd ~/tmp
+                            chmod a+x ./loffice.sh
+                            sudo ./loffice.sh
+                          </pre>
+                          <p>Jak widać, skrypt musisz uruchomić z uprawnieniami roota. Działanie skryptu polega na rozpakowaniu archiwów deb, zainstalowaniu zawartych w nich pakietów i opcjonalnie zaktualizowaniu skryptów uruchamiających aplikacje pakietu w CrunchBangu.</p>
+                          <p>Jeżeli pojawi się nowa wersja Libry, wystarczy ściągnąć archiwa <code>.deb</code>, ustawić zmienne w skrypcie i ponownie go uruchomić. Uważać trzeba tylko wtedy, kiedy zmieni się podwersja, np. 4.4 na 4.5. Wtedy dodatkowo wersję 4.4 trzeba odinstalować, wpisując jej nazwę w skrypcie, oraz w przypadku CrunchBanga zaktualizować pliki opisywane wyżej w punkcie 3.</p>
                         </div>
-
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                      </div>
                   </div>
                   </figure>
                 </div>
