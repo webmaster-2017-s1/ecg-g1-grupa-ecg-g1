@@ -1109,8 +1109,7 @@
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
-                    <p class="materials-desc">Miejsce na ewentualny opis</p>
+                    <h2 class="materials-title">Rozruchowy klucz USB <br>z dystrybucją SRU</h2>
                     <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
                   </figcaption>
                   <div class="materials-modal">
@@ -1124,37 +1123,64 @@
                         </button>
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
+                            <h2 class="materials-title">Rozruchowy klucz USB z dystrybucją SRU</h2>
                           </div>
                       </div>
                         <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
+                          <p><ins>Dystrybucja SRU nie jest już dostępna. Poniższy opis będzie nadal aktualny w odniesieniu do dystrybucji opartych na Ubuntu.</ins></p>
+                          <p>Przygotowanie pendrajwa z dystrybucją SRU, który będzie pamiętał dokumenty i ustawienia użytkownika, możliwe jest na kilka sposobów.</p>
+                          <p>1) Jeżeli dysponujemy już takim pendrajwem, możemy zastosować polecenia podane wyżej w części "Kopiowanie bootowalnego klucza USB".</p>
+                          <p>2) W pozostałych przypadkach, tzn. pracując na jakiejś dystrybucji z rodziny Ubuntu (w tym na SRU) zainstalowanej na twardym dysku lub uruchomionej w sesji live z pendrajwa lub płyty CD/DVD, wykonujemy następujące czynności:</p>
+                          <ol class="labc">
+                          	<li>Pobieramy ostatnią wersję obrazu (w tym momencie: sru-test-37.iso) dystrybucji spod adresu <del>http://sru.e-swoi.pl/</del></li>
+                          	<li>Za pomocą "Centrum oprogramowania" lub termianla Instalujemy program "Tworzenie nośnika rozruchowego" (pakiet "usb-creator-gtk")</li>
+                          	<li>Przygotowujemy pendrajwa o pojemności min. 4GB za pomocą programu gparted, tzn. tworzemy przynajmniej jedną główną partycję Fat32 o pojemności min. 3GB. Opcjonalnie tworzemy partycję z systemem plików Ext4 o etykiecie "home-rw" na katalog domowy użytkownika. (Jeżeli nie utworzymy partycji "home-rw", nadal będziemy mogli zapisywać dokumenty i ustawienia użytkownika, ale warto wtedy przeznaczyć całą pojemność pendrajwa na partycję systemową Fat32).</li>
+                          	<li>Uruchamiamy program "Tworzenie nośnika rozruchowego" (Wciskamy Alt+F2 lub uruchamiamy terminal i wpisujemy polecenie usb-creator-gtk).</li>
+                          	<li>W górnej części okna wskazujemy pobrany obraz iso systemu (możemy wskazać obraz dowolnej dystrybucji z rodziny Ubuntu lub na niej opartej).</li>
+                          	<li>Na dole okna zaznaczamy opcję "Przechowywane w zarezerwowanym obszarze..." i określamy rozmiar, jeżeli nie utworzyliśmy dodatkowej partycji "home-rw". W przeciwnym razie zaznaczamy opcję "Porzucone..." - dokumenty i ustawienia będą przechowywane na dodatkowej partycji.</li>
+                          </ol>
 
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                      </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Pobieramy obraz iso</h3>
+                            <img src="images/usb01.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Uruchamiamy Centrum oprogramowania</h3><br><br><br>
+                            <img src="images/usb02.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Instalujemy program usb-creator-gtk</h3><br><br><br>
+                            <img src="images/usb03.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Instalacja programu usb-creator-gtk w terminalu</h3><br><br><br>
+                            <img src="images/usb04.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Wciskamy Alt+F2 i uruchamiamy program usb-creator-gtk</h3><br><br><br>
+                            <img src="images/usb05.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Instalacja programu gparted</h3><br><br><br>
+                            <img src="images/usb06.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Tworzenie systemowej partycji fat dla dystrybucji SRU</h3><br><br><br>
+                            <img src="images/usb07.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Tworzenie partycji home-rw na dane użytkownika</h3><br><br><br>
+                            <img src="images/usb08.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Pendrive przygotowany do wgrania dystrybucji SRU</h3><br><br><br>
+                            <img src="images/usb09.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Tworzenie rozruchowego pendrive'a</h3><br><br><br>
+                            <img src="images/usb10.png" alt="">
+                          </div>
+                    </div>
                   </div>
                   </figure>
                 </div>
