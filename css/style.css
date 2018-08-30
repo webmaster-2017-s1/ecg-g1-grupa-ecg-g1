@@ -466,8 +466,9 @@
     }
 
     .materials-title-box .materials-title {
-      font-size: 3.5rem;
-      display: inline-block;
+     
+      
+      text-align: center;    
     }
 
     .materials-title-box .materials-title::after {
