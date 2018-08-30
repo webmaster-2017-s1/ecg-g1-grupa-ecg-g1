@@ -746,9 +746,8 @@
             display: grid;
             grid-gap: 20px;
             grid-template-areas:
-              'top-box-m top-box-n top-box-o top-box-p'
-              'top-box-r top-box-s top-box-t top-box-u'
-              'top-box-x top-box-w top-box-z top-box-y';
+            'top-box-m top-box-n top-box-o top-box-p top-box-r'
+            'top-box-s top-box-t top-box-u top-box-w top-box-z';
           }
 
 
@@ -810,9 +809,9 @@
           @media (max-width: 700px) {
             .top-container {
               grid-template-areas:
-              'top-box-m top-box-n top-box-o top-box-p'
-              'top-box-r top-box-s top-box-t top-box-u'
-              'top-box-x top-box-w top-box-z top-box-y';
+              'top-box-m top-box-n top-box-o top-box-p top-box-r'
+              'top-box-s top-box-t top-box-u top-box-w top-box-z'
+              ;
             }
           }
 
@@ -840,4 +839,20 @@
           pre {
             margin-left: auto;
             margin-right: auto;
+          }
+
+          ins {
+            color: var(--light);
+            background-color: var(--blue);
+            text-decoration: none;;
+          }
+
+          .cb {
+            width: 551px;
+            height: 413px;
+          }
+
+          .container_archives {
+            margin-left: 7%;
+            margin-right: 7%;
           }

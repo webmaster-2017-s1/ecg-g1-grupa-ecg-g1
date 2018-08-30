@@ -55,10 +55,11 @@
 
       <embed type="text/html" class="embed" src="menu.html">
 
-        <div class="container materials-items">
+        <div class="container_archives materials-items">
           <div class="wrapper">
 
             <section class="top-container_archives">
+              <!-- Ubuntu server 12.04 -->
                 <div class="top-box_archives top-box-m">
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
@@ -79,6 +80,7 @@
                           <div class="materials-title-box div-alingment">
                             <h2 class="materials-title">Ubuntu Server 12.04 LTS</h2>
                           </div>
+<<<<<<< HEAD
                       </div>
                         <div class="materials-content container">
                           <h3 class="materials_title_archives">Założenia wstępne</h3>
@@ -125,8 +127,18 @@
                         <h4 class="materials_title">Pobranie obrazu i przygotowanie nośnika instalacyjnego</h4>   
                         <p>Z podanego adresu: <a href="http://releases.ubuntu.com/12.04">http://releases.ubuntu.com/12.04</a> pobieramy obraz iso płyty instalacyjnej, przy czym zalecana jest wersja 64-bitowa (AMD64). Wypalamy na płycie DVD lub przygotowujemy bootowalny klucz USB.</p>
 
+=======
+                    </div>
+                      <div class="materials-content container">
+                        <h3 class="materials_title_archives">Założenia wstępne</h3>
+                        <p>Serwer pełnił będzie funkcję routera, posiada dwa interfejsy sieciowe: eth0 (WAN, połączenie z internetem) adresowany przez DHCP, oraz eth1 (LAN, połączenie z siecią lokalną), adresowany statycznie. Na interfejsie WAN uruchomiona zostanie usługa NAT (translacja adresów). Na interfejsie LAN uruchomione zostaną następujące usługi: serwer DHCP, serwer DNS, transparentne proxy z filtracją treści WWW (Squid + Dansguardian). Konfiguracja taka może zostać zastosowana np. w szkolnych pracowniach.</p>
+                        <p>Uwaga: ponieważ Ubuntu oparte jest na Debianie, powyższe procedury konfiguracyjne stosują się również do tego systemu, przynajmniej w wersji Wheezy, którą z powodzeniem udało się wdrożyć.</p>
+                        <h3 class="materials_title_archives">Instalacja Ubuntu Server 12.04 LTS</h3>
+                        <h4 class="materials-title">Pobranie obrazu i przygotowanie nośnika instalacyjnegoS</h4>
+                        <p>Z podanego adresu: http://releases.ubuntu.com/12.04 pobieramy obraz iso płyty instalacyjnej, przy czym zalecana jest wersja 64-bitowa (AMD64). Wypalamy na płycie DVD lub przygotowujemy bootowalny klucz USB.</p>
+                        <h4 class="materials-title">Pobranie obrazu i przygotowanie nośnika instalacyjnego</h4>
+>>>>>>> ebf2744faf1912ed3ac83e92b2b41720398c1807
                         <p>Po uruchomieniu komputera instalacja przebiega w następujących krokach (por. zrzuty z instalacji):</p>
-
                         <ol>
                           <li>Wybór języka, wybranie opcji "Instalacja Ubuntu Server" i potwierdzenie chęci instalacji mimo nieukończonego tłumaczenia instalatora.</li>
                           <li>Wybór lokalizacji ("Polska") oraz układu klawiatury (pomijamy wykrywanie, wybieramy kraj i układ "Polski").</li>
@@ -142,22 +154,27 @@
                           <li>Zainstalowanie boot menedżera GRUB. Potwierdzamy propozycję zainstalowania w MBR (master boot record) - najprościej i najlepiej.</li>
                           <li>Ponowne uruchomienie komputera.</li>
                         </ol>
+<<<<<<< HEAD
 
                         <h4 class="materials_title">Przygotowanie dysku</h4>
+=======
+                        <h4 class="materials-title">Przygotowanie dysku</h4>
+>>>>>>> ebf2744faf1912ed3ac83e92b2b41720398c1807
                         <p>Z powyższych kroków najtrudniejsze niewątpliwie jest przygotowanie dysku, czyli podział na partycje. Przede wszystkim na instalację serwera Ubuntu najlepiej przeznaczyć cały dysk o pojemności np. 160 GB lub większej. Wszystko zależy od tego, z jakich usług będziemy chcieli korzystać. Jeżeli mamy do dyspozycji dwa dyski, drugi możemy przeznaczyć na katalog /srv, w którym można umieścić zasoby Samby, serwera www czy cache proxy. <br>
-
                         Podczas instalacji na początku jako sposób parycjonowania można wybrać opcję "Przewodnik - cały dysk". Po wskazaniu dysku instalator zaproponuje usunięcie wszelkich istniejących partycji i - na podstawie rozmiaru dysku - utworzenie co najmniej jednej partycji podstawowej dla katalogu głównego (/) oraz co najmniej jednej partycji logicznej na przestrzeń wymiany (swap). Tak czy inaczej w oknie podglądu układ warto przejrzeć i dostosować.</p>
-
-
-                        <ul>
-                          <li><img src="images/koza.png" alt="materials item"></li>
-                          <li><img src="images/koza.png" alt="materials item"></li>
-                          <li><img src="images/koza.png" alt="materials item"></li>
-                          <li><img src="images/koza.png" alt="materials item"></li>
-                        </ul>
-
+                        <div class="materials-content container text-center">
+                          <img src="images/ubuntu_srv16.png">
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/ubuntu_srv17.png">
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/ubuntu_srv18.png">
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/ubuntu_srv18a.png">
+                        </div>
                         <p>Po wybraniu partycji mamy możliwość usunięcia jej, określenia systemu plików, wskazania katalogu montowania, określenia etykiery czy ustawienia flagi rozruchu. Jeżeli usuniemy jakąś partycję możemy utworzyć nową podająć jej rozmiar w MB. Warto rozważyć utworzenie partycji dla następujących katalogów (zob. zrzut poniżej):</p>
-
                         <ul>
                         	<li>katalog główny <span class="katalog"><strong>/</strong></span> - partycja podstawowa, wystarczy 10 GB, partycję można ustawić flagę rozruchu</li>
                         	<li>przestrzeń wymiany <strong>swap</strong> - partycja podstawowa, 2 razy ilość dostępnej pamięci w serwerze</li>
@@ -166,11 +183,10 @@
                         	<li><span class="katalog">/var</span> - partycja logiczna, logi systemowe, wystarczy np. 6 GB w omawianych tu zastosowaniach (!)</li>
                         	<li><span class="katalog">/srv</span> - partycja logiczna, np. 80-100 GB, katalog cache proxy, ogólnodostępne zasoby sieciowe (samba, ftp, serwer www)</li>
                         </ul>
-
                         <p>Oczywiście podane rozmiary są dobrane dla stosunkowo niedużego dysku (ok. 200 GB) i małej bądź średniej sieci (kilkadziesiąt maszyn), powinny więc proporcjonalnie zostać dostosowane. Ponadto są dopasowane do przedstawionej dalej konfiguracji serwera szkolnego. W praktyce konfiguracja na jednym dysku 160 GB bez problemu wystarcza do obsługi pracowni komputerowej (15 jednostek), natomiast konfiguracja dwóch dysków 500 GB + 200 GB działa jako serwer dostępowy dla szkolnej sieci składającej się z 80 jednostek bardzo dobrze i w zasadzie jest nadmiarowa. Generlanie od czegoś trzeba wyjść, żeby po obserwacji obciążenia serwera dokonać korekt.</p>
-
-                        <img class="materials_images_archives" src="images/koza.png" alt="materials item">
-
+                        <div class="materials-content container text-center">
+                          <img src="images/ubuntu_srv18c.png">
+                        </div>
                         <p>Jeżeli partycja <span class="katalog">/srv</span> miałaby się znaleźć na drugim dysku, można ją utworzyć i zamontować po zainstalowaniu systemu.</p>
 
                         <!-- konfiguracja -->
@@ -203,6 +219,7 @@
                             <!-- Dnsmasq  -->
 
                             <h3 class="materials_title_archives">Dnsmasq (serwer DHCP i DNS)</h3>
+<<<<<<< HEAD
                             
                             <h3 class="materials_title">Instalacja</h3>
                             
@@ -212,6 +229,12 @@
                               <br>
                               <p>Wszystkie ustawienia znajdują się w pliku <span class="katalog">/etc/dnsmasq.conf</span>, chociaż moglibyśmy umieścić je w osobnych plikach w katalogu <span class="katalog">/etc/dnsmasq.d</span>. Konfiguracja funkcjonalności serwera DHCP i DNS (cache) dla sieci lokalnej na interfejsie eth1 o adresie 192.168.19.1 przedstawia się następująco:</p>
 
+=======
+                            <h3 class="materials_title_archives">Instalacja</h3>
+                            <p><code>sudo apt-get install dnsmasq</code></p>
+                            <h3 class="materials_title_archives">Konfiguracja</h3>
+                            <p>Wszystkie ustawienia znajdują się w pliku <span class="katalog">/etc/dnsmasq.conf</span>, chociaż moglibyśmy umieścić je w osobnych plikach w katalogu <span class="katalog">/etc/dnsmasq.d</span>. Konfiguracja funkcjonalności serwera DHCP i DNS (cache) dla sieci lokalnej na interfejsie eth1 o adresie 192.168.19.1 przedstawia się następująco:</p>
+>>>>>>> ebf2744faf1912ed3ac83e92b2b41720398c1807
                               <pre>
                                 domain-needed
                                 bogus-priv
@@ -243,31 +266,27 @@
                                 dhcp-authoritative
                                 cache-size=200
                               </pre>
-
                               <p>W opcjach <em>server</em> podano adresy serwerów Open DNS, ale można podać oczywiście inne. Pozostałe ustawienia są bardzo dobrze opisane w oryginalnym pliku konfiguracyjnym (warto zrobić jego kopię).</p>
-
                               <p>Aby wszystko działało, trzeba jeszcze pamiętać o dwóch rzeczach. W pliku <span class="katalog">/etc/dhcp/dhclient.conf</span>:</p>
-
                               <pre>
                                 supersede domain-name "mojadomena.org";
                                 prepend domain-name-servers 127.0.0.1;
                               </pre>
-
                               <p>	Natomiast w pliku <span class="katalog">/etc/hosts</span>, który dnsmasq propaguje do wszystkich klientów, powinna znaleźć się linia definiująca adres naszego routera (i ewentualnie serwera Samby):</p>
-
                               <pre>
                                 #127.0.1.1 mojserwer.mojadomena.org mojserwer #to zakomentowujemy
                                 192.168.19.1 mojserwer.mojadomena.org mojserwer
                               </pre>
-
                               <p>Dnsmasq zużywa o wiele mniej zasobów niż tandem ISC DHCP + ISC Bind, jest też, jak widać, prostszy w konfiguracji. Przydzielone adresy przejrzymy za pomocą polecenia: <code>cat /var/lib/misc/dnsmasq.leases</code></p>
-
                               <p>Usługę uruchamiamy standardowo, tzn. <code>sudo service dnsmasq start</code>.</p>
 
                               <!-- Routing i firewall -->
 
                               <h3 class="materials_title_archives">Routing i firewall</h3>
+<<<<<<< HEAD
                               <br>
+=======
+>>>>>>> ebf2744faf1912ed3ac83e92b2b41720398c1807
                               <p>Routing, a zarazem firewall zrealizowane zostaną za pomocą <strong>iptables</strong>. Ponieważ będziemy korzystać z usługi NAT, w pliku <span class="katalog">/etc/sysctl.conf</span> trzeba odkomentować opcję: <code>net.ipv4.ip_forward=1</code>. Zanim uruchomimy pełną konfigurację firewalla, warto utworzyć prosty skrypt testowo-awaryjny. W pliku <span class="katalog">/etc/mojserwer/testf.sh</span> (nazwy katalogu i pliku można zmienić) wpisujemy:</p>
                               <pre class="f10">#!/bin/bash
                               INTIF="eth1"
@@ -441,14 +460,10 @@
                               echo -e "Zakończono!\n\n"
                               </pre>
                               <p>Plikowi należy nadać prawa do wykonywania: <code>chmod a+x /etc/mojserwer/firewall.sh</code>. Aby reguły były wczytywane podczas startu systemu w pliku /etc/rc.local dopisujemy:</p>
-                              <pre>  cd /etc/mojserwer/
-                                ./init_firewall.sh
-                              </pre>
+                              <pre> cd /etc/mojserwer/./init_firewall.sh</pre>
                               <p>Nie jest to metoda optymalna, ale skuteczna. Firewall można też zrestartować np. po zmianach) czy uruchomić ręcznie: <code>sh /etc/rc.local</code>.</p>
                               <p>W przedstawionej koniguracji zdefiniowany został dodatkowy łańcuch "drop-and-log-it", do którego trafiają pakiety niepasujące do reguł połączenia. Domyślnie wszystkie te wpisy trafiają do logu systemowego <span class="katalog">/var/log/syslog</span> poprzedzone przedrostkiem "droplog:". Lepiej jednak zapisywać je w osobnym pliku, co ułatwia ewentualną póxniejszą analizę. Torzymy więc plik <span class="katalog">/etc/rsyslog.d/20-iptables.conf</span> i wpisujemy:</p>
-                              <pre>  :msg, contains, "droplog: " -/var/log/iptables.log
-                                &amp; ~
-                              </pre>
+                              <pre>  :msg, contains, "droplog: " -/var/log/iptables.log&amp; ~</pre>
                               <p>– dzięki czemu usługa <strong>rsyslog</strong> odpowiedzialna za logowanie przekieruje wpisy do pliku <span class="katalog">/var/log/iptables.log</span>. Pozostaje jeszcze utworzenie pliku <span class="katalog">/etc/logrotate.d/iptables</span> z zawartością:</p>
                               <pre>/var/log/iptables.log {
                               	daily
@@ -469,8 +484,8 @@
                               <h3 class="materials_title">Konfiguracja</h3>
                               <br>
                               <p>Przed utworzeniem pliku konfiguracyjnego warto zmienić nazwę oryginalnego pliku, który zawiera opis wszystkich opcji, natomiast właściwy plik utworzyć od początku:</p>
-                              <p>	<code>sudo mv /etc/squid3/squid.conf /etc/squid3/squid.conf.org<br />
-                              	sudo touch /etc/squid3/squid.conf</code></p>
+                              <p>	<code>sudo mv /etc/squid3/squid.conf /etc/squid3/squid.conf.org<br>
+                            	sudo touch /etc/squid3/squid.conf</code></p>
                               <p>	Do utworzonego pliku (squid.conf) wpisujemy:</p>
                               <pre>
                               acl all src
@@ -710,11 +725,12 @@
                   </div>
                   </figure>
                 </div>
+                <!-- Porteus - przenośny Linux -->
                 <div class="top-box_archives top-box-n">
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
+                    <h2 class="materials-title">Porteus - przenośny Linux</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
                     <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
                   </figcaption>
@@ -729,46 +745,118 @@
                         </button>
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
+                            <h2 class="materials-title">Porteus - przenośny Linux</h2>
+                            <p class="materials-subtitle">Poniższy tekst dotyczy Porteusa w starszej wersji 3.2.1. Nowsza opisana została <a href="https://linetc.readthedocs.io/pl/latest/porteus/index.html">tutaj.</a></p>
                           </div>
                       </div>
-                        <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
 
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <h3 class="materials_title_archives">Proteus - co to jest?</h3>
+                          <p>Porteus jest odmianą Linuksa zoptymalizowaną do uruchamiania z nośników wymiennych, np. kluczy USB. Oparty jest na najstarszej dystrybucji Linuksa o nazwie Slackware.</p>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <img src="images/porteus.jpg" >
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <p>Porteus ma budowę modularną, słada się z paczek zawierających system plików SquashFS. Na kluczu USB (płycie CD) znajduje się katalog /porteus zawierający wszystkie moduły:</p>
+                          <ul>
+                            <li>base - moduły systemu bazowego,</li>
+                            <li>modules - tu umieszczamy moduły ładowane automatycznie podczas startu,</li>
+                            <li>optional - oprogramowanie dodatkowe, ładowane na żądanie.</li>
+                          </ul>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/porteus_modules.png" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <h3 class="materials_title_archives">Pobieranie i nagrywanie</h3>
+                          <p>Przygotowaliśmy dwie wersje systemu do pobrania:</p>
+                          <p>Porteus_BASE - system podstawowy ze środowiskiem XFCE4, ładowane domyślnie: spolszczenie, czcionki, Geany IDE, git, Python 2.7.5, biblioteka Qt4 i PyQt4, wszystkie biblioteki wymagane przez scenariusze Python101.</p>
+                          <p>Porteus_FULL - dodatkowo profesjonalne edytory SublimeText3 i PyCharm w postaci dynamicznych modułów do załadowania.</p>
+                          <p>W systemie Windows plik iso po pobraniu nagrywamy na pendrajwa za pomocą programu Rufus – polecamy ten sposób nawet użytkownikom Linuksa ;-)</p>
+                          <p>W systemach Linux wykonujemy następujące czynności z konta roota. Po pierwsze montujemy plik iso:</p>
+                          <br>
+                          <code>
+                            # mkdir /mnt/loop
+                            <br>
+                            # mount -o loop /path/to/file.iso /mnt/loop
+                          </code>
+                          <br><br>
+                          <p>Następnie wkładamy klucz USB, na który chcemy zainstalować system. Powinien zostać zamontowany automatycznie, np. jako <code>/dev/sdb1.</code> Możemy to sprawdzić wydając polecenie: <code>mount</code>. Następnie kopiujemy katalogi /boot i /porteus na klucz USB. Na koniec uruchamiamy instalator z katalogu <code>/mnt/sdb1/boot</code> poleceniem: <code>sh Porteus.installer-for-Linux.com.</code> sh Porteus.installer-for-Linux.com.</p>
+                          <p>Dodatkowe moduły, które udostępniamy, umieszczamy w katalogu <code>modules</code>, jeśli mają być ładowane automatycznie, lub w katalogu <code>optional</code>, jeśli chcemy je ładować w miarę potrzeb. Wtedy wykorzystujemy program "Aktywuj moduł opcjonalny".</p>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <h3 class="materials_title_archives">Pierwsze uruchomienie</h3>
+                          <p>System błyskawicznie się uruchamia i pozwala na zachowanie wprowadzanych zmian, tj. konfiguracji, oprogramowania czy dokumentów użytkownika. W tym celu należy utworzyć specjalny plik zapisu.</p>
+                          <p>Wybieramy <code>Start/System/Porteus Setings Centre</code>, podajemy hasło roota (administratora), czyli <b>toor</b>, i klikamy ikonę dyskietki.</p>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/porteus01.png" alt="">
                         </div>
-                      </div>
+                        <div class="materials-content container">
+                          <p>Klikamy ikonę <b>Porteus Save Changes</b> i wybieramy opcję "I want to create a new save file" przycieskiem <b>Create.</b></p>
+                          <p>W polu "Location" kilkamy ikonę folderu i wskazujemy napęd USB. W komputerach z jednym dyskiem twardym będzie to nazwa "sdb1". Jeżeli mamy wątpliwości, możemy uruchomić <code>Start/System/Porteus system info</code>, kliknąć <code>Porteus/Boot_info</code> i sprawdzić wpis "# Booting device".</p>
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/porteus02.png" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>W polu "Savefile name" wpisujemy nazwę pliku, np. "porteussave.dat", rozmiar zostawiamy domyślny. Na koniec klikamy "OK".</p>
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/porteus_save.png" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>Po zapisaniu pliku powracamy do okna "Porteus Settings Centre", w którym wybieramy <b>Edit porteus.cfg</b>. Plik ten znajduje się w katalogu <code>/boot/syslinux</code> i definiuje opcje startowe systemu. Odszukujemy pierwszy wpis "changes=/porteus" i zmieniamy na <b>changes=/porteussave.dat</b> godnie z podaną wcześniej nazwą pliku zapisu.porteus.cfg</p>
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/porteus04.png" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>Po ponownym uruchomieniu systemu wszystkie zmiany będą zapisywane. Jeżeli tworzymy lub ściągamy i zapisujemy wiele plików, warto sprawdzać ilość dostępnego miejsca w pliku zapisu:</p>
+                          <ul>
+                            <li><code>du -sh /mnt/live/memory/changes</code> - poda ilość zajętego miejsca;</li>
+                            <li><code>df -h /mnt/live/memory/changes</code> - poda ilość wolnego miejsca.</li>
+                          </ul>
+                          <p>W przypadku wyczerpywania się wolnego miejsca w pliku zapisu możemy zwiększyć jego rozmiar wybierając:</p>
+                          <ul>
+                            <li>start systemu w trybie "Always Fresh mode",</li>
+                            <li>następnie Start/System/Porteus Settings Centre/Porteus changes i opcję "Porteus Save Changes",</li>
+                            <li>później "I want to resize a save file":</li>
+                          </ul>
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/porteus05png.png" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>Uwaga: tworzony jest nowy plik zapisu w podanej lokalizacji zawierający dotychczasowe zmiany. Jeżeli zaznaczymy usunięcie dotychczasowego pliku, nowy trzeba przenieść w dotychczasowe miejsce lub zmienić ścieżkę w pliku "porteus.cfg".</p>
+                        </div>
+                        <div class="materials-content container">
+                          <h3 class="materials_title_archives">Moduły</h3>
+                          <ul>
+                            <li>Moduły można (de)aktywować dwukrotnym kliknięciem.</li>
+                            <li>Domyślną przeglądarką jest Palemoon, zawarta w module <code>/porteus/base/04-palemoon.xzm</code>. Jeżeli chcesz Firefoksa, pobierz moduł 04-firefox.xzm stworzony przez twórców Porteusa i zastąp nim Palemoona.</li>
+                            <li>Niektóre moduły wymagają innych, zobacz niżej.</li>
+                            <li>Dodaliśmy moduły <code>pycharm-2016.1.xzm</code> i wymagane środowisko Javy <code>jdk-8u66.xzm</code>. Oba moduły można pobrać, wgrać do katalogu <code>/porteus/optional</code> i przetestować. Uwaga: aktywuj moduły dwukrotnym kliknięciem i nie ładuj Javy w wersji 7 z modułu <code>openjre-7u95.xzm</code>.</li>
+                          </ul>
+                        </div>
+                        <div class="materials-content container">
+                          <h3 class="materials_title_archives">Dla zainteresowanych</h3>
+                          <ul>
+                            <li>Hasło do konta domyślnego użytkownika <b>guest</b> to... <b>guest</b>.</li>
+                            <li>Wersję systemu (32/64-bity) oraz system bazowy (np. wsparcie dla EFI, środowisko graficzne) można skonfigurować samemu na stronie Porteus Wizard.</li>
+                          </ul>
+                        </div>
                   </div>
                   </figure>
                 </div>
+                <!-- Debian Wheezy -->
                 <div class="top-box_archives top-box-o">
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
-                    <p class="materials-desc">Miejsce na ewentualny opis</p>
+                    <h2 class="materials-title">Debian Wheezy (instalacja)</h2>
+                    <p class="materials-desc"></p>
                     <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
                   </figcaption>
                   <div class="materials-modal">
@@ -782,45 +870,84 @@
                         </button>
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
+                            <h2 class="materials-title">Debian Wheezy (instalacja)</h2>
                             <p class="materials-subtitle">Ewentualny podtytuł</p>
                           </div>
                       </div>
                         <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <h3 class="materials_title_archives">Debian Wheezy (instalacja)</h3>
+                          <p>Debian to jedna z najstarszych dystrybucji Linuksa, na której bazuje cała gama innych, w tym Ubuntu. Debiana cechuje przede wszystkim stabilność, dlatego warto go zastosować, kiedy nie mamy zbyt dużo czasu na aktualizacje. Do instalacji aktualnej stabilnej wersji <b>7.0</b> o nazwie <b>Wheezy</b> potrzebny nam będzie obraz 1. płyty instalacyjnej, który pobieramy w formacie iso. Następnie przygotowujemy nośnik instalacyjny <a href="#">(CD lub USB)</a> i uruchamiamy z niego komputer. Powita nas następujący ekran:</p>
                         </div>
-
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian01.jpg" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <p>Wybieramy instalację w trybie graficznym. Na następnych ekranach lokalizujemy system, czyli wybieramy język (Polski – wystarczy wcisnąć kolejno "po"+Enter), lokalizację (Polska) i układ klawiatury (polski). Następnie wprowadzamy nazwę komputera i ewentualnie domenę (np. home.net):</p>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian02.jpg" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <p>Dalej wpisujemy dwukrotnie hasło administratora, czyli użytkownika root, a następnie podajemy pełną nazwę i nazwę (login) zwykłego użytkownika (zazwyczaj takie same) oraz hasło:</p>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian03.jpg" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian04.jpg" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <p>Po załadowaniu odpowiednich modułów rozpoczyna się najtrudniejszy etap instalacji, czyli partycjonowanie. Jeżeli Debian ma być jedynym systemem na dysku, wybieramy "Przewodnik - cały dysk", a następnie opcję z osobną partycją na katalog /home. Jeżeli jednak na dysku mamy już jakiś system, wskazujemy "Ręcznie", po czym widzimy dotychczasowy rozkład partycji na dysku:</p>
                         </div>
-                      </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian05.jpg" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>Po podświetleniu istniejącej partycji i naciśnięciu Enter możemy określić system plików i punkt montowania np. głównego systemu plików. Można też partycję usunąć i utworzyć nową. Tak czy inaczej pamiętajmy, że Linux wymaga co najmniej jednej partycji systemowej i jednej partycji wymiany. Nie muszą to być partycje podstawowe, mogą też być logiczne (por. zrzut wyrzej).Po potwierdzeniu zmian w układzie partycji rozpocznie się instalacaja:</p>
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian06.jpg" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>Po zainstalowaniu podstawowych pakietów system zaproponuje przeskanowanie dodtakowych płyt instalacyjnych, z czego rezygnujemy (Nie), po czym konfigurujemy główne repozytorium pakietów, wybierając w kolejnych oknach: "Polska", "ftp.pl.debian.org", "", "Tak". Udziału w systemie "pupularity" odmawiamy, natomiast na ekranie "Wyboru oprogramowania" zaznaczamy tylko te pozycje, z których rzeczywiście będziemy korzystać:</p>
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian07.jpg" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>Uwaga: pozostawienie zaznaczonej opcji "Podstawowe składniki środowiska graficznego Debiana" spowoduje zainstalowanie domyślnie środowiska Gnome 3.4, co – jeżeli zależy nam na wydajności – nie jest konieczne. Proponujemy odznaczyć tę opcję i później doinstalować XFCE4 (zobacz niżej). Serwer druku zaznaczamy tylko wtedy, jeżeli do komputera mamy podłączoną drukarkę. Instalacja chwilę potrwa, po czym przechodzimy do ostatniego etapu, czyli zinstalowania bootmenedżera GRUB w głównym rekordzie rozruchowym (zalecane). Zgadzamy się i po chwili kończymy instalację:</p>
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian08.jpg" alt="">
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian09.jpg" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          Po restarcie powinniśmy zobaczyć menu startowe GRUB-a. Jeżeli odznaczyliśmy opcję instalacji podstawowych składników graficznych, po uruchomieniu się systemu znajdziemy się w trybie znakowym konsoli.
+                        </div>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian10.jpg" alt="">
+                        </div>
+                        <div class="materials-content container">
+                          <p>Logujemy się na konto roota i rozpoczynamy konfigurację, tj. doinstalowanie środowiska graficznego i wybranych programów użytkowych.</p>
+                        </div>
+                        <div class="materials-content container">
+                          <h3 class="materials_title_archives">Zobacz</h3>
+                          <ul>
+                            <li>instalacja Debiana -<a href="#">galeria</a></li>
+                            <li> <a href="#">Konfiguracja i zarządzanie</a> Debianem</li>
+                          </ul>
+                        </div>
                   </div>
                   </figure>
                 </div>
+                <!-- Debian 7 Wheezy – konfiguracja i zarządzanie -->
                 <div class="top-box_archives top-box-p">
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
+                    <h2 class="materials-title">Debian 7 Wheezy - konfiguracja i zarządzanie.</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
                     <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
                   </figcaption>
@@ -835,45 +962,101 @@
                         </button>
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
+                            <h2 class="materials-title">Debian 7 Wheezy - konfiguracja i zarządzanie</h2>
                           </div>
                       </div>
                         <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <h3 class="materials_title_archives">Repozytoria</h3>
+                          <br>
+                          <p>Podobnie jak w każdej innej dystrybucji Linuksa na początku należy ustawić odpowiednie repozytoria. Domyślną listę po instalacji <b>Debiana 7.0 Wheezy</b> zobaczymy po wydaniu polecenia nano <code>/etc/apt/sources.list</code>. Zmieniamy ją zgodnie z poniższym zrzutem, aby dodać kanały contrib i non-free:</p>
                         </div>
-
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian1.jpg" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <p>Aby zapisać zmiany, naciskamy CTRL+O, Enter i wychodzimy CTRL+X. Dodatkowe repozytoria dodamy po wydaniu polecenia nano <code>/etc/apt/sources.list.d/extra.list</code>:</p>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container text-center">
+                          <img src="images/debian2.jpg" alt="">
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <p>Pierwsze repozytorium udostępnia aktualne pakiety programów multimedialnych. Uwaga: jeżeli chcemy mieć absolutny spokój z ewentualnymi konfliktami wersji pakietów, to zamiast testing wpisujemy wheezy. Drugie repozytorium "xfcenext" zawiera najnowszą wersję XFCE - 4.10. Repo Opery dodajemy tylko wtedy, jeżeli chcemy korzystać z tej przeglądarki. Na koniec odświeżamy bazę repozytoriów i dodajemy klucze podpisów:</p>
+                          <pre>
+                            apt-get update
+                            apt-get install deb-multimedia-keyring
+                            wget http://packages.siduction.org/base/pool/main/s/siduction-archive-keyring/siduction-archive-keyring_2013.03.29_all.deb
+                            dpkg -i siduction-archive-keyring_2013.03.29_all.deb
+                            wget -O - http://deb.opera.com/archive.key | apt-key add -
+                            apt-get update
+                          </pre>
+                          <p>Po ponownym wydaniu polecenia odświeżenia bazy repozytoriów nie powinniśmy zobaczyć już żadnych błędów podpisów GPG.</p>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                        <div class="materials-content container">
+                          <h3 class="materials_title_archives">Oprogramowanie</h3>
+                          <br>
+                          <p>To co nastąpi dalej, zależy od tego, jakie oprogramowanie chcemy mieć w systemie. Poniższa propozycja nadaje się zarówno na starsze, jak i nowsze maszyny, zapewniając wygodne i szybkie środowisko do pracy biurowej, a także pełną obsługę multimediów.</p>
+                          <ul>
+                          	<li>Podstawowe narzędzia:<br>
+                          		<code>apt-get install mc zip unzip unrar-free sudo localepurge deborphan sysv-rc-conf ntp</code></li>
+                          	<li>Środowisko XFCE 4.10:<br>
+                          		<code>apt-get install xfce4 xfce4-terminal xfce4-taskmanager xfce4-notifyd xfce4-screenshooter xfce4-notes-plugin xfce4-datetime-plugin xarchiver thunar-archive-plugin xfburn</code></li>
+                          	<li>XServer, menedżer logowania (Lightdm) i firmware:<br>
+                          		<code>apt-get install xserver-xorg-video-vesa xserver-xorg-video-fbdev lightdm firmware-linux-free firmware-linux-nonfree</code></li>
+                          	<li>Obsługa tematów graficznych, wtyczka Flasha, Java:<br>
+                          		<code>apt-get install gtk2-engines-murrine gtk2-engines-pixbuf flashplugin-nonfree openjdk-7-jre icedtea-7-plugin</code></li>
+                          	<li>Programy użytkowe:<br>
+                          		<code>apt-get install galculator leafpad gpicview vlc libdvdcss2 deadbeef lame vorbis-tools gstreamer0.10-alsa volumeicon-alsa ttf-liberation epdfview gimp&nbsp;gvfs-backends</code></li>
+                          	<li>Przeglądarki (wszystkie lub wybraną):<br>
+                          		<code>apt-get install chromium chromium-l10n opera midori</code></li>
+                          </ul>
+                          <h4 class="materials_title_archives">Konfiguracja sudo</h4>
+                          <br>
+                          <p>Debian inaczej niż np. Ubuntu nie umożliwia automatycznie zwykłym użytkownikom wykonywania poleceń z uprawnieniami administracyjnymi za pomocą polecenia <strong>sudo</strong> czy <strong>gksudo</strong>. Aby to zmienić wydajemy polecenie <code>visudo</code>, po czym wpisujemy w linii rozpoczynającej się od <strong>%sudo</strong> tekst <strong>NOPASSWD</strong> tak jak na zrzucie:</p>
+                          <div class="materials-content container text-center">
+                            <img src="images/debian3.jpg" alt="">
+                          </div>
+                          <p><p>Dzięki temu uprawnieni użytkownicy nie będą musieli każdorazowo podawać hasła podczas wydawania poleceń administracyjnych. Użytkownika (-ów) trzeba dodać jeszcze do grupy <strong>sudo</strong>: <code>usermod -a -G sudo nazwa_użytkownika</code>.</p></p>
+                          <h4 class="materials_title_archives">Restart i logowanie w trybie graficznym</h4>
+                          <br>
+                          <p>Po zrestartowaniu maszyny i zalogowaniu się na utworzone podczas instalacji konto zwykłego użytkownika, zobaczymy okno dialogowe "Pierwsze uruchomienie panelu", w którym wybieramy utworzenie konfiguracji domyślnej wykorzystującej styl i ikony "Tango" oraz dwa panele na górze i dole ekranu. Jak dostosować wygląd pulpitu XFCE opisujemy tutaj.</p>
+                          <p>Jeżeli chcielibyśmy, aby domyślny wygląd i ustawienia środowiska były inne, do katalogu <span class="katalog">/etc/skel</span> musielibyśmy wgrać wybrane foldery z ustawieniami, czyli przede wszystkim folder <code>~/.config</code> i ewentualnie <code>~/.local/share/applications</code>. Oczywiście katalogi te trzeba by przygotować wcześniej na podstawie przykładowego konta.</p>
+                          <h4 class="materials_title_archives">Instalacja LibreOffice'a</h4>
+                          <br>
+                          <p>Pakiet biurowy LibreOffice można zainstalować już po pierwszym uruchomieniu systemu w konsoli, z repozytoriów Debiana, ale w starszej wersji 3.5.4. Aby zainstalować wersję najnowszą, postępujemy zgodnie z <a href="http://ecg.vot.pl/libreoffice-install-debian" target="_blank">tą instrukcją</a>.</p>
+                          <h4 class="materials_title_archives">Instalacja Firefoxa</h4>
+                          <br>
+                          <p>Zamiast Firefoksa w repozytoriach z powodów licencyjnych znajdziemy stabilną wersję 10.0.12 pod nazwą Iceweasel. Instalacja najnowszej wersji Firefoksa wymaga pobrania plików instalacyjnych, co można zrobić wcześniej na innej maszynie, w konsoli przy użyciu polecenia <strong>wget</strong> albo w środowisku graficznym po pierwszym zalogowaniu, ale wtedy musimy&nbsp;mieć zainstalowaną wcześniej jakąś inną przeglądarkę ;).</p>
+                          <p>Firefoksa pobieramy np. ze strony <a href="http://www.mozilla.org/pl/firefox/new/">www.mozilla.org/pl/firefox/new</a>, w katalogu <span class="katalog">~/Pobrane</span> powinien znaleźć się plik np. "firefox-20.0.tar.gz", który rozpakowujemy poleceniem: <code>tar xvf firefox-20.0.tar.gz -C /opt</code>. Aby przeglądarka była widziana w środowisku XFCE do katalogu <span class="katalog">~/.local/share/applications</span> dodajemy plik o nazwie <em>firefox.desktop</em> zawierający wpisy:</p>
+                          <pre>
+                             [Desktop Entry]
+                              Encoding=UTF-8
+                              Name=Firefox
+                              Name[pl]=Firefox
+                              Comment[pl]=Przeglądanie stron WWW
+                              GenericName[pl]=Przeglądarka WWW
+                              X-GNOME-FullName[pl]=Przeglądarka WWW Firefox
+                              Exec=/opt/firefox/firefox %u
+                              Terminal=false
+                              X-MultipleArgs=false
+                              Type=Application
+                              Icon=/opt/firefox/icons/mozicon128.png
+                              Categories=Network;WebBrowser;
+                              MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
+                              StartupWMClass=Firefox-bin
+                              StartupNotify=true
+                          </pre>
+                          <p>Wygląda to skomplikowanie, ale odpowiedni plik można utworzyć na podstawie jakiegoś pliku z katalogu <span class="katalog">/usr/share/applications</span>.</p>
+                          <p>Po przelogowaniu się w menu programów powinniśmy zobaczyć wpis&nbsp;<strong>Firefoksa</strong> w grupie <strong>Internet</strong>. Można też dodać odpowiedni aktywator do panelu lub umieścić skrót na Pulpicie.</p>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                      </div>
                   </div>
                   </figure>
                 </div>
+                <!-- Debian Wheezy i LibreOffice -->
                 <div class="top-box_archives top-box-r">
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
+                    <h2 class="materials-title">Debian Wheezy i LibreOffice</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
                     <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
                   </figcaption>
@@ -888,40 +1071,61 @@
                         </button>
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
+                            <h2 class="materials-title">Instalacja LibreOffice'a w systemie Debian Wheezy</h2>
                             <p class="materials-subtitle">Ewentualny podtytuł</p>
                           </div>
                       </div>
                         <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <p>Opisane tutaj procedury pozwalają zainstalować (później aktualizować) najnowszą wersję pakietu biurowego LibreOffice w systemie Debian Wheezy oraz dystrybucjach, które na nim się opierają: SnowLinux czy CrunchBang. <ins>Niestety, obydwie wspomniane dystrybucje nie są rozwijane!</ins> Wersją domyślną w tych systemach jest 3.5.4 i jeżeli ją zainstalowaliśmy, należy przed upgradem ją usunąć, wydając polecenie w terminalu: <code>sudo apt-get purgelibreoffice*</code>.</p>
+                          <h3 class="materials_title_archives">Repozytoria backports</h3>
+                          <br>
+                          <p>Pierwsza możliwość, relatywnie prostsza, to wykorzystanie repozytorium backports, do którego trafiają wersje oprogramowania dostępne w wersji testowej, ale przystosowane do uruchomienia w wersji stabilnej. Do pliku <code >/etc/apt/sources.list</code> dodajemy więc poniższą linię:</p>
+                          <pre>   deb http://ftp.pl.debian.org/debian wheezy-backports main contrib non-free</pre>
+                          <p>– a następnie jako użytkownik z uprawnieniami roota (lub przez <code>sudo</code>) aktualizujemy listę dostępnych pakietów i instalujemy pakiet biurowy:</p>
+                          <pre>   apt-get updateapt-get install -t wheezy-backports libreoffice libreoffice-l10n-pl libreoffice-help-pl libreoffice-gnome libreoffice-style-sifr mythes-pl hyphen-pl --yes --force-yes</pre>
+                          <h3 class="materials_title_archives">Instalacja z archiwów</h3>
+                          <br>
+                          <p>Ze strony <a href="http://pl.libreoffice.org/pobieranie/" target="_blank">http://pl.libreoffice.org/pobieranie/</a> pobieramy ostatnią wersję LibreOffice, czyli trzy archiwa <code>.deb</code> zawierające główny instalator, tłumaczenia interfejsu i pomoc. Umieszczamy je w osobnym katalogu, np. ~/tmp. Następnie wykoujemy polecenia:</p>
+                          <pre>
+                            tar xvf LibreOffice_4.4.0_Linux_x86_deb.tar.gz
+                            tar xvf LibreOffice_4.4.0_Linux_x86_deb_langpack_pl.tar.gz
+                            tar xvf LibreOffice_4.4.0_Linux_x86_deb_helppack_pl.tar.gz
+                            dpkg -i LibreOffice_4.4.0.3_Linux_x86_deb/DEBS/*.deb
+                            dpkg -i LibreOffice_4.4.0.3_Linux_x86_deb/DEBS/desktop-integration/*.deb
+                            dpkg -i LibreOffice_4.4.0.3_Linux_x86_deb_langpack_pl/DEBS/*.deb
+                            dpkg -i LibreOffice_4.4.0.3_Linux_x86_deb_helppack_pl/DEBS/*.deb
+                          </pre>
+                          <p>Oczywiście numery wersji (np. 4.4.0) trzeba dostosować, podobnie podwersję (np. 4.4.0.3), którą najłatwiej sprawdzić otwierając któreś z archiwum w dowolnym menedżerze.To wszystko, katalog <span class="katalog">tmp</span> można opróżnić, zainstalowane pliki trafią do katalogu <code>/opt/libreoffice4.4</code> (numer końcwoy zależy od wersji).</p>
+                          <p>W środowisku XFCE4 odpowiednie wpisy pojawią się w menu w kategorii Biuro.</p>
+                          <p>W Openboksie (wykorzystywanym domyślnie przez CrunchBanga), trzeba kilka rzeczy zmienić:</p>
+                          <ol>
+                          	<li>Tworzymy dowiązanie: <code>ln -s /usr/bin/libreoffice4.4 /usr/bin/libreoffice</code></li>
+                          	<li>W pliku <span class="katalog">.config/openbox/menu.xml</span> np. po poleceniu uruchamiającym menedżer plików (thunar) dopisujemy:
+                          		<pre>
+                                &lt;item label="LibreOffice"&gt;
+                          	    &lt;action name="Execute"&gt;
+                          		  &lt;command&gt;
+                          			libreoffice
+                            		&lt;/command&gt;
+                          	    &lt;/action&gt;
+                               &lt;/item&gt;
+                              </pre>
+                          	</li>
+                          	<li>CB do uruchamiania poszczególnych składników Libry z menu "Biuro/LibreOffice" wykorzystuje skrypty z katalogu <span class="katalog">/usr/bin</span>: lowriter, localc, lodraw, loimpress, lodraw i lobase. Trzeba zadbać, aby linia <span class="katalog">cmd=/opt/libreoffice4.4/program/soffice</span> w tych plikach zawierała poprawny katalog, czyli w naszym przypadku <span class="katalog">libreoffice4.4</span>.</li>
+                          </ol>
+                          <p>Wszystkie powyższe czynności wykona prosty <a href="http://ecg.vot.pl/data/uploads/linux/skrypty/loffice.tar.gz"><strong>skrypt</strong></a>. Pobierz go, rozpakuj i wgraj do katalogu z pobranymi wcześniej archiwami .deb.tar.gz pakietu. Otwórz skrypt <code>loffice.sh</code> w dowolnym edytorze (np. <code>geany</code> albo <code>nano</code> w terminalu) i ustaw zmienne VER oraz SVER zgodnie z wersją instalowanego pakietu. Jeżeli NIE używaszCrunchBanga, zakomentuj/usuń wskazany kod ze skryptu lub wskazne pliki. Na koniec wykonaj polecenia w terminalu:</p>
+                          <pre>
+                            cd ~/tmp
+                            chmod a+x ./loffice.sh
+                            sudo ./loffice.sh
+                          </pre>
+                          <p>Jak widać, skrypt musisz uruchomić z uprawnieniami roota. Działanie skryptu polega na rozpakowaniu archiwów deb, zainstalowaniu zawartych w nich pakietów i opcjonalnie zaktualizowaniu skryptów uruchamiających aplikacje pakietu w CrunchBangu.</p>
+                          <p>Jeżeli pojawi się nowa wersja Libry, wystarczy ściągnąć archiwa <code>.deb</code>, ustawić zmienne w skrypcie i ponownie go uruchomić. Uważać trzeba tylko wtedy, kiedy zmieni się podwersja, np. 4.4 na 4.5. Wtedy dodatkowo wersję 4.4 trzeba odinstalować, wpisując jej nazwę w skrypcie, oraz w przypadku CrunchBanga zaktualizować pliki opisywane wyżej w punkcie 3.</p>
                         </div>
-
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                      </div>
                   </div>
                   </figure>
                 </div>
+                <!-- Bridge Linux – instalacja -->
                 <div class="top-box_archives top-box-s">
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
@@ -975,12 +1179,12 @@
                   </div>
                   </figure>
                 </div>
+                <!-- Rozruchowy klucz USB z dystrybucją SRU -->
                 <div class="top-box_archives top-box-t">
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
-                    <p class="materials-desc">Miejsce na ewentualny opis</p>
+                    <h2 class="materials-title">Rozruchowy klucz USB <br>z dystrybucją SRU</h2>
                     <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
                   </figcaption>
                   <div class="materials-modal">
@@ -994,46 +1198,73 @@
                         </button>
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
+                            <h2 class="materials-title">Rozruchowy klucz USB z dystrybucją SRU</h2>
                           </div>
                       </div>
                         <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
+                          <p><ins>Dystrybucja SRU nie jest już dostępna. Poniższy opis będzie nadal aktualny w odniesieniu do dystrybucji opartych na Ubuntu.</ins></p>
+                          <p>Przygotowanie pendrajwa z dystrybucją SRU, który będzie pamiętał dokumenty i ustawienia użytkownika, możliwe jest na kilka sposobów.</p>
+                          <p>1) Jeżeli dysponujemy już takim pendrajwem, możemy zastosować polecenia podane wyżej w części "Kopiowanie bootowalnego klucza USB".</p>
+                          <p>2) W pozostałych przypadkach, tzn. pracując na jakiejś dystrybucji z rodziny Ubuntu (w tym na SRU) zainstalowanej na twardym dysku lub uruchomionej w sesji live z pendrajwa lub płyty CD/DVD, wykonujemy następujące czynności:</p>
+                          <ol class="labc">
+                          	<li>Pobieramy ostatnią wersję obrazu (w tym momencie: sru-test-37.iso) dystrybucji spod adresu <del>http://sru.e-swoi.pl/</del></li>
+                          	<li>Za pomocą "Centrum oprogramowania" lub termianla Instalujemy program "Tworzenie nośnika rozruchowego" (pakiet "usb-creator-gtk")</li>
+                          	<li>Przygotowujemy pendrajwa o pojemności min. 4GB za pomocą programu gparted, tzn. tworzemy przynajmniej jedną główną partycję Fat32 o pojemności min. 3GB. Opcjonalnie tworzemy partycję z systemem plików Ext4 o etykiecie "home-rw" na katalog domowy użytkownika. (Jeżeli nie utworzymy partycji "home-rw", nadal będziemy mogli zapisywać dokumenty i ustawienia użytkownika, ale warto wtedy przeznaczyć całą pojemność pendrajwa na partycję systemową Fat32).</li>
+                          	<li>Uruchamiamy program "Tworzenie nośnika rozruchowego" (Wciskamy Alt+F2 lub uruchamiamy terminal i wpisujemy polecenie usb-creator-gtk).</li>
+                          	<li>W górnej części okna wskazujemy pobrany obraz iso systemu (możemy wskazać obraz dowolnej dystrybucji z rodziny Ubuntu lub na niej opartej).</li>
+                          	<li>Na dole okna zaznaczamy opcję "Przechowywane w zarezerwowanym obszarze..." i określamy rozmiar, jeżeli nie utworzyliśmy dodatkowej partycji "home-rw". W przeciwnym razie zaznaczamy opcję "Porzucone..." - dokumenty i ustawienia będą przechowywane na dodatkowej partycji.</li>
+                          </ol>
 
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                      </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Pobieramy obraz iso</h3>
+                            <img src="images/usb01.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Uruchamiamy Centrum oprogramowania</h3><br><br><br>
+                            <img src="images/usb02.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Instalujemy program usb-creator-gtk</h3><br><br><br>
+                            <img src="images/usb03.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Instalacja programu usb-creator-gtk w terminalu</h3><br><br><br>
+                            <img src="images/usb04.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Wciskamy Alt+F2 i uruchamiamy program usb-creator-gtk</h3><br><br><br>
+                            <img src="images/usb05.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Instalacja programu gparted</h3><br><br><br>
+                            <img src="images/usb06.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Tworzenie systemowej partycji fat dla dystrybucji SRU</h3><br><br><br>
+                            <img src="images/usb07.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Tworzenie partycji home-rw na dane użytkownika</h3><br><br><br>
+                            <img src="images/usb08.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Pendrive przygotowany do wgrania dystrybucji SRU</h3><br><br><br>
+                            <img src="images/usb09.png" alt="">
+                          </div>
+                          <div class="materials-content container text-center">
+                            <br><h3 class="materials_title_archives">Tworzenie rozruchowego pendrive'a</h3><br><br><br>
+                            <img src="images/usb10.png" alt="">
+                          </div>
+                    </div>
                   </div>
                   </figure>
                 </div>
+                <!-- CrunchBang (instalacja) -->
                 <div class="top-box_archives top-box-u">
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
-                    <p class="materials-desc">Miejsce na ewentualny opis</p>
+                    <h2 class="materials-title">CrunchBang</h2>
                     <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
                   </figcaption>
                   <div class="materials-modal">
@@ -1047,46 +1278,111 @@
                         </button>
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
+                            <h2 class="materials-title">CrunchBang (Instalacja) – dystrybucja nierozwijana</h2>
                           </div>
                       </div>
                         <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <h3 class="materials_title_archives">CrunchBang (Instalacja) – dystrybucja nierozwijana</h3>
+                    				<p><ins>Niestety, dystrybucja CB ze względu na decyzję głównego dewelopera przestała być, miejmy nadzieję, że jednak nie ostatecznie, rozwijana. Niemniej, dopóki Debian Wheezy jest wersją stabilną, nadal można jej z powodzeniem używać, zwłaszcza że jest wzorem konfiguracji środowiska OpenBox. Po jej zainstalowaniu można ją zaktualizować do wersji Debian Jessie.</ins></p>
+                            <p><a href="http://crunchbang.org/" target="_blank">CrunchBang</a> to dystrybucja oparta na stabilnej wersji Debiana (aktualnie: 7.4, Wheezy). Przeznaczona jest dla każdego, tzn. i dla "zwykłego" użytkownika, który wykorzystuje komputer do przeglądania Internetu, korzystania z mediów i edycji dokumentów, jak i użytkownika zaawansowanego, np. programisty.</p>
+                            <h3 class="materials_title_archives">Czym się wyróżnia? Dlaczego warto jej używać?</h3>
+                            <p>Po pierwsze jest, jak piszą na swojej stronie jej twórcy, najwszechstronniej przetestowana, a więc stabilna. Po drugie szybka – korzysta z menedżera okien OpenBox, ma optymalny wybór domyślnie zainstalowanych usług systemowych. Po trzecie bardzo funkcjonalna i prosta w obsłudze mimo, że część ustawień wprowadzas się bezpośrednio w plikach konfiguracyjnych.</p>
+                            <h3 class="materials_title_archives">Instalacja</h3>
+                            <p>Po <a href="http://crunchbang.org/download" target="_blank">pobraniu</a> obrazu systemu, wypaleniu go na płytce lub <a href="http://ecg.vot.pl/usb-boot">przeniesieniu na klucz USB</a>, uruchomieniu komputera za pomocą przygotowanego nośnika, możemy rozpocząć prostą i szybką instalację. CB wykorzystuje lekko zmodyfikowany instalator Debiana. Po uruchumieniu komputera z nośnika instalacyjnego (płyty CD lub klucza USB) zobaczymy następujący ekran:</p>
+                            </div>
+                            <div class="materials-content container text-center">
+                              <img class="cb" src="images/cb01.png">
+                            </div>
+                            <div class="materials-content container">
+                            <p>Opcja "Live Session" pozwala przetestować system bez instalowania, natomiast po wybraniu pozycji "Install" kolejne kroki przedstawiają się następująco:</p>
+                            <ol>
+                            	<li>Wybór języka&nbsp; (Polski), lokalizacji (Polska) oraz klawiatury (polski);</li>
+                            	<li>Konfiguracja sieci: podanie nazwy komputera;</li>
+                            	<li>Ustawienia użytkownika z uprawnieniami administratora (sudo): pełna nazwa, nazwa użytkownika, hasło;</li>
+                            	<li><a href="http://ecg.vot.pl/partycjonowanie">Partycjonowanie dysku</a>: proponujemy, jak zwykle, opcję "Ręcznie" i utworzenie co najmniej 1 partycji ext4 na system i jednej partycji swap;</li>
+                            	<li>Zapisanie zmian na dysku i instalacja systemu;</li>
+                            	<li>Wybór miejsca instalacji bootmenedżera GRUB: proponujemy instalację w MBR (głównym rekordzie rozruchowym), chociaż możliwa jest też instalacja na wskazanej partycji.</li>
+                            	<li>Zakończenie instalacji i restart maszyny.</li>
+                            </ol>
+                            <p>Zobacz: <a href="http://ecg.vot.pl/cb-install-gal">Galeria instalacji CB</a></p>
+                            <h3 class="materials_title_archives">Pierwsze uruchomienie</h3>
+                            <p>Ekran startowy zainstalowanego systemu wygląda tak:</p>
+                            </div>
+                            <div class="materials-content container text-center">
+                              <img class="cb" src="images/cb17.png">
+                            </div>
+                            <div class="materials-content container">
+                            <p>Po pierwszym zalogowaniu uruchamia się skrypt konfiguracyjny pozwalający zaktualizować system, z czego warto skorzystać, tj. na 1. ekranie "Hello" naciskamy Enter i na 2. y+Enter. Po zaktualizowaniu repozytoriów rozpocznie się upgrade, podczas którego zostaniemy zapytani, czy chcemy zastąpić pliki <span class="katalog">/etc/issue.distrib</span> oraz <span class="katalog">/etc/issue.net.distrib</span>, proponujemy nacisnąć Enter (akcja domyślna). Na kolejnych ekranach 4-7 proponujemy naciskać n+Enter, czyli nie instalować (na razie) dodatkowych pakietów.</p>
+                            <h3 class="materials_title_archives">Dodatkowa konfiguracja</h3>
+                            <p>CrunchBang oparty jest na stabilnej wersji Debiana, która w momencie wydania została "zamrożona", skutkiem czego domyślnie otrzymuje tylko poprawki bezpieczeństwa, a nie nowsze wersje aplikacji. Warto jednak dodać do domyślnych źródeł oprogramowania repozytoria zawierające: nowsze wersje programów (tzw. Debian backports), najnowsze wersje przeglądarki Mozilla Iceweasel (czyli debianowej wersji Firefoksa) oraz aktualizacje programów multimedialnych. W sumie zawartość pliku <span class="katalog">/etc/apt/sources.list </span>definiującego repozytoria będzie wyglądała tak:</p>
+                            <pre>## CRUNCHBANG
+                            	deb http://packages.crunchbang.org/waldorf waldorf main
+                            	## DEBIAN
+                            	deb http://ftp.pl.debian.org/debian wheezy main contrib non-free
+                            	## DEBIAN SECURITY
+                            	deb http://security.debian.org/ wheezy/updates main contrib non-free
+                            	deb http://ftp.pl.debian.org/debian wheezy-updates main contrib non-free
+                            	## DEBIAN BACKPORTS
+                            	deb http://ftp.pl.debian.org/debian wheezy-backports main contrib non-free
+                            	## MOZILLA, MULTIMEDIA
+                            	deb http://mozilla.debian.net/ wheezy-backports iceweasel-release
+                            	deb http://www.deb-multimedia.org wheezy main non-free
+                            </pre>
+                            <p>Aby zautomatyzować podmianę repozytoriów, aktualizację oraz instalację dodatkowego oprogramowania, można skorzystać z przygotowanego <a href="http://ecg.vot.pl/data/uploads/linux/skrypty/cbinstall.tar.gz"><strong>prostego skryptu</strong></a> oraz plików konfiguracyjnych. Po pobraniu <a href="http://ecg.vot.pl/data/uploads/linux/skrypty/cbinstall.tar.gz"><strong>archiwum</strong></a>, należy rozpakować pliki w wybranym katalogu (sugerujemy katalog <span class="katalog">~/tmp</span>), przejrzeć i dostosować do własnych potrzeb skrypt instalacyjny i w terminalu wydać polecenia:</p>
+                            <pre>	cd ~/tmp
+                            	chmod a+x ./install.sh
+                            	sudo ./install.sh
+                            </pre>
+                            <p>Skrypt wykonuje następujące działania:</p>
+                            <ol>
+                            	<li>wgranie nowej listy repozytoriów (zob. wyżej) i instalacja ich klucze,</li>
+                            	<li>aktualizacja systemu,</li>
+                            	<li>instalacja opcjonalnego oprogramowania,</li>
+                            	<li>spolszczeniu skryptów systemowych</li>
+                            	<li>wgranie domyślnej konfiguracji dla nowych (!) użytkowników (<span class="katalog">/etc/skel</span>).</li>
+                            </ol>
+                            <h3 class="materials_title_archives">Aktualizacja do XFCE 4.10</h3>
+                            <p>CB zawiera komponenty środowiska XFCE w wersji 4.8, przede wszystkim menedżer plików Thunar. Wersja 4.10 tego środowiska, razem z najnowaszą wersją menedżera plików, zawiera sporo usprawnień i dostępna jest w aktualnej wersji testowej Debiana o nazwie "Jessie". Aktualizacja jest wprawedzie możliwa, ale ilość zmian, które różnią wersję stabilną i testową jest tak duża, że o ile chcemy pracować w środowisku XFCE, lepiej zainstalować po prostu wersję testową Debiana z tym środowiskiem jako domyślnym. Wkrótce zamieszczę przewodnik, jak to zrobić.</p>
+                            <h3 class="materials_title_archives">Używanie systemu</h3>
+                            <p>Domyślnym menedżerem okien jest w CB szybki i lekki OpenBox. Filozofia pracy z tym interfejsem różni się trochę od tego, do czego przyzwyczaiły nas tradycyjne rozwiązania, czyli pulpit(y) + pasek menu z przyciskiem typu "Start". W OpenBoksie menu programów wywołujemy prawym kliknięciem myszy. Inne, wydajniejsze sposoby uruchamiania aplikacji to:</p>
+                            <ol>
+                            	<li>użycie predefiniowanych skrótów (domyślnie widocznych na pulpicie);</li>
+                            	<li>wpisanie pierwszych liter polecenia po naciśnięciu ALT+F3 (wykorzystujemy program Dmenu);</li>
+                            	<li>wpisanie pełnego polecenia w oknie po naciśnięciu ALT+F2.</li>
+                            </ol>
+                            <p>Do wyboru, do koloru, a najciekawsze, że już po kilku dniach trudno się bez tych skrótów obyć ;-)</p>
+                            <h3 class="materials_title_archives">Pliki konfiguracyjne</h3>
+                            <p>Konto użytkownika domyślnego utworzonego podczas instalacji systemu wymaga spolszczenia. Pierwsze, co trzeba zrobić, to zmienić nazwy katalogów. Można użyć do tego menedżera plików (skrót Super+f, <em>Super</em> oznacza klawisz Windows na klawiaturze). Zmieniamy: <span class="katalog">documents -&gt; Dokumenty, music -&gt; Muzyka, images -&gt; Obrazy, downloads -&gt; Pobrane, templates -&gt; Szablony, video -&gt; Wideo</span>, tworzymy też katalogi <span class="katalog">Pulpit</span> i ewentualnie <span class="katalog">Publiczny</span>. Następnie wprowadzamy odpowiednie nazwy w pliku <span class="katalog">.config/user-dirs.dirs</span>, a w pliku <span class="katalog">.config/user-dirs.locale</span> wpisujemy <code>pl_PL</code>. Pliki te znajdziesz w archiwum.</p>
+                            <p>Openboksa konfiguruje się za pomocą plików tekstowych, chociaż autorzy CB dołożyli starań, aby można było większość rzeczy również wyklikać. Gdzie mógłbyś chcieć zajrzeć? Np. do katalogu <span class="katalog">.config/openbox</span>:</p>
+                            <ul>
+                            	<li><span class="katalog">menu.xml</span> (Settings/Openbox/Edit menu.xml) – plik przechowuje konfigurację menu wywoływanego kliknięciem prawym klawiszem myszy; możemy w nim przetłumaczyć angielskie komunikaty na polskie, a także dodać swoje pozycje.</li>
+                            	<li><span class="katalog">rc.xml</span> (Settings/Openbox/Edit menu.xml) – tu znajdziesz ustawienia wyglądu i zachowania okien czy skrótów klawiaturowych.</li>
+                            	<li><span class="katalog">autostart</span> (Settings/Openbox/Edit autostart) – plik określa, jakie programy uruchamiane są automatycznie po zalogowaniu się do menedżera okien.</li>
+                            	<li>Aby zobaczyć efekty zmian, po ich zapisaniu należy ponownie wczytać konfigurację Openboksa (Settings/Openbox/Reconfigure) lub przelogować się.</li>
+                            	<li>W katalogu domowym (!) znajdziemy jeszcze plik <span class="katalog">.conkyrc</span>, w którym definiujemy, co i jak wyświetlane jest na pulpicie.</li>
+                            </ul>
+                            <p>Czy musisz zaglądać do tych plików? Niekoniecznie, możesz pobrać przygotowane przez nas <a href="http://ecg.vot.pl/data/uploads/linux/skrypty/config.tar.gz"><strong>archiwum</strong></a> i wypakować poszczególne pliki do odpowiednich podkatalogów w swoim katalogu domowym (np. za pomocą Midnight Commandera instalowanego poleceniem: <code>sudo apt-get install mc</code> i uruchamianego w terminalu poleceniem <code>mc</code>).</p>
+                            <h3 class="materials_title_archives">Instalacja LibreOffice'a</h3>
+                            <p>Można oczywiście zainstalować LibreOffice już podczas uruchomienia po pierwszym logowaniu omówionego wyżej skryptu konfiguracyjnego przygotowanego przez twórców CB. W ten sposób na dysku znajdzie się wersja 3.5.4. Biorąc pod uwagę bardzo dynamiczny rozwój pakietu, warto zainstalować najnowaszą wersję. Jak to zrobić, <a href="http://ecg.vot.pl/libreoffice-install-debian">przeczytaj</a>.</p>
+                            <h3 class="materials_title_archives">Aktualizacja systemu i programów</h3>
+                            <p><a href="http://ecg.vot.pl/linux-oprogramowanie">Przeczytaj materiał</a>. O ile zdecydowałeś się na użycie zaproponowanych wyżej repozytoriów backports i testowych, możesz zaktualizować wykorzystywane oprogramowanie następująco:</p>
+                            <ul>
+                            	<li>sudo apt-cache policy geany (bluefish, itd.) – sprawdzenie dostępnych wersji</li>
+                            	<li>sudo apt-get install -t wheezy-backports geany geany-plugins (bluefish bluefish-plugins) – instalacja aktualizacji z repozytorium backports, można również z jessie</li>
+                            </ul>
+                            <p>Gdyby po zaktualizowaniu wybranych programów, polecenie <code>apt-get dist-upgrade</code> chciało usunąć nowe pakiety, można zablokować ich przetwarzanie: <code>echo "bluefish&nbsp;&nbsp;&nbsp; hold" | dpkg --set-selections</code></p>
+                            <p>Pamiętać tylko trzeba, że od tej pory samemu trzeba sprawdzać dostępność ewentualnych poprawek za pomocą polecenia <code>apt-cache policy</code>.</p>
+                            <p>&nbsp;</p>
                         </div>
-
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                      </div>
                   </div>
                   </figure>
                 </div>
+                <!-- Snowlinux (instalacja) -->
                 <div class="top-box_archives top-box-w">
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
-                    <p class="materials-desc">Miejsce na ewentualny opis</p>
+                    <h2 class="materials-title">Snowlinux</h2>
                     <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
                   </figcaption>
                   <div class="materials-modal">
@@ -1100,46 +1396,45 @@
                         </button>
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
+                            <h2 class="materials-title">Snowlinux (instalacja) – dystrybucja nierozwijana</h2>
+                            <p class="materials-subtitle"></p>
                           </div>
                       </div>
-                        <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <div class="materials-content container">
+                        <p><ins>Niestety, jak informowaliśmy, dystrybucja SnowLinux przestała być począwszy od lipca 2014 r. rozwijana, czego skutkiem jest m.in. niedostepność serwerów z obrazami instalacyjnymi. Poniższy materiał pozostawiamy więc dla tych, którzy ewentualnie posiadają takie obrazy. Pozostałym proponujemy przejście na dystrybucję <a href="http://ecg.vot.pl/crunchbang">CrunchBang</a>, również opartą na stabilnym Debianie (Wheezy).</ins></p>
+                        <p>Snowlinux to dystrybucja oparta na Debianie, chociaż niektóre wersje wykorzystują jako podstawę Ubuntu. Występuje w wielu wariantach różniących się przede wszystkim domyślnym środowiskiem graficznym. Proponujemy &nbsp;wykorzystanie wersji z XFCE 4.10. Pobieramy więc aktualną wersję 4 o nazwie <a href="http://cdimage.snowlinux.de/releases/stable/4/snowlinux-4-xfce-i386.iso">Glacier</a> i przygotowujemy nośnik instalacyjny (CD lub <a href="http://ecg.vot.pl/usb-boot">USB</a>). Po uruchomieniu komputera z płyty zobaczymy ekran startowy:</p>
+                        <div class="materials-content container text-center">
+                          <img src="images/snow001.jpg">
                         </div>
-
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
+                        <p>Wybieramy opcję domyślną, a w razie kłopotów tryb <em>compatibility mode</em>. Po uruchomieniu systemu instalację uruchamiamy klikając dwa razy skrót "Install Snowlinux" na pulpicie. Instalator, mimo że po angielsku, jest bardzo prosty:</p>
+                        <ul>
+                        <li>Wybór języka (Polish/Polska)</li>
+                        <li>Wybór strefy czasowej (Europe/Warsaw)</li>
+                        <li>Wybór układu klawiatury (Polish/Polish)</li>
+                        <li>Wybór dysku do instlacji</li>
+                        <li>Wskazanie lub utworzenie partycji do instalacji</li>
+                        <li>Określenie punktu (-ów) montowania - w najprostszym przypadku instalujemy cały system na jednej partycji; zalecaną opcją jest utworzenie dwóch partycji: na pierwszej instalujemy system główny <span class="katalog">&nbsp;/&nbsp;</span> , drugą przeznaczamy na pliki użytkownika <span class="katalog">/home</span>.</li>
+                        <li>Podajemy nazwę, login, hasło użytkownika oraz nazwę systemu</li>
+                        <li>Wybieramy miejsce instalacji bootmenedżera Grub: MBR (/dev/sda(b), kiedy instalujemy Linuksa jako pierwszy lub jako drugi po Windows system), partycja systemowa (/dev/sda(b)n, kiedy korzystamy już z bootmenedżera, czyli mamy wiele systemów)</li>
+                        <li>Potwierdzenie wybranych ustawień instalacji</li>
+                        <li>Instalacja</li>
+                        <li>Restart</li>
+                        </ul>
+                        <p>Jeżeli nie pomylimy się podczas wskazywania / tworzenia / określania punktów montowania partycji oraz wskazywania miejsca instalacji bootmenedżera, instalacja powinna przebiec bez problemów. Po uruchomieniu systemu aktualizujemy pakiety i ewentualnie doinstalowujemy potrzebne programy.</p>
+                        <h3 class="materials_title_archives">Zobacz</h3>
+                        <ul>
+                        <li>Instalacja Snowlinux – <a href="snow-install-gal">galeria</a></li>
+                        </ul>
                       </div>
-                  </div>
+                    </div>
                   </figure>
                 </div>
+                <!-- Szkoła z klasą – Kodeks 2.0 -->
                 <div class="top-box_archives top-box-z">
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
-                    <p class="materials-desc">Miejsce na ewentualny opis</p>
+                    <h2 class="materials-title">Szkoła z klasą – Kodeks 2.0</h2>
                     <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
                   </figcaption>
                   <div class="materials-modal">
@@ -1153,48 +1448,41 @@
                         </button>
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
+                            <h2 class="materials-title">Szkoła z klasą – Kodeks 2.0</h2>
                             <p class="materials-subtitle">Ewentualny podtytuł</p>
                           </div>
                       </div>
                         <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                          <h3 class="materials_title_archives">Propozycje uczniów</h3><br><br>
+                          <div class="main-div">
+                            <ul>
+                                <li>
+                                <a href="http://ecg.vot.pl/data/uploads/szzklasa201314/Kodeks2.0_1.pdf">Ucz i ucz się z TIK</a>
+                              </li>
+                              <li>
+                                <a href="http://ecg.vot.pl/data/uploads/szzklasa201314/Kodeks2.0_6.pdf">Bądź bezpieczny w sieci</a>
+                              </li>
+                              <li>
+                                <a href="http://ecg.vot.pl/data/uploads/szzklasa201314/Kodeks2.0_3.pdf">Nie kradnij i daj się okraść</a>
+                              </li>
+                              <li>
+                                <a href="http://ecg.vot.pl/data/uploads/szzklasa201314/Kodeks2.0_4.pdf">Komunikujmy się</a>
+                              </li>
+                              <li>
+                                <a href="http://ecg.vot.pl/data/uploads/szzklasa201314/Kodeks2.0_5.pdf">Komputery pod ręką</a>
+                              </li>
+                              <li>
+                                <a href="http://ecg.vot.pl/data/uploads/szzklasa201314/Kodeks2.0_7.pdf">Nauczcie tego dorosłych</a>
+                              </li>
+                              <li>
+                                <a href="http://ecg.vot.pl/data/uploads/szzklasa201314/Kodeks2.0_2.pdf">Samodzielne i krytyczne korzystanie z informacji</a>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
-                  </div>
                   </figure>
                 </div>
-                <div class="top-box_archives top-box-x d-none">
-
-                </div>
-                <div class="top-box_archives top-box-y d-none">
-
-                </div>
-
-
             </section>
 
           </div>
