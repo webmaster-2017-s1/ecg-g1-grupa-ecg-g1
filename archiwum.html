@@ -82,13 +82,15 @@
                       </div>
                         <div class="materials-content container">
                           <h3 class="materials_title_archives">Założenia wstępne</h3>
+                            <br>
                           <p>Serwer pełnił będzie funkcję routera, posiada dwa interfejsy sieciowe: eth0 (WAN, połączenie z internetem) adresowany przez DHCP, oraz eth1 (LAN, połączenie z siecią lokalną), adresowany statycznie. Na interfejsie WAN uruchomiona zostanie usługa NAT (translacja adresów). Na interfejsie LAN uruchomione zostaną następujące usługi: serwer DHCP, serwer DNS, transparentne proxy z filtracją treści WWW (Squid + Dansguardian). Konfiguracja taka może zostać zastosowana np. w szkolnych pracowniach.</p>
+                            <br>
 
 
                         <div class="main-div">
                           <ul>
                               <li>
-                              <a href="#">Instalacja</a>
+                              <a href="#"><b>Instalacja</b></a>
                             </li>
                             <li>
                               <a href="#">Interfejsy sieciowe</a>
@@ -114,15 +116,15 @@
                           </ul>
                         </div>
 
-                        <p>Uwaga: ponieważ Ubuntu oparte jest na Debianie, powyższe procedury konfiguracyjne stosują się również do tego systemu, przynajmniej w wersji Wheezy, którą z powodzeniem udało się wdrożyć.</p>
+                        <p><b>UWAGA:</b> ponieważ Ubuntu oparte jest na Debianie, powyższe procedury konfiguracyjne stosują się również do tego systemu, przynajmniej w wersji Wheezy, którą z powodzeniem udało się wdrożyć.</p>
+                            
+                            <br>
 
+                        <h3 class="materials_title_archives"><b>Instalacja Ubuntu Server 12.04 LTS</b></h3>
+                        <br>
+                        <h4 class="materials_title">Pobranie obrazu i przygotowanie nośnika instalacyjnego</h4>   
+                        <p>Z podanego adresu: <a href="http://releases.ubuntu.com/12.04">http://releases.ubuntu.com/12.04</a> pobieramy obraz iso płyty instalacyjnej, przy czym zalecana jest wersja 64-bitowa (AMD64). Wypalamy na płycie DVD lub przygotowujemy bootowalny klucz USB.</p>
 
-                        <h3 class="materials_title_archives">Instalacja Ubuntu Server 12.04 LTS</h3>
-                        <h4 class="materials-title">Pobranie obrazu i przygotowanie nośnika instalacyjnegoS</h4>
-
-                        <p>Z podanego adresu: http://releases.ubuntu.com/12.04 pobieramy obraz iso płyty instalacyjnej, przy czym zalecana jest wersja 64-bitowa (AMD64). Wypalamy na płycie DVD lub przygotowujemy bootowalny klucz USB.</p>
-
-                        <h4 class="materials-title">Pobranie obrazu i przygotowanie nośnika instalacyjnego</h4>
                         <p>Po uruchomieniu komputera instalacja przebiega w następujących krokach (por. zrzuty z instalacji):</p>
 
                         <ol>
@@ -141,7 +143,7 @@
                           <li>Ponowne uruchomienie komputera.</li>
                         </ol>
 
-                        <h4 class="materials-title">Przygotowanie dysku</h4>
+                        <h4 class="materials_title">Przygotowanie dysku</h4>
                         <p>Z powyższych kroków najtrudniejsze niewątpliwie jest przygotowanie dysku, czyli podział na partycje. Przede wszystkim na instalację serwera Ubuntu najlepiej przeznaczyć cały dysk o pojemności np. 160 GB lub większej. Wszystko zależy od tego, z jakich usług będziemy chcieli korzystać. Jeżeli mamy do dyspozycji dwa dyski, drugi możemy przeznaczyć na katalog /srv, w którym można umieścić zasoby Samby, serwera www czy cache proxy. <br>
 
                         Podczas instalacji na początku jako sposób parycjonowania można wybrać opcję "Przewodnik - cały dysk". Po wskazaniu dysku instalator zaproponuje usunięcie wszelkich istniejących partycji i - na podstawie rozmiaru dysku - utworzenie co najmniej jednej partycji podstawowej dla katalogu głównego (/) oraz co najmniej jednej partycji logicznej na przestrzeń wymiany (swap). Tak czy inaczej w oknie podglądu układ warto przejrzeć i dostosować.</p>
@@ -174,6 +176,7 @@
                         <!-- konfiguracja -->
 
                           <h3 class="materials_title_archives">Konfiguracja interfejsów sieciowych</h3>
+                                    <br>
 				                    <p>Po instalacji może okazać się, że nazwy interfejsów niekoniecznie odpowiadają przyjętym wyżej założeniom, tzn. eth0 to WAN, a eth1 - LAN. Po wydaniu komendy # ip addr, należy sprawdzić, jakie adresy (jeśli w ogóle) otrzymały karty sieciowe. Zakładając, że nasz serwer podłączony jest np. do routera udostępniającego internet, co najmniej jedna karta powinna otrzymać adres z DHCP. Po zidentyfikowaniu interfejsów można przystąpić do konfiguracji, której dokonuje się w pliku <span class="katalog">/etc/network/interfaces</span>:</p>
                               <pre>
                               auto lo
@@ -200,12 +203,13 @@
                             <!-- Dnsmasq  -->
 
                             <h3 class="materials_title_archives">Dnsmasq (serwer DHCP i DNS)</h3>
-                            <h3 class="materials_title_archives">Instalacja</h3>
+                            
+                            <h3 class="materials_title">Instalacja</h3>
+                            
+                            <p><code>sudo apt-get install dnsmasq</code></p>
 
-                              <p><code>sudo apt-get install dnsmasq</code></p>
-
-                            <h3 class="materials_title_archives">Konfiguracja</h3>
-
+                            <h3 class="materials_title">Konfiguracja</h3>
+                              <br>
                               <p>Wszystkie ustawienia znajdują się w pliku <span class="katalog">/etc/dnsmasq.conf</span>, chociaż moglibyśmy umieścić je w osobnych plikach w katalogu <span class="katalog">/etc/dnsmasq.d</span>. Konfiguracja funkcjonalności serwera DHCP i DNS (cache) dla sieci lokalnej na interfejsie eth1 o adresie 192.168.19.1 przedstawia się następująco:</p>
 
                               <pre>
@@ -263,7 +267,7 @@
                               <!-- Routing i firewall -->
 
                               <h3 class="materials_title_archives">Routing i firewall</h3>
-
+                              <br>
                               <p>Routing, a zarazem firewall zrealizowane zostaną za pomocą <strong>iptables</strong>. Ponieważ będziemy korzystać z usługi NAT, w pliku <span class="katalog">/etc/sysctl.conf</span> trzeba odkomentować opcję: <code>net.ipv4.ip_forward=1</code>. Zanim uruchomimy pełną konfigurację firewalla, warto utworzyć prosty skrypt testowo-awaryjny. W pliku <span class="katalog">/etc/mojserwer/testf.sh</span> (nazwy katalogu i pliku można zmienić) wpisujemy:</p>
                               <pre class="f10">#!/bin/bash
                               INTIF="eth1"
@@ -459,9 +463,11 @@
                               <!-- squid -->
 
                               <h3 class="materials_title_archives">Squid (serwer proxy)</h3>
-				                      <h3 class="materials_title_archives">Instalacja</h3>
+				                      <h3 class="materials_title">Instalacja</h3>
+                                <br>
                               <p>Squid ma bardzo wiele zastosowań, my użyjemy go w roli serwera proxy, który wykorzystując cache przyśpiesza pobieranie danych z internetu. Instalujemy odpowiedni pakiet: <code>sudo apt-get install squid3</code></p>
-                              <h3 class="materials_title_archives">Konfiguracja</h3>
+                              <h3 class="materials_title">Konfiguracja</h3>
+                              <br>
                               <p>Przed utworzeniem pliku konfiguracyjnego warto zmienić nazwę oryginalnego pliku, który zawiera opis wszystkich opcji, natomiast właściwy plik utworzyć od początku:</p>
                               <p>	<code>sudo mv /etc/squid3/squid.conf /etc/squid3/squid.conf.org<br />
                               	sudo touch /etc/squid3/squid.conf</code></p>
@@ -540,9 +546,10 @@
                               <!-- Dansguardian -->
 
                               <h3 class="materials_title_archives">Dansguardian (filtrowanie treści)</h3>
-				                      <h3 class="materials_title_archives">Instalacja</h3>
+				                      <h3 class="materials_title">Instalacja</h3>
                               <p><code>sudo apt-get install dansguardian</code></p>
-                              <h3 class="materials_title_archives">Konfiguracja</h3>
+                              <h3 class="materials_title">Konfiguracja</h3>
+                              <br>
                               <p>W pliku <span class="katalog">/etc/dansguardian/dansguardian.conf</span> zmieniamy niewiele:</p>
                               <pre>
                                 language = 'polish'
@@ -675,6 +682,7 @@
                               <!-- Konfiguracja interfejsów sieciowych -->
 
                               <h3 class="materials_title_archives">Konfiguracja interfejsów sieciowych</h3>
+                              <br>
                               <p>Po instalacji może okazać się, że nazwy interfejsów niekoniecznie odpowiadają przyjętym wyżej założeniom, tzn. eth0 to WAN, a eth1 - LAN. Po wydaniu komendy # ip addr, należy sprawdzić, jakie adresy (jeśli w ogóle) otrzymały karty sieciowe. Zakładając, że nasz serwer podłączony jest np. do routera udostępniającego internet, co najmniej jedna karta powinna otrzymać adres z DHCP. Po zidentyfikowaniu interfejsów można przystąpić do konfiguracji, której dokonuje się w pliku <span class="katalog">/etc/network/interfaces</span>:</p>
                               <pre>
                               auto lo
