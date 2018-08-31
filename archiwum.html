@@ -80,7 +80,7 @@
                           <div class="materials-title-box div-alingment">
                             <h2 class="materials-title">Ubuntu Server 12.04 LTS</h2>
                           </div>
-<<<<<<< HEAD
+
                       </div>
                         <div class="materials-content container">
                           <h3 class="materials_title_archives">Założenia wstępne</h3>
@@ -119,15 +119,15 @@
                         </div>
 
                         <p><b>UWAGA:</b> ponieważ Ubuntu oparte jest na Debianie, powyższe procedury konfiguracyjne stosują się również do tego systemu, przynajmniej w wersji Wheezy, którą z powodzeniem udało się wdrożyć.</p>
-                            
+
                             <br>
 
                         <h3 class="materials_title_archives"><b>Instalacja Ubuntu Server 12.04 LTS</b></h3>
                         <br>
-                        <h4 class="materials_title">Pobranie obrazu i przygotowanie nośnika instalacyjnego</h4>   
+                        <h4 class="materials_title">Pobranie obrazu i przygotowanie nośnika instalacyjnego</h4>
                         <p>Z podanego adresu: <a href="http://releases.ubuntu.com/12.04">http://releases.ubuntu.com/12.04</a> pobieramy obraz iso płyty instalacyjnej, przy czym zalecana jest wersja 64-bitowa (AMD64). Wypalamy na płycie DVD lub przygotowujemy bootowalny klucz USB.</p>
 
-=======
+
                     </div>
                       <div class="materials-content container">
                         <h3 class="materials_title_archives">Założenia wstępne</h3>
@@ -137,7 +137,7 @@
                         <h4 class="materials-title">Pobranie obrazu i przygotowanie nośnika instalacyjnegoS</h4>
                         <p>Z podanego adresu: http://releases.ubuntu.com/12.04 pobieramy obraz iso płyty instalacyjnej, przy czym zalecana jest wersja 64-bitowa (AMD64). Wypalamy na płycie DVD lub przygotowujemy bootowalny klucz USB.</p>
                         <h4 class="materials-title">Pobranie obrazu i przygotowanie nośnika instalacyjnego</h4>
->>>>>>> ebf2744faf1912ed3ac83e92b2b41720398c1807
+
                         <p>Po uruchomieniu komputera instalacja przebiega w następujących krokach (por. zrzuty z instalacji):</p>
                         <ol>
                           <li>Wybór języka, wybranie opcji "Instalacja Ubuntu Server" i potwierdzenie chęci instalacji mimo nieukończonego tłumaczenia instalatora.</li>
@@ -154,12 +154,12 @@
                           <li>Zainstalowanie boot menedżera GRUB. Potwierdzamy propozycję zainstalowania w MBR (master boot record) - najprościej i najlepiej.</li>
                           <li>Ponowne uruchomienie komputera.</li>
                         </ol>
-<<<<<<< HEAD
+
 
                         <h4 class="materials_title">Przygotowanie dysku</h4>
-=======
+
                         <h4 class="materials-title">Przygotowanie dysku</h4>
->>>>>>> ebf2744faf1912ed3ac83e92b2b41720398c1807
+
                         <p>Z powyższych kroków najtrudniejsze niewątpliwie jest przygotowanie dysku, czyli podział na partycje. Przede wszystkim na instalację serwera Ubuntu najlepiej przeznaczyć cały dysk o pojemności np. 160 GB lub większej. Wszystko zależy od tego, z jakich usług będziemy chcieli korzystać. Jeżeli mamy do dyspozycji dwa dyski, drugi możemy przeznaczyć na katalog /srv, w którym można umieścić zasoby Samby, serwera www czy cache proxy. <br>
                         Podczas instalacji na początku jako sposób parycjonowania można wybrać opcję "Przewodnik - cały dysk". Po wskazaniu dysku instalator zaproponuje usunięcie wszelkich istniejących partycji i - na podstawie rozmiaru dysku - utworzenie co najmniej jednej partycji podstawowej dla katalogu głównego (/) oraz co najmniej jednej partycji logicznej na przestrzeń wymiany (swap). Tak czy inaczej w oknie podglądu układ warto przejrzeć i dostosować.</p>
                         <div class="materials-content container text-center">
@@ -219,22 +219,21 @@
                             <!-- Dnsmasq  -->
 
                             <h3 class="materials_title_archives">Dnsmasq (serwer DHCP i DNS)</h3>
-<<<<<<< HEAD
-                            
+
+
                             <h3 class="materials_title">Instalacja</h3>
-                            
+
                             <p><code>sudo apt-get install dnsmasq</code></p>
 
                             <h3 class="materials_title">Konfiguracja</h3>
                               <br>
                               <p>Wszystkie ustawienia znajdują się w pliku <span class="katalog">/etc/dnsmasq.conf</span>, chociaż moglibyśmy umieścić je w osobnych plikach w katalogu <span class="katalog">/etc/dnsmasq.d</span>. Konfiguracja funkcjonalności serwera DHCP i DNS (cache) dla sieci lokalnej na interfejsie eth1 o adresie 192.168.19.1 przedstawia się następująco:</p>
 
-=======
-                            <h3 class="materials_title_archives">Instalacja</h3>
+                    <h3 class="materials_title_archives">Instalacja</h3>
                             <p><code>sudo apt-get install dnsmasq</code></p>
                             <h3 class="materials_title_archives">Konfiguracja</h3>
                             <p>Wszystkie ustawienia znajdują się w pliku <span class="katalog">/etc/dnsmasq.conf</span>, chociaż moglibyśmy umieścić je w osobnych plikach w katalogu <span class="katalog">/etc/dnsmasq.d</span>. Konfiguracja funkcjonalności serwera DHCP i DNS (cache) dla sieci lokalnej na interfejsie eth1 o adresie 192.168.19.1 przedstawia się następująco:</p>
->>>>>>> ebf2744faf1912ed3ac83e92b2b41720398c1807
+
                               <pre>
                                 domain-needed
                                 bogus-priv
@@ -283,10 +282,10 @@
                               <!-- Routing i firewall -->
 
                               <h3 class="materials_title_archives">Routing i firewall</h3>
-<<<<<<< HEAD
+
                               <br>
-=======
->>>>>>> ebf2744faf1912ed3ac83e92b2b41720398c1807
+
+
                               <p>Routing, a zarazem firewall zrealizowane zostaną za pomocą <strong>iptables</strong>. Ponieważ będziemy korzystać z usługi NAT, w pliku <span class="katalog">/etc/sysctl.conf</span> trzeba odkomentować opcję: <code>net.ipv4.ip_forward=1</code>. Zanim uruchomimy pełną konfigurację firewalla, warto utworzyć prosty skrypt testowo-awaryjny. W pliku <span class="katalog">/etc/mojserwer/testf.sh</span> (nazwy katalogu i pliku można zmienić) wpisujemy:</p>
                               <pre class="f10">#!/bin/bash
                               INTIF="eth1"
@@ -1130,7 +1129,7 @@
                   <figure class="materials-item">
                     <img class="materials_images_archives" src="images/logo_stopka.png" alt="materials item">
                   <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
+                    <h2 class="materials-title">Bridge Linux</h2>
                     <p class="materials-desc">Miejsce na ewentualny opis</p>
                     <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
                   </figcaption>
@@ -1145,37 +1144,132 @@
                         </button>
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
+                            <h2 class="materials-title">Bridge Linux - instalacja</h2>
                             <p class="materials-subtitle">Ewentualny podtytuł</p>
                           </div>
                       </div>
                         <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
+                          <p>Uwaga: obrazy instalacyjne Bridge Linuksa są na chwilę obecną (05.2016) zbyt stare, żeby można było ich używać. Trzeba poczekać na nowe lub użyć innej dystrybucji, np. Antergos.</p>
+                          <br>
+                          <p><a href="https://www.archlinux.org/about/"><strong>Archlinux</strong></a> to nowoczesna dystrybucja Linuksa typu <strong>rolling-release</strong>, tzn. uaktualniana na bieżąco. Jej zalety to prostota i minimalizm, a także szybkość działania. Dostępna jest w wersjach 32-bitowej (i686) i 64-bitowej (x86-64). Archa można instalować od podstaw wykorzystując <a href="https://www.archlinux.org/download/">aktualny obraz instalacyjny</a>, co daje pełną kontrolę nad oprogramowaniem i konfiguracją systemu, ale wymaga trochę doświadczenia (<a href="http://linetc.blogspot.com/2012/12/archlinux-instalacja.html">więcej &gt;&gt;</a>). Drugą możliwością jest użycie dystrybucji opartych na Archu, np. <a href="http://millertechnologies.net/">Bridge Linux</a>, które są wstępnie skonfigurowane i wyposażone w określony zestaw oprogramowania użytkowego.</p>
+                          <p>Bridge Linux nadaje się na w pełni funkcjonalną stację roboczą zarówno w domu, jak i np. w szkole. Bardzo dobrze działa na starszych komputerach dzięki wykorzystaniu środowiska graficznego XFCE lub LXDM. Dla lepiej wyposażonych maszyn dostępne są wydania z Gnome i KDE. Niniejszy opis oparty został na wydaniu z XFCE, ale poszczególne kroki są w zasadzie takie same w innych.</p>
+                          <p>Na początku ściagamy obraz (ostatni to <strong>Bridge 2015.02</strong>) spod adresu <a href="http://sourceforge.net/projects/bridgelinux/files/Xfce/2015.02/">http://sourceforge.net/projects/bridgelinux/files/Xfce/2015.02/</a>, jeżeli komputer ma 64-bitowy procesor i przynajmniej 1 GB RAMu, wbieramy wersję x86_64, w przeciwnym razie i686. Przygotowujemy nośnik instalacyjny <a href="http://ecg.vot.pl/usb-boot">na płycie DVD lub kluczu USB</a> i uruchamiamy z niego komputer. Po chwili powinniśmy zobaczyć następujący ekran:</p>
+                          <div class="materials-content container text-center">
+                            <img src="images/bridge01.jpg" alt="">
+                          </div>
+                          <p>Wybieramy (naciskając Enter) pierwszą pozycję i czekamy na uruchomienie się systemu w trybie "live", tzn. możemy testować bez instalacji ani jakiejkolwiek zmian na dysku. Jeżeli zamiast pulpitu pojawią się artefakty na ekranie (nieznikający graficzny chaos), zazwyczaj oznacza to problemy ze sterownikiem karty graficznej (czasem na laptopach z niektórymi kartami ATI czy NVIDIA). Wtedy restartujemy system (np. wciskając Reset) i z ekranu startowego wybieramy opcję 2 (force vesa + nomodeset). Po uruchomieniu się systemu, zobaczymy pulpit:</p>
+                          <div class="materials-content container text-center">
+                            <img src="images/bridge02.jpg" alt="">
+                          </div>
+                          <p>Możemy potestować system w wersji angielskiej albo od razu przystąpić do instalacji dwukrotnie klikając ikonę "Install Bridge" (można też wybrać <em>Execute</em> z menu podręcznego ikony). Instalator uruchamia się w konsoli tekstowej oferując wybór języka. Wybieramy polski:</p>
+                          <div class="materials-content container text-center">
+                            <img src="images/bridge03.png" alt="">
+                          </div>
+                          <p>Po potwierdzeniu powitania zobaczymy główne menu instalatora:</p>
+                          <div class="materials-content container text-center">
+                            <img src="images/bridge04.png" alt="">
+                          </div>
+                          <p>Widzimy kolejne etapy instalacji. Klawisze kursora pozwalają wybierać poszczególne pozycje, klawisz TAB przenosi kursor między kolejnymi możliwymi akcjami, Enter zatwierdza. Na początku ustawiamy datę i czas, w następnym oknie dialogowym wybieramy <strong>czas uniwersalny (UTC)</strong>. Jeżeli instalujemy linuksa obok Windows starszego niż Vista, jeżeli Linux będzie jedynym systemem na dysku wybieramy czas uniwersalny (UTC), w przeciwnym razie <strong>lokalny (localtime)</strong>. Po powrocie do głównego menu wybieramy przygotowanie dysku, a wnastępnym oknie dysk. Pierwszy będzie oznaczony <strong>/dev/sda</strong>, drugi (jeżeli obecny lub jeżeli uruchomiliśmy komputer z pendrive'a) - <strong>/dev/dsb</strong>. Po wybraniu dysku uruchomiony zostanie program do partycjonowania <strong>cfdisk</strong>:</p>
+                          <div class="materials-content container text-center">
+                            <img src="images/bridge05.png" alt="">
+                          </div>
+                          <p>Po najechaniu na istniejącą patycję, możemy ją usunąć (Delete) lub np. oznaczyć jako aktywną (Bootable). Jeżeli najedziemy klawiszami kursora na pozycję "Free space", możemy utworzyć nową partycję (New), podając jej rozmiar w MB. W najprostszym przypadku potrzebujemy dwóch partycji, pierwszej na system (typ 83), drugiej na przestrzeń wymiany (typ 82). Po ich utworzeniu wybieramy zapis (Write) lub jeżeli zostały utworzone wcześniej wychodzimy (Quit), ale zapamiętujemy oznaczenia parycji, np. sda1, sda2 itd. W następnym kroku wskazujemy bowiem partycję wymiany, a nastepnie partycję główną (root), po czym wybieramy system plików <strong>ext4</strong> (tradycyjny, ulepszony) lub <strong>reiserfs</strong>. W praktyce jeden i drugi działają bez problemu. Na końcu przeglądamy okno podsumowania partycjonowania:</p>
+                          <div class="materials-content container text-center">
+                            <img src="images/bridge06.png" alt="">
+                          </div>
+                          <p>Sprawdzamy i potwierdzamy poprawność wyboru partycji, które w następnym kroku zostaną sformatowane, co w przypadku istniejących partycji oznacza usunięcie danych. Powracamy do menu głównego i wybieramy instalację systemu, komunikat "Uruchomiono instalację. Proszę czekać!" potwierdzamy i czekamy na skopiowanie plików na dysk twardy (trwa to przeciętnie kilkanaście minut):</p>
+                          <div class="materials-content container text-center">
+                            <img src="images/bridge07.png" alt="">
+                          </div>
+                          <p>Po ujrzeniu komunikatu "125602 files copied, 0 failed" oznaczającego skopiowanie wszystkich plików, naciskamy Enter, wracamy do menu głównego i przechodzimy do "Konfiguracji systemu".</p>
+                          <div class="materials-content container text-center">
+                            <img src="images/bridge08.png" alt="">
+                          </div>
+                          <p>Na początku podajemy hasło roota, wybierając "Root password". Później tworzymy konto użytkownika, wybieramy "Username": podajemy nazwę (login), a następnie dwukrotnie hasło. Dalej przechodzimy do konfiguracji systemu - opcja "Configure", która sprowadza się na tym etapie do określenia nazwy hosta w pliku <code>/etc/hostname</code>.</p>
+                          <div class="materials-content container text-center">
+                            <img src="images/bridge09.png" alt="">
+                          </div>
+                          <p>Wybieramy opcję z menu i w edytorze <strong>nano</strong> wpisujemy nazwę hosta. Zapisujemy plik poprzez naciśnięcie CTRL+O i wychodzimy CTRL+X. Następnie wybieramy do edycji plik <code>/etc/hosts</code>, w którym zastępujemy dwa wsytąpienia słowa <strong>bridge</strong> nazwą naszego systemu. Ponownie naciskamy CTRL+O, CTRL+X i wracamy do menu głównego. Pozostaje zainstalowanie boot menedżera, czyli programu pozwalającego wybrać system podczas uruchamiani komputera. Wybieramy pozycję "Instalacja bootloadera", potwierdzamy okno dialogowe "Zainstalować...?" po wybraniu "Zainstaluj GRUB" i w ostatnim oknie potwierdzamy domyślny wybór <code>/dev/sda</code> oznaczający MBR (Master Boot Record), główny rekord startowy dysku wybranego do instalacji.</p>
+                          <div class="materials-content container text-center">
+                            <img src="images/bridge10.png" alt="">
+                          </div>
+                          <p>Po zainstalowaniu boot mnedżera i wyświetleniu komunikatu "Instalacja zakończona" można zrestartować komputer. Jeżeli wszystko przebiegło poprawnie (tak jest zazwyczaj), ujrzymy menu GRUB-a pozwalające uruchomić świeżo zainstalowany system.</p>
+                          <h4 class="materials_title_archives">Zobacz</h4>
+                          <ul>
+                          	<li><a href="bridge-konfig">Skrypt konfiguracyjny</a> Bridge Linux</li>
+                          	<li><a href="http://ecg.vot.pl/archlinux-mirrors">Aktualizacja systemu</a> (Archlinux, Bridge)</li>
+                          	<li><a href="arch-konfiguracja">Konfiguracja i zarządzanie</a> (Archlinux, Bridge)</li>
+                          </ul>
+                          <div class="container">
 
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
+                          <h1 class="my-4 text-center text-lg-left">Thumbnail Gallery</h1>
+
+                          <div class="row text-center text-lg-left">
+
+                            <div class="col-lg-3 col-md-4 col-xs-6 gallery">
+                              <a href="#" class="d-block mb-4 h-100">
+                                <img class="img-fluid img-thumbnail" src="images/bridge01.jpg" alt="">
+                              </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6">
+                              <a href="#" class="d-block mb-4 h-100">
+                                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                              </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6">
+                              <a href="#" class="d-block mb-4 h-100">
+                                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                              </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6">
+                              <a href="#" class="d-block mb-4 h-100">
+                                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                              </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6">
+                              <a href="#" class="d-block mb-4 h-100">
+                                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                              </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6">
+                              <a href="#" class="d-block mb-4 h-100">
+                                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                              </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6">
+                              <a href="#" class="d-block mb-4 h-100">
+                                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                              </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6">
+                              <a href="#" class="d-block mb-4 h-100">
+                                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                              </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6">
+                              <a href="#" class="d-block mb-4 h-100">
+                                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                              </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6">
+                              <a href="#" class="d-block mb-4 h-100">
+                                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                              </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6">
+                              <a href="#" class="d-block mb-4 h-100">
+                                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                              </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6">
+                              <a href="#" class="d-block mb-4 h-100">
+                                <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+                              </a>
+                            </div>
+                          </div>
+
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
                         </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                      </div>
                   </div>
                   </figure>
                 </div>
@@ -1255,6 +1349,7 @@
                             <br><h3 class="materials_title_archives">Tworzenie rozruchowego pendrive'a</h3><br><br><br>
                             <img src="images/usb10.png" alt="">
                           </div>
+
                     </div>
                   </div>
                   </figure>
