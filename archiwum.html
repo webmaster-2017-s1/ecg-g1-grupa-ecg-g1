@@ -88,36 +88,6 @@
                           <p>Serwer pełnił będzie funkcję routera, posiada dwa interfejsy sieciowe: eth0 (WAN, połączenie z internetem) adresowany przez DHCP, oraz eth1 (LAN, połączenie z siecią lokalną), adresowany statycznie. Na interfejsie WAN uruchomiona zostanie usługa NAT (translacja adresów). Na interfejsie LAN uruchomione zostaną następujące usługi: serwer DHCP, serwer DNS, transparentne proxy z filtracją treści WWW (Squid + Dansguardian). Konfiguracja taka może zostać zastosowana np. w szkolnych pracowniach.</p>
                             <br>
 
-
-                        <div class="main-div">
-                          <ul>
-                              <li>
-                              <a href="#"><b>Instalacja</b></a>
-                            </li>
-                            <li>
-                              <a href="#">Interfejsy sieciowe</a>
-                            </li>
-                            <li>
-                              <a href="#">Dnsmasq (serwer DHCP i DNS)</a>
-                            </li>
-                            <li>
-                              <a href="#">Routing i firewall</a>
-                            </li>
-                            <li>
-                              <a href="#">Squid (serwer proxy)</a>
-                            </li>
-                            <li>
-                              <a href="#">Dansguardian (filtrowanie)</a>
-                            </li>
-                            <li>
-                              <a href="#">Monitoring</a>
-                            </li>
-                            <li>
-                              <a href="#">Dokumentacja (Linux jako serwer)</a>
-                            </li>
-                          </ul>
-                        </div>
-
                         <p><b>UWAGA:</b> ponieważ Ubuntu oparte jest na Debianie, powyższe procedury konfiguracyjne stosują się również do tego systemu, przynajmniej w wersji Wheezy, którą z powodzeniem udało się wdrożyć.</p>
 
                             <br>
@@ -870,7 +840,6 @@
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
                             <h2 class="materials-title">Debian Wheezy (instalacja)</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
                           </div>
                       </div>
                         <div class="materials-content container">
@@ -1071,7 +1040,6 @@
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
                             <h2 class="materials-title">Instalacja LibreOffice'a w systemie Debian Wheezy</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
                           </div>
                       </div>
                         <div class="materials-content container">
@@ -1145,7 +1113,6 @@
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
                             <h2 class="materials-title">Bridge Linux - instalacja</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
                           </div>
                       </div>
                         <div class="materials-content container">
@@ -1203,7 +1170,7 @@
                           <div class="materials-content container">
                             <div class="container">
                               <div class="row text-center text-lg-left">
-
+                                <!-- galeria Bridge Linux -->
                                 <div id="overlay"></div>
                                   <div id="overlayContent">
                                       <img id="imgBig" src="" alt="" width="400" />
@@ -1283,7 +1250,6 @@
                                   <div id="grid_10">
                                    <img id="imgSmall_10" width="200" src="images/bridge10.png" alt="" />
                                 </div>
-
                               </div>
                             </div>
                           </div>
@@ -1562,7 +1528,6 @@
                         <div class="materials-header header-one">
                           <div class="materials-title-box div-alingment">
                             <h2 class="materials-title">Szkoła z klasą – Kodeks 2.0</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
                           </div>
                       </div>
                         <div class="materials-content container">
@@ -1597,22 +1562,20 @@
                   </figure>
                 </div>
             </section>
-
           </div>
-          <div class="empty">
-
+          <div class="empty d-none d-lg-block">
           </div>
         </div>
     </article>
   </section>
 
-  <footer class="footer_index">
+  <footer class="footer_index d-none d-lg-block">
     <footer class="footer fixed-bottom">
         <div class="container-fluid footer-stuff">
           <div class="row">
             <div class="col-1">
             </div>
-            <div class="col-3 d-none d-lg-block">
+            <div class="col-3">
                 <img src="images/logo_stopka.png" class="img">
                 <p class="footer_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius</p>
             </div>
@@ -1621,7 +1584,7 @@
             <div class="col-3 d-none d-lg-block">
               <h3 class="materials_title_archives"><strong>Przydatne linki</strong></h3>
               <hr class="footer_hr">
-              <a href="http://lo1.sandomierz.pl/"><p  class="footer_p">Strona Szkoły <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+              <a href="http://lo1.sandomierz.pl/"><p class="footer_p">Strona Szkoły <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
               <hr>
               <a href="index.html"><p  class="footer_p">Poczytaj <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
               <hr>
@@ -1645,6 +1608,12 @@
           </div>
         </div>
       </footer>
+      </footer>
+
+      <footer class="d-block d-lg-none">
+        <div class="fixed-bottom divbo">
+            <p class="text-center text-muted">Theme © Coding by Michał Parzych, Piotr Wojtoń • Graphics by Hubert Żuber</p>
+        </div>
       </footer>
 
   <!-- jQuery library -->
