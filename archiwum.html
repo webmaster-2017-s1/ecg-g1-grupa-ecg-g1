@@ -1203,11 +1203,15 @@
                           <div class="materials-content container">
                             <div class="container">
                               <div class="row text-center text-lg-left">
-                                <div class="col-lg-3 col-md-4 col-xs-6">
-                                  <a href="#"  class="d-block mb-4 h-100">
-                                    <img class="img-fluid img-thumbnail" data-toggle="lightbox" src="images/bridge01.jpg" alt="">
-                                  </a>
+
+                                <div class="overlay"></div>
+                                  <div class="overlayContent">
+                                      <img class="imgBig" src="" alt="" width="400" />
+                                  </div>
+                                  <div class="grid">
+                                   <img class="imgSmall" width="200" src="images/bridge01.jpg" alt="" />
                                 </div>
+
                                 <div class="col-lg-3 col-md-4 col-xs-6">
                                   <a href="#" class="d-block mb-4 h-100">
                                     <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
@@ -1635,10 +1639,17 @@
   <script src="js/gallery.js"></script>
   <!-- gallery lightbox -->
   <script type="text/javascript">
-    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
-            });
+        $(".grid img").click(function(){
+        $(".imgBig").attr("src",$(this).prop('src'));
+        $(".overlay").show('slow');
+        $(".overlayContent").show('slow');
+      });
+
+      $(".imgBig").click(function(){
+        $(".imgBig").attr("src", "");
+        $(".overlay").hide();
+        $(".overlayContent").hide();
+      });
   </script>
 
 </body>
