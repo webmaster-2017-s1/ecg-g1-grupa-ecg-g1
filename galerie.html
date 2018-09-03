@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Szablon Bootstrapa</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+  <!-- Font Awesome, zob. How to Use: https://fontawesome.bootstrapcheatsheets.com -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" integrity="sha384-VY3F8aCQDLImi4L+tPX4XjtiJwXDwwyXNbkH7SHts0Jlo85t1R15MlXVBKLNx+dj" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+  <link rel="stylesheet" href="gallery-grid.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- twoje style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- brak java scriptu -->
+  <noscript>
+    Do pełnej funkcjonalności strony potrzebujesz włączonej obsługi skryptów.
+    Tu znajdziesz <a href="https://www.enable-javascript.com/pl/" target="_blank">
+    instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.
+  </noscript>
+
+  <!-- nieaktualna przeglądarka, zob. dostosowanie: https://browser-update.org/customize.html -->
+  <script>
+    var $buoop = {notify:{e:-6,f:-4,o:-4,s:-2,c:-4},insecure:true,api:5};
+    function $buo_f(){
+      var e = document.createElement("script");
+      e.src = "http://browser-update.org/update.min.js";
+      document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+  </script>
+
+  <!-- Nagłówek strony: menu, logo, breadcrumbs itp. oraz treść główna -->
+
+  <section class="content">
+    <article>
+
+      <embed type="text/html" class="embed" src="menu.html">
+
+        <div class="container">
+          <h1 class="text-center mb-4">Galerie</h1>
+          <section class="galerie_section">
+            <h3 class="materials_title_archives">CMS Get Simple</h3>
+            <div class="gallery-container">
+            <div class="tz-gallery">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="images/server2go.jpg">
+                            <img src="images/server2go.jpg">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="images/gs_instalacja1.jpg">
+                            <img src="images/gs_instalacja1.jpg">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="images/gs_instalacja2.jpg">
+                            <img src="images/gs_instalacja2.jpg">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="images/gs_instalacja3.jpg">
+                            <img src="images/gs_instalacja3.jpg">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="images/gs_instalacja4.jpg">
+                            <img src="images/gs_instalacja4.jpg">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="images/gs_instalacja5.jpg">
+                            <img src="images/gs_instalacja5.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </section>
+        </div>
+
+    </article>
+  </section>
+
+  <footer class="footer_index d-none d-lg-block">
+    <footer class="footer fixed-bottom">
+        <div class="container-fluid footer-stuff">
+          <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-3">
+                <img src="images/logo_stopka.png" class="img">
+                <p class="footer_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius</p>
+            </div>
+            <div class="col-1">
+            </div>
+            <div class="col-3 d-none d-lg-block">
+              <h3 class="materials_title_archives"><strong>Przydatne linki</strong></h3>
+              <hr class="footer_hr">
+              <a href="http://lo1.sandomierz.pl/"><p class="footer_p">Strona Szkoły <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+              <hr>
+              <a href="index.html"><p  class="footer_p">Poczytaj <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+              <hr>
+              <a href="materialy.html"><p  class="footer_p">Materiały <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+              <hr>
+              <a href="linki.html"><p  class="footer_p">Linki & Narzędzia <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+            </div>
+            <div class="col-1">
+
+            </div>
+            <div class="col-3 d-none d-lg-block">
+              <h3 class="materials_title_archives"><strong>Kontakt</strong></h3>
+              <hr class="footer_hr">
+              <p>ul.Jana Długosza 7</p>
+              <p>Sandomierz, Polska</p>
+              <p>Email: <span class="email"><b>ecg.vot@gmail.com</b></span></p>
+            </div>
+            <div class="fixed-bottom divbo">
+                <p class="text-center text-muted">Theme © Coding by Michał Parzych, Piotr Wojtoń • Graphics by Hubert Żuber</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      </footer>
+
+      <footer class="d-block d-lg-none">
+        <div class="fixed-bottom divbo">
+            <p class="text-center text-muted">Theme © Coding by Michał Parzych, Piotr Wojtoń • Graphics by Hubert Żuber</p>
+        </div>
+      </footer>
+
+  <!-- jQuery library -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+      baguetteBox.run('.tz-gallery');
+  </script>
+
+</body>
+</html>

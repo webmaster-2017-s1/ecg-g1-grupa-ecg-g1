@@ -41,11 +41,6 @@
       overflow: hidden;
     }
 
-  .container_linki{
-      margin-left: 5%;
-      margin-right: 5%;
-    }
-
   /* paralaxa */
 
 
@@ -600,6 +595,11 @@
 
          /* linki & linux */
 
+         .container_linki{
+             margin-left: 10%;
+             margin-right: 10%;
+           }
+
         .main-div ul {
           display: grid;
           grid-gap: 30px;
@@ -644,6 +644,7 @@
           grid-gap: 30px;
           grid-template-columns: repeat(2, 1fr);
           padding: 3rem;
+          margin-bottom: 200px;
         }
 
         .info_2 {
@@ -653,6 +654,7 @@
           padding-left: 7rem;
           padding-right: 7rem;
           padding-bottom: 5rem;
+          margin-bottom: 200px;
         }
 
         .main-div-md ul {
@@ -869,9 +871,16 @@
             margin-right: 7%;
           }
 
-          /* galeria archiwa */
+          /* galeria */
 
-          .container.gallery-container {
+          .galerie_section {
+            background: var(--primary);
+            box-shadow: var(--shadow);
+            margin-bottom: 200px;
+            padding: 5rem;
+          }
+
+          .gallery-container {
               min-height: 100vh;
           }
 
