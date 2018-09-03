@@ -869,40 +869,44 @@
             margin-right: 7%;
           }
 
-          #overlay, #overlay_2, #overlay_3, #overlay_4, #overlay_5, #overlay_6, #overlay_7, #overlay_8, #overlay_9, #overlay_10{
-              position: fixed;
+          /* galeria archiwa */
+
+          .container.gallery-container {
+              min-height: 100vh;
+          }
+
+          .tz-gallery {
+              padding: 40px;
+          }
+
+          .tz-gallery .lightbox img {
               width: 100%;
-              height: 100%;
-              top: 0px;
-              left: 0px;
-              background-color: #000;
-              opacity: 0.7;
-              display: none;
-              z-index: 100;
+              margin-bottom: 30px;
+              transition: 0.2s ease-in-out;
+              box-shadow: var(--shadow);
           }
 
-          #overlayContent, #overlayContent_2, #overlayContent_3, #overlayContent_4, #overlayContent_5, #overlayContent_6, #overlayContent_7, #overlayContent_8, #overlayContent_9, #overlayContent_10{
-              position: absolute;
-              width: 100%;
-              text-align: center;
-              display: none;
-              overflow: hidden;
-              z-index: 5100;
-              left: -1%;
+
+          .tz-gallery .lightbox img:hover {
+              transform: scale(1.05);
+              box-shadow: var(--shadow);
           }
 
-          #contentGallery, #contentGallery_2, #contentGallery_3, #contentGallery_4, #contentGallery_5, #contentGallery_6, #contentGallery_7, #contentGallery_8, #contentGallery_9, #contentGallery_10{
-              margin: 0px auto;
+          .tz-gallery img {
+              border-radius: 4px;
           }
 
-          #imgBig, #imgBig_2, #imgBig_3, #imgBig_4, #imgBig_5, #imgBig_6, #imgBig_7, #imgBig_8, #imgBig_9, #imgBig_10 {
-            height: auto;
-            width: auto;
-            cursor: pointer;
+          .baguetteBox-button {
+              background-color: transparent !important;
           }
 
-          #imgSmall, #imgSmall_2, #imgSmall_3, #imgSmall_4, #imgSmall_5, #imgSmall_6, #imgSmall_7, #imgSmall_8, #imgSmall_9, #imgSmall_10{
-              cursor: pointer;
-              margin: 10px;
 
+          @media(max-width: 768px) {
+              body {
+                  padding: 0;
+              }
+
+              .container.gallery-container {
+                  border-radius: 0;
+              }
           }
