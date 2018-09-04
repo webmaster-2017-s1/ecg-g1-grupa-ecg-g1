@@ -724,7 +724,8 @@
                       </div>
 
                         <div class="materials-content container">
-                          <h3 class="materials_title_archives">Proteus - co to jest?</h3>
+                          <h3 class="materials_title_archives"><b>Porteus - co to jest?</b></h3>
+                          <br>
                           <p>Porteus jest odmianą Linuksa zoptymalizowaną do uruchamiania z nośników wymiennych, np. kluczy USB. Oparty jest na najstarszej dystrybucji Linuksa o nazwie Slackware.</p>
                         </div>
                         <div class="materials-content container">
@@ -733,19 +734,20 @@
                         <div class="materials-content container">
                           <p>Porteus ma budowę modularną, słada się z paczek zawierających system plików SquashFS. Na kluczu USB (płycie CD) znajduje się katalog /porteus zawierający wszystkie moduły:</p>
                           <ul>
-                            <li>base - moduły systemu bazowego,</li>
-                            <li>modules - tu umieszczamy moduły ładowane automatycznie podczas startu,</li>
-                            <li>optional - oprogramowanie dodatkowe, ładowane na żądanie.</li>
+                            <li><b>base</b> - moduły systemu bazowego,</li>
+                            <li><b>modules</b> - tu umieszczamy moduły ładowane automatycznie podczas startu,</li>
+                            <li><b>optional</b> - oprogramowanie dodatkowe, ładowane na żądanie.</li>
                           </ul>
                         </div>
                         <div class="materials-content container text-center">
                           <img src="images/porteus_modules.png" alt="">
                         </div>
                         <div class="materials-content container">
-                          <h3 class="materials_title_archives">Pobieranie i nagrywanie</h3>
+                          <h3 class="materials_title_archives"><b>Pobieranie i nagrywanie</b></h3>
+                            <br>
                           <p>Przygotowaliśmy dwie wersje systemu do pobrania:</p>
-                          <p>Porteus_BASE - system podstawowy ze środowiskiem XFCE4, ładowane domyślnie: spolszczenie, czcionki, Geany IDE, git, Python 2.7.5, biblioteka Qt4 i PyQt4, wszystkie biblioteki wymagane przez scenariusze Python101.</p>
-                          <p>Porteus_FULL - dodatkowo profesjonalne edytory SublimeText3 i PyCharm w postaci dynamicznych modułów do załadowania.</p>
+                          <p><b>Porteus_BASE</b> - system podstawowy ze środowiskiem XFCE4, ładowane domyślnie: spolszczenie, czcionki, Geany IDE, git, Python 2.7.5, biblioteka Qt4 i PyQt4, wszystkie biblioteki wymagane przez scenariusze Python101.</p>
+                          <p><b>Porteus_FULL</b> - dodatkowo profesjonalne edytory SublimeText3 i PyCharm w postaci dynamicznych modułów do załadowania.</p>
                           <p>W systemie Windows plik iso po pobraniu nagrywamy na pendrajwa za pomocą programu Rufus – polecamy ten sposób nawet użytkownikom Linuksa ;-)</p>
                           <p>W systemach Linux wykonujemy następujące czynności z konta roota. Po pierwsze montujemy plik iso:</p>
                           <br>
@@ -759,7 +761,8 @@
                           <p>Dodatkowe moduły, które udostępniamy, umieszczamy w katalogu <code>modules</code>, jeśli mają być ładowane automatycznie, lub w katalogu <code>optional</code>, jeśli chcemy je ładować w miarę potrzeb. Wtedy wykorzystujemy program "Aktywuj moduł opcjonalny".</p>
                         </div>
                         <div class="materials-content container">
-                          <h3 class="materials_title_archives">Pierwsze uruchomienie</h3>
+                          <h3 class="materials_title_archives"><b>Pierwsze uruchomienie</b></h3>
+                            <br>
                           <p>System błyskawicznie się uruchamia i pozwala na zachowanie wprowadzanych zmian, tj. konfiguracji, oprogramowania czy dokumentów użytkownika. W tym celu należy utworzyć specjalny plik zapisu.</p>
                           <p>Wybieramy <code>Start/System/Porteus Setings Centre</code>, podajemy hasło roota (administratora), czyli <b>toor</b>, i klikamy ikonę dyskietki.</p>
                         </div>
@@ -805,7 +808,8 @@
                           <p>Uwaga: tworzony jest nowy plik zapisu w podanej lokalizacji zawierający dotychczasowe zmiany. Jeżeli zaznaczymy usunięcie dotychczasowego pliku, nowy trzeba przenieść w dotychczasowe miejsce lub zmienić ścieżkę w pliku "porteus.cfg".</p>
                         </div>
                         <div class="materials-content container">
-                          <h3 class="materials_title_archives">Moduły</h3>
+                          <h3 class="materials_title_archives"><b>Moduły</b></h3>
+                            <br>
                           <ul>
                             <li>Moduły można (de)aktywować dwukrotnym kliknięciem.</li>
                             <li>Domyślną przeglądarką jest Palemoon, zawarta w module <code>/porteus/base/04-palemoon.xzm</code>. Jeżeli chcesz Firefoksa, pobierz moduł 04-firefox.xzm stworzony przez twórców Porteusa i zastąp nim Palemoona.</li>
@@ -814,7 +818,8 @@
                           </ul>
                         </div>
                         <div class="materials-content container">
-                          <h3 class="materials_title_archives">Dla zainteresowanych</h3>
+                          <h3 class="materials_title_archives"><b>Dla zainteresowanych</b></h3>
+                            <br>
                           <ul>
                             <li>Hasło do konta domyślnego użytkownika <b>guest</b> to... <b>guest</b>.</li>
                             <li>Wersję systemu (32/64-bity) oraz system bazowy (np. wsparcie dla EFI, środowisko graficzne) można skonfigurować samemu na stronie Porteus Wizard.</li>
