@@ -61,11 +61,24 @@
 
         <div class="container">
           <h1 class="text-center mb-4">Galerie</h1>
-          <section class="galerie_section">
-            <h3 class="materials_title_archives">CMS Get Simple</h3>
+          <section class="gallery_section">
+
+            <div class="main-div">
+              <ul>
+                  <button id="btn_1" type="button" name="button"><h3 class="materials_title_archives">CMS Get Simple</h3></button>
+                  <button id="btn_2" type="button" name="button"><h3 class="materials_title_archives">Konfiguracja środowiska XFCE 4.10</h3></button>
+                  <button id="btn_3" type="button" name="button"><h3 class="materials_title_archives">########</h3></button>
+                  <button id="btn_4" type="button" name="button"><h3 class="materials_title_archives">########</h3></button>
+                  <button id="btn_5" type="button" name="button"><h3 class="materials_title_archives">########</h3></button>
+                  <button id="btn_6" type="button" name="button"><h3 class="materials_title_archives">########</h3></button>
+                  <button id="btn_7" type="button" name="button"><h3 class="materials_title_archives">########</h3></button>
+                  <button id="btn_7" type="button" name="button"><h3 class="materials_title_archives">########</h3></button>
+              </ul>
+            </div>
+
             <div class="gallery-container">
             <div class="tz-gallery">
-                <div class="row">
+                <div id="gallery_1" class="row">
                     <div class="col-sm-6 col-md-4">
                         <a class="lightbox" href="images/server2go.jpg">
                             <img src="images/server2go.jpg">
@@ -97,8 +110,7 @@
                         </a>
                     </div>
                 </div>
-                <h3 class="materials_title_archives">Konfiguracja środowiska XFCE 4.10</h3>
-                    <div class="row">
+                    <div id="gallery_2" class="row">
                         <div class="col-sm-6 col-md-4">
                             <a class="lightbox" href="images/fce4_01.png">
                                 <img src="images/fce4_01.png">
@@ -265,6 +277,7 @@
             </div>
           </section>
         </div>
+        <a href="#" class="scrollToTop"><i class="fas fa-arrow-up"></i></a>
 
     </article>
   </section>
@@ -322,6 +335,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/parallax.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/scroll.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
   <script>
       baguetteBox.run('.tz-gallery');
