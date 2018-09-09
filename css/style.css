@@ -42,6 +42,7 @@
       overflow: hidden;
     }
 
+
     /* style zmieniające wygląd scrollbar'a */
 
     ::-webkit-scrollbar {
@@ -72,6 +73,8 @@
   background-position: top center;
   background-attachment: fixed;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {
@@ -90,7 +93,7 @@
     height: 816px;
     resize: horizontal;
 
-    background-image: url(../images/paralaksa_collegium1.png);
+    background-image: url(../images/paralaksa_collegium_kolor.png);
     background-repeat: no-repeat;
     background-position: right bottom;
     position: absolute;
@@ -113,7 +116,7 @@
     .menu header {
       background: var(--dark);
       text-align: center;
-      position: fixed;
+      position: relative;
       z-index: 999;
       width: 100%;
     }
@@ -121,10 +124,15 @@
     .menu nav {
       position: absolute;
       text-align: left;
-      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
       background: var(--dark);
       width: 100%;
-
+      position: relative;
+      z-index: 3;
+      margin-top: 50px
     }
 
     .menu nav ul {
@@ -136,7 +144,8 @@
     .menu nav li {
       margin-bottom: 1.2em;
       margin-top: 1.2em;
-      margin-left: 1em;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .menu nav a {
@@ -144,12 +153,13 @@
       font-weight: bold;
       font-size: 1.2rem;
       text-transform: uppercase;
-      margin-right: 7px;
-      margin-left: 7px;
+      margin-right: 15px;
+      margin-left: 15px;
     }
 
-    .menu nav a:hover {
-      color: #000;
+    .menu nav li:hover {
+      background-color: rgb(50, 49, 49);
+      border-radius: 50px;
     }
 
     .menu nav a {
@@ -157,22 +167,22 @@
         position: relative;
       }
 
-    .menu nav a::before {
-        content: '';
-        display: block;
-        height: 5px;
-        background:  #3776B6;
-        position: absolute;
-        top: -.3em;
-        left: 0;
-        right: 0;
-        transform: scale(0, 1);
-        transition: transform ease-in-out 250ms;
-      }
+      .menu nav a::before {
+          content: '';
+          display: block;
+          height: 7px;
+          background:  #3776B6;
+          position: absolute;
+          top: -.4em;
+          left: 0;
+          right: 0;
+          transform: scale(0, 1);
+          transition: transform ease-in-out 275ms;
+        }
 
-    .menu nav a:hover::before {
-      transform: scale(1,1);
-    }
+      .menu nav a:hover::before {
+        transform: scale(1.25,1);
+      }
 
   /* footer */
 
@@ -262,17 +272,18 @@
 
       .trigger {
         position: absolute;
-        width: 100%;
-        height: 100%;
+        width: 48%;
+        height: 48%;
         cursor: pointer;
         z-index: 5;
         top: 0;
-        left: 0;
+        right: 0;
       }
 
       .btn-dark {
         background: var(--dark);
         border: none;
+        margin-left: auto;
       }
 
       .btn-dark:active {
@@ -289,6 +300,7 @@
 /* materiały */
 
   .top-container {
+    margin-top: 75px;
       display: grid;
       grid-gap: 20px;
       grid-template-areas:
@@ -308,6 +320,8 @@
       align-items: start;
       justify-content: center;
       box-shadow: var(--shadow);
+      margin-left: 15px;
+      margin-right: 15px;
     }
 
     .showcase h1 {
@@ -330,7 +344,8 @@
       align-items: center;
       justify-items: center;
       box-shadow: var(--shadow);
-      min-width: 150px;
+      max-height: 200px;
+      min-width: 200px;
     }
 
     .top-box .price {
@@ -355,19 +370,22 @@
 
     .boxes {
       display: grid;
-      grid-gap: 20px;
-      min-width: 200px;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-gap: 10px;
+      min-width: 170px;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     }
 
     .box {
+      min-width: 170px;
+      max-height: 170px;
+      margin-top: 15px;
       background: var(--primary);
       text-align: center;
       box-shadow: var(--shadow);
     }
 
 
-    @media (max-width: 700px) {
+    @media (max-width: 1100px) {
       .top-container {
         grid-template-areas:
           'showcase'
@@ -380,7 +398,7 @@
       }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 1000px) {
       .top-container {
         grid-template-areas:
           'showcase'
@@ -422,11 +440,11 @@
       margin: auto;
     }
 
-    .materials-title2 {
+    .materials-title-sm {
       color: var(--light);
       font-size: 170%;
       margin-bottom: auto;
-      margin-top: 20%;
+      margin-top: 15%;
       margin: auto;
     }
 
@@ -535,9 +553,9 @@
           display: inline-block;
           text-transform: uppercase;
           cursor: pointer;
-          transition: all ease-in-out 300ms;
+          transition: all ease-in-out 350ms;
           margin-top: 5%;
-          margin-bottom: 20%;
+          margin-bottom: 10%;
           margin-left: auto;
           margin-right: auto;
           width: 75%;
@@ -549,6 +567,7 @@
           text-align: center;
           color: white;
         }
+
 
         .btn1:hover{
           background-color: #175491;
@@ -596,7 +615,7 @@
         }
 
         .materials-images {
-          min-width: 200px;
+          min-width: 170px;
         }
 
         .hidden {
@@ -614,11 +633,11 @@
 
 
          /* linki & linux */
-
          .container_linki{
              margin-left: 10%;
              margin-right: 10%;
            }
+
 
         .main-div ul {
           display: grid;
@@ -656,7 +675,6 @@
           text-indent: 25px;
         }
 
-
         .info {
           background: var(--primary);
           box-shadow: var(--shadow);
@@ -675,6 +693,7 @@
           padding-right: 7rem;
           padding-bottom: 5rem;
           margin-bottom: 200px;
+
         }
 
         .main-div-md ul {
@@ -717,6 +736,7 @@
           grid-gap: 30px;
           grid-template-columns: repeat(1, 1fr);
           padding: 3rem;
+          margin-bottom: 25px;
         }
 
         .info_md_2 {
@@ -726,6 +746,7 @@
           grid-gap: 30px;
           grid-template-columns: repeat(1, 1fr);
           padding: 3rem;
+          margin-bottom: 25px;
         }
 
 
