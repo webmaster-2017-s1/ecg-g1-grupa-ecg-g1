@@ -57,7 +57,47 @@
   <section class="content">
     <article>
 
-      <embed type="text/html" class="embed" src="menu.html">
+            <h1 style="color:red;">UWAGA MENU NIE WYGLĄDA TAK JAK POWINNO</h1>
+
+      <div class="menu container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg_dark">
+      <!-- hamburger -->
+      <button class="btn btn-dark d-md-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div>
+          <svg width="100px" height="100px">
+            <path id="first" d="M 30 40 L 70 40 C 90 40 90 75 60 85 A 40 40 0 0 1 20 20 L 80 80"></path>
+            <path id="middle" d="M 30 50 L 70 50"></path>
+            <path id="second" d="M 70 60 L 30 60 C 10 60 10 20 40 15 A 40 38 0 1 1 20 80 L 80 20"></path>
+          </svg>
+          <div class="trigger"></div>
+        </div>
+      </button>
+      <!-- /hamburger -->
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav m-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Poczytaj <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="materialy.html">Materiały <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active ">
+                <a class="nav-link" href="linux.html">Linux <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active ">
+                <a class="nav-link" href="archiwum.html">Archiwum <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active ">
+                <a class="nav-link" href="galerie.html">Galerie <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active" >
+                <a class="nav-link" href="linki.html">Linki & Narzędzia <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
         <div class="container_archives materials-items">
           <div class="wrapper">
@@ -1601,6 +1641,9 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/parallax.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/moveit.js"></script>
+  <!-- Hamburger JavaScript -->
+  <script src="js/hamburger.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
   <script>
       baguetteBox.run('.tz-gallery');
