@@ -912,6 +912,19 @@
             grid-template-columns: repeat(2, 1fr);
           }
 
+          @media (max-width: 2100px) {
+            .gallery_section button {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+
+          @media (max-width: 1000px) {
+            .gallery_section ul {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          }
+
+
           .gallery-container {
               max-height: 100%;
           }
@@ -935,6 +948,35 @@
             grid-template-columns: repeat(4, 1fr);
           }
 
+          @media (max-width: 2100px) {
+            .main_div_gallery ul {
+              grid-template-columns: repeat(4, 1fr);
+            }
+          }
+
+          @media (max-width: 1220px) {
+            .main_div_gallery ul {
+              grid-template-columns: repeat(3, 1fr);
+            }
+          }
+
+
+          @media (max-width: 990px) {
+            .main_div_gallery ul {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+
+          @media (max-width: 780px) {
+            .main_div_gallery ul {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          }
+
+          .main_div_gallery div {
+            margin: auto;
+          }
+
           .tz-gallery .lightbox img:hover {
               transform: scale(1.05);
               box-shadow: var(--shadow);
@@ -942,8 +984,8 @@
 
           .tz-gallery img {
               border-radius: 4px;
-              max-width: 210px;
-              max-height: 210px;
+              max-width: 250px;
+              max-height: 250px;
           }
 
           .baguetteBox-button {
