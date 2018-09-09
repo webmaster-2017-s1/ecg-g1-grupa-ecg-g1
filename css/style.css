@@ -213,6 +213,7 @@
       }
 
       .footer_hr {
+        border-color: rgb(55, 118, 182) ;
         border-bottom: rgb(55, 118, 182) 2px solid;
       }
 
@@ -896,6 +897,7 @@
           }
 
           .gallery_section {
+            height: auto;
             background: var(--primary);
             box-shadow: var(--shadow);
             margin-bottom: 200px;
@@ -907,11 +909,11 @@
             grid-gap: 30px;
             padding: 0;
             list-style: none;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
           }
 
           .gallery-container {
-              min-height: 100vh;
+              max-height: 100%;
           }
 
           .tz-gallery {
@@ -925,6 +927,13 @@
               box-shadow: var(--shadow);
           }
 
+          .main_div_gallery ul{
+            display: grid;
+            grid-gap: 30px;
+            padding: 0;
+            list-style: none;
+            grid-template-columns: repeat(4, 1fr);
+          }
 
           .tz-gallery .lightbox img:hover {
               transform: scale(1.05);
@@ -933,8 +942,8 @@
 
           .tz-gallery img {
               border-radius: 4px;
-              width: 50%;
-              height: 50%;
+              max-width: 210px;
+              max-height: 210px;
           }
 
           .baguetteBox-button {
