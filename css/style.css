@@ -127,7 +127,7 @@
       margin-left: auto;
       margin-right: auto;
       margin-top: auto;
-      margin-bottom: auto;
+      margin-bottom: 5%;
       background: var(--dark);
       width: 100%;
       position: relative;
@@ -183,6 +183,79 @@
       .menu nav a:hover::before {
         transform: scale(1.25,1);
       }
+  /* menu2 */
+
+      .menu2 header {
+        background: var(--dark);
+        text-align: center;
+        position: relative;
+        z-index: 999;
+        width: 100%;
+      }
+
+      .menu2 nav {
+        position: absolute;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: 5%;
+        background: var(--dark);
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        margin-top: 50px
+      }
+
+      .menu2 nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .menu2 nav li {
+        margin-bottom: 1.2em;
+        margin-top: 1.2em;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .menu2 nav a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+
+      .menu2 nav li:hover {
+        background-color: rgb(50, 49, 49);
+        border-radius: 50px;
+      }
+
+      .menu2 nav a {
+          opacity: 1;
+          position: relative;
+        }
+
+        .menu2 nav a::before {
+            content: '';
+            display: block;
+            height: 7px;
+            background:  #3776B6;
+            position: absolute;
+            top: -.4em;
+            left: 0;
+            right: 0;
+            transform: scale(0, 1);
+            transition: transform ease-in-out 275ms;
+          }
+
+        .menu2 nav a:hover::before {
+          transform: scale(1.25,1);
+        }
+
 
   /* footer */
 
@@ -1069,4 +1142,8 @@
           .scrollToTop:hover {
             background: var(--blue);
             color: var(--light);
+          }
+
+          .navbar2 {
+            margin-bottom: 30%;
           }
