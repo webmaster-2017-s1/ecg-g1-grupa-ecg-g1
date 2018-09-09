@@ -1,7 +1,8 @@
   :root {
-    --primary: rgb(221, 221, 221);
+    --primary: rgb(242, 242, 242);
     --dark: rgb(47, 47, 47);
     --light: rgb(255, 255, 255);
+    --gray: rgb(210, 214, 223);
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     --blue: rgba(83, 115, 163, 0.75);
     --blue_footer: rgb(55, 118, 182);
@@ -910,6 +911,33 @@
             padding: 0;
             list-style: none;
             grid-template-columns: repeat(2, 1fr);
+            text-decoration: none;
+            display: inline-block;
+            background: var(--blue);
+            border: none;
+            padding: 1em 3em;
+            color: white;
+            border-radius: 0px;
+            outline: 4px solid var(--light);
+            transition: all ease-in-out 300ms;
+            margin: auto;
+            width: 100%;
+            font-size: 2rem;
+            font-weight: bold;
+          }
+
+          .gallery_section button:hover {
+            outline: 4px solid var(--light);
+            outline-offset: -11px;
+            background-color: rgb(159, 175, 199);
+            color: var(--light);
+          }
+
+          .gallery_section button:active {
+            outline: 4px solid var(--light);
+            outline-offset: -11px;
+            background-color: rgb(159, 175, 199);
+            color: var(--light);
           }
 
           @media (max-width: 2100px) {
