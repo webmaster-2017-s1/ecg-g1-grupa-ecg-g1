@@ -113,6 +113,11 @@
 
   /* menu */
 
+      .menu {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
     .menu header {
       background: var(--dark);
       text-align: center;
@@ -128,11 +133,12 @@
       margin-right: auto;
       margin-top: auto;
       margin-bottom: 5%;
-      background: var(--dark);
+      background: var(--primary);
       width: 100%;
       position: relative;
       z-index: 3;
-      margin-top: 50px
+      margin-top: 50px;
+      border-radius: 100px;
     }
 
     .menu nav ul {
@@ -146,6 +152,7 @@
       margin-top: 1.2em;
       margin-left: auto;
       margin-right: auto;
+      min-width: 150px;
     }
 
     .menu nav a {
@@ -155,11 +162,9 @@
       text-transform: uppercase;
       margin-right: 15px;
       margin-left: 15px;
-    }
-
-    .menu nav li:hover {
-      background-color: rgb(50, 49, 49);
-      border-radius: 50px;
+      color: var(--dark);
+      max-height: 100px;
+      margin-top: 30px;
     }
 
     .menu nav a {
@@ -171,9 +176,9 @@
           content: '';
           display: block;
           height: 7px;
-          background:  #3776B6;
+          background: var(--dark);
           position: absolute;
-          top: -.4em;
+          top: 2.5em;
           left: 0;
           right: 0;
           transform: scale(0, 1);
@@ -183,6 +188,14 @@
       .menu nav a:hover::before {
         transform: scale(1.25,1);
       }
+
+       .menu_img {
+         margin-top: 0;
+         max-height: 100px;
+         margin-left: 25px;
+         margin-right: 25px;
+       }
+
   /* footer */
 
       footer {
