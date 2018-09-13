@@ -1,5 +1,5 @@
   :root {
-    --primary: rgb(242, 242, 242);
+    --primary: rgb(235, 235, 235);
     --dark: rgb(47, 47, 47);
     --light: rgb(255, 255, 255);
     --gray: rgb(210, 214, 223);
@@ -75,6 +75,7 @@
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: var(--shadow);
 }
 
 .logo {
@@ -131,9 +132,9 @@
       text-align: left;
       margin-left: auto;
       margin-right: auto;
-      margin-top: auto;
       margin-bottom: 5%;
       background: var(--primary);
+      box-shadow: var(--shadow);
       width: 100%;
       position: relative;
       z-index: 3;
@@ -152,7 +153,8 @@
       margin-top: 1.2em;
       margin-left: auto;
       margin-right: auto;
-      min-width: 150px;
+      min-width: 160px;
+      max-width: 160px;
     }
 
     .menu nav a {
@@ -160,11 +162,10 @@
       font-weight: bold;
       font-size: 1.2rem;
       text-transform: uppercase;
-      margin-right: 15px;
-      margin-left: 15px;
       color: var(--dark);
       max-height: 100px;
       margin-top: 30px;
+      text-align: center;
     }
 
     .menu nav a {
@@ -186,14 +187,14 @@
         }
 
       .menu nav a:hover::before {
-        transform: scale(1.25,1);
+        transform: scale(1,1);
       }
 
        .menu_img {
          margin-top: 0;
          max-height: 100px;
          margin-left: 25px;
-         margin-right: 25px;
+         margin-right: 5px;
        }
 
   /* footer */
@@ -308,7 +309,19 @@
         border: none;
         }
 
+      .main_page{
+        background: var(--primary);
+        box-shadow: var(--shadow);
+        margin-bottom: 200px;
+      }
 
+      .main_page h1 {
+        color: var(--blue_footer);
+        font-size: 3rem;
+        margin-bottom: auto;
+        margin-top: 70px;
+        margin: auto;
+      }
 /* materiały */
 
   .top-container {
