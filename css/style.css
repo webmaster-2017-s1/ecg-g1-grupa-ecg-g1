@@ -1,9 +1,9 @@
   :root {
-    --primary: rgb(235, 235, 235);
+    --primary: rgba(228, 228, 228, .9);
     --dark: rgb(47, 47, 47);
     --light: rgb(255, 255, 255);
     --gray: rgb(210, 214, 223);
-    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --shadow: 0 2px 22px rgba(104, 104, 104, 0.8);
     --blue: rgba(83, 115, 163, 0.75);
     --blue_footer: rgb(55, 118, 182);
     --blue_active: rgba(56, 114, 171, 0.75);
@@ -133,8 +133,9 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 5%;
-      background: var(--primary);
+      background: var(--dark);
       box-shadow: var(--shadow);
+      opacity: .95;
       width: 100%;
       position: relative;
       z-index: 3;
@@ -162,7 +163,7 @@
       font-weight: bold;
       font-size: 1.2rem;
       text-transform: uppercase;
-      color: var(--dark);
+      color: var(--primary);
       max-height: 100px;
       margin-top: 30px;
       text-align: center;
@@ -177,7 +178,7 @@
           content: '';
           display: block;
           height: 7px;
-          background: var(--dark);
+          background: var(--primary);
           position: absolute;
           top: 2.5em;
           left: 0;
@@ -293,6 +294,7 @@
         right: 0;
       }
 
+ /*  */
       .btn-dark {
         background: var(--dark);
         border: none;
@@ -309,23 +311,70 @@
         border: none;
         }
 
-      .main_page{
-        background: var(--primary);
+        /* strona główna */
+
+        .main_page {
+          margin-bottom: 200px;
+          display: grid;
+          grid-gap: 40px;
+          grid-template-areas:
+            'first second'
+            'first third'
+        }
+
+        .main_page p {
+          margin-left: 100px;
+          margin-right: 100px;
+          margin-bottom: 70px;
+        }
+
+        .main_page h1 {
+          color: var(--blue_footer);
+          font-size: 200%;
+          text-align: center;
+          margin-bottom: 40px;
+          margin-top: 40px;
+        }
+
+      .first {
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
         box-shadow: var(--shadow);
-        margin-bottom: 200px;
       }
 
-      .main_page h1 {
-        color: var(--blue_footer);
-        font-size: 3rem;
-        margin-bottom: auto;
-        margin-top: 70px;
-        margin: auto;
+      .first{
+      grid-area: first;
       }
+
+      .first h1 {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
+      .second {
+        background: var(--primary);
+          display: grid;
+          align-items: center;
+          box-shadow: var(--shadow);
+          grid-area: second;
+      }
+
+      .third {
+        background: var(--primary);
+          display: grid;
+          align-items: center;
+          box-shadow: var(--shadow);
+          grid-area: third;
+      }
+
 /* materiały */
 
   .top-container {
-    margin-top: 75px;
+      margin-top: 75px;
       display: grid;
       grid-gap: 20px;
       grid-template-areas:
@@ -523,8 +572,6 @@
     }
 
     .materials-title-box .materials-title {
-
-
       text-align: center;
     }
 
