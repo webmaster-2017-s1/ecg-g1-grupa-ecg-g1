@@ -451,7 +451,7 @@
 
   .boxes {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 60px 10px;
     min-width: 170px;
     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   }
@@ -504,7 +504,7 @@
       align-items: center;
       justify-items: center;
       box-shadow: var(--shadow);
-      min-width: 200px;
+      min-width: 170px;
       margin: auto;
       color: var(--light);
     }
