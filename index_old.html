@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ecg.vot.pl</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Font Awesome, zob. How to Use: https://fontawesome.bootstrapcheatsheets.com -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- twoje style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- brak java scriptu -->
+  <noscript>
+    Do pełnej funkcjonalności strony potrzebujesz włączonej obsługi skryptów.
+    Tu znajdziesz <a href="https://www.enable-javascript.com/pl/" target="_blank">
+    instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.
+  </noscript>
+
+  <!-- nieaktualna przeglądarka, zob. dostosowanie: https://browser-update.org/customize.html -->
+  <script>
+    var $buoop = {notify:{e:-6,f:-4,o:-4,s:-2,c:-4},insecure:true,api:5};
+    function $buo_f(){
+      var e = document.createElement("script");
+      e.src = "http://browser-update.org/update.min.js";
+      document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+  </script>
+
+  <!-- Nagłówek strony: menu, logo, breadcrumbs itp. oraz treść główna -->
+  <section class="content">
+    <article>
+      <div class="container">
+
+        <header class="box-tlo">
+          <div class="third-plan d-none d-lg-block"></div>
+
+          <div class="logo"></div>
+          <div class="first-plan d-none d-lg-block"></div>
+        </header>
+          <br>
+          <div class="menu container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg_dark">
+          <!-- hamburger -->
+          <button class="btn btn-dark d-md-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div>
+              <svg width="100px" height="100px">
+                <path id="first" d="M 30 40 L 70 40 C 90 40 90 75 60 85 A 40 40 0 0 1 20 20 L 80 80"></path>
+                <path id="middle" d="M 30 50 L 70 50"></path>
+                <path id="second" d="M 70 60 L 30 60 C 10 60 10 20 40 15 A 40 38 0 1 1 20 80 L 80 20"></path>
+              </svg>
+              <div class="trigger"></div>
+            </div>
+          </button>
+          <!-- /hamburger -->
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav m-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Poczytaj <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="materialy.html">Materiały <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active ">
+                    <a class="nav-link" href="linux.html">Linux <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active ">
+                    <a class="nav-link" href="archiwum.html">Archiwum <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active ">
+                    <a class="nav-link" href="galerie.html">Galerie <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active" >
+                    <a class="nav-link" href="linki.html">Linki & Narzędzia <span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <br><br>
+
+          <div>
+              <h1 class="text-center lead mx-4">ECG.VOT.PL</h1>
+              <hr>
+              <div class="text-center">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <br>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <br>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <br>
+              </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  <!-- Stopka strony: copyrights, dodatkowe linki itp. -->
+  <footer class="footer_index">
+    <footer class="footer fixed-bottom">
+        <div class="container-fluid footer-stuff">
+          <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-3 d-none d-lg-block">
+                <img src="images/logo_stopka.png" class="img">
+                <p class="footer_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius</p>
+            </div>
+            <div class="col-1">
+            </div>
+            <div class="col-3 d-none d-lg-block">
+              <h3><strong>Przydatne linki</strong></h3>
+              <hr class="footer_hr">
+              <a href="http://lo1.sandomierz.pl/"><p  class="footer_p">Strona Szkoły <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+              <hr>
+              <a href="index.html"><p  class="footer_p">Poczytaj <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+              <hr>
+              <a href="materialy.html"><p  class="footer_p">Materiały <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+              <hr>
+              <a href="linki.html"><p  class="footer_p">Linki & Narzędzia <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+            </div>
+            <div class="col-1">
+
+            </div>
+            <div class="col-3 d-none d-lg-block">
+              <h3><strong>Kontakt</strong></h3>
+              <hr class="footer_hr">
+              <p>ul.Jana Długosza 7</p>
+              <p>Sandomierz, Polska</p>
+              <p>Email: <span class="email"><b>ecg.vot@gmail.com</b></span></p>
+            </div>
+            <div class="fixed-bottom divbo">
+                <p class="text-center text-muted">Theme © Coding by Michał Parzych, Piotr Wojtoń • Graphics by Hubert Żuber</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      </footer>
+
+      <!-- jQuery library -->
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <!-- Moveit library -->
+      <script src="js/moveit.js"></script>
+      <!-- Hamburger JavaScript -->
+      <script src="js/hamburger.js"></script>
+      <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- Obsługa paralaxy -->
+      <script src="js/parallax.js"></script>
+
+
+</body>
+</html>
