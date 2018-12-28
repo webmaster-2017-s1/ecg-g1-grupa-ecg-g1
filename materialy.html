@@ -4,18 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Szablon Bootstrapa</title>
+  <title>ecg.vot.pl</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
-
   <!-- Font Awesome, zob. How to Use: https://fontawesome.bootstrapcheatsheets.com -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" integrity="sha384-VY3F8aCQDLImi4L+tPX4XjtiJwXDwwyXNbkH7SHts0Jlo85t1R15MlXVBKLNx+dj" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,6 +21,8 @@
 
   <!-- twoje style -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
 </head>
 <body>
 
@@ -36,664 +33,278 @@
     instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.
   </noscript>
 
-  <!-- nieaktualna przeglądarka, zob. dostosowanie: https://browser-update.org/customize.html -->
+  <!-- nieaktualna przeglądarka, zob. dostosowanie: https://brow row_cardsser-update.org/customize.html -->
   <script>
     var $buoop = {notify:{e:-6,f:-4,o:-4,s:-2,c:-4},insecure:true,api:5};
     function $buo_f(){
       var e = document.createElement("script");
-      e.src = "http://browser-update.org/update.min.js";
+      e.src = "http://brow row_cardsser-update.org/update.min.js";
       document.body.appendChild(e);
     };
     try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
     catch(e){window.attachEvent("onload", $buo_f)}
   </script>
 
-  <!-- Nagłówek strony: menu, logo, breadcrumbs itp. oraz treść główna -->
 
-  <section class="content">
-    <article>
+  <aside id="aside" role="complementary" class="js-fullheight text-center">
+    <h1 id="logo">
+      <a href="index.html">
+        <span class="img d-none d-lg-block" style="background-image: url(images/logo_150px.png);"></span>
+        ecg.vot.pl</a>
+    </h1>
+    <nav id="main-menu" role="navigation">
+      <ul>
+        <li><a href="index.html">Strona Główna</a></li>
+        <li class="active"><a href="materialy.html">Materiały</a></li>
+        <li><a href="linux.html">Linux</a></li>
+        <li><a href="archiwum.html">Archiwum </a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="linki.html">Linki & Narzędzia</a></li>
+      </ul>
+    </nav>
+  </aside>
 
-      <div class="menu container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg_dark">
-      <!-- hamburger -->
-      <button class="btn btn-dark d-md-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div>
-          <svg width="100px" height="100px">
-            <path id="first" d="M 30 40 L 70 40 C 90 40 90 75 60 85 A 40 40 0 0 1 20 20 L 80 80"></path>
-            <path id="middle" d="M 30 50 L 70 50"></path>
-            <path id="second" d="M 70 60 L 30 60 C 10 60 10 20 40 15 A 40 38 0 1 1 20 80 L 80 20"></path>
-          </svg>
-          <div class="trigger"></div>
-        </div>
-      </button>
-      <!-- /hamburger -->
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav navbar-nav m-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Poczytaj <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="materialy.html">Materiały <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active ">
-                <a class="nav-link" href="linux.html">Linux <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active ">
-                <a class="nav-link" href="archiwum.html">Archiwum <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active ">
-                <a class="nav-link" href="galerie.html">Galerie <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active" >
-                <a class="nav-link" href="linki.html">Linki & Narzędzia <span class="sr-only">(current)</span></a>
-              </li>
-            </ul>
+  <div id="main">
+    <section>
+      <section>
+        <div class="container">
+          <div class="row row_cards justify-content-center mb-2 pb-3">
+            <div class="col-md-7 text-center">
+              <h2 class="title">Title</h2>
+            </div>
           </div>
-        </nav>
+          <div class="row row_cards">
+            <div class="col-lg-6">
+              <section class="cards">
+                <div class="card">
+                  <div class="img_card img_card_1">
+                    <img src="images/ac.jpg">
+                  </div>
+                  <div class="img_card img_card_2">
+                    <div class="content_card">
+                      <h2>Lorem ipsum dolor sit amet</h2>
+                      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <button class="btn">Light</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col-lg-6">
+              <section class="cards">
+                <div class="card">
+                  <div class="img_card img_card_1">
+                    <img src="images/ac.jpg">
+                  </div>
+                  <div class="img_card img_card_2">
+                    <div class="content_card">
+                      <h2>Lorem ipsum dolor sit amet</h2>
+                      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <button class="btn">Light</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="row row_cards">
+            <div class="col-lg-6">
+              <section class="cards">
+                <div class="card">
+                  <div class="img_card img_card_1">
+                    <img src="images/ac.jpg">
+                  </div>
+                  <div class="img_card img_card_2">
+                    <div class="content_card">
+                      <h2>Lorem ipsum dolor sit amet</h2>
+                      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <button class="btn">Light</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col-lg-6">
+              <section class="cards">
+                <div class="card">
+                  <div class="img_card img_card_1">
+                    <img src="images/ac.jpg">
+                  </div>
+                  <div class="img_card img_card_2">
+                    <div class="content_card">
+                      <h2>Lorem ipsum dolor sit amet</h2>
+                      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <button class="btn">Light</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="row row_cards">
+            <div class="col-lg-6">
+              <section class="cards">
+                <div class="card">
+                  <div class="img_card img_card_1">
+                    <img src="images/ac.jpg">
+                  </div>
+                  <div class="img_card img_card_2">
+                    <div class="content_card">
+                      <h2>Lorem ipsum dolor sit amet</h2>
+                      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <button class="btn">Light</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col-lg-6">
+              <section class="cards">
+                <div class="card">
+                  <div class="img_card img_card_1">
+                    <img src="images/ac.jpg">
+                  </div>
+                  <div class="img_card img_card_2">
+                    <div class="content_card">
+                      <h2>Lorem ipsum dolor sit amet</h2>
+                      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <button class="btn">Light</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="row row_cards">
+            <div class="col-lg-6">
+              <section class="cards">
+                <div class="card">
+                  <div class="img_card img_card_1">
+                    <img src="images/ac.jpg">
+                  </div>
+                  <div class="img_card img_card_2">
+                    <div class="content_card">
+                      <h2>Lorem ipsum dolor sit amet</h2>
+                      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <button class="btn">Light</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col-lg-6">
+              <section class="cards">
+                <div class="card">
+                  <div class="img_card img_card_1">
+                    <img src="images/ac.jpg">
+                  </div>
+                  <div class="img_card img_card_2">
+                    <div class="content_card">
+                      <h2>Lorem ipsum dolor sit amet</h2>
+                      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <button class="btn">Light</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="row row_cards">
+            <div class="col-lg-6">
+              <section class="cards">
+                <div class="card">
+                  <div class="img_card img_card_1">
+                    <img src="images/ac.jpg">
+                  </div>
+                  <div class="img_card img_card_2">
+                    <div class="content_card">
+                      <h2>Lorem ipsum dolor sit amet</h2>
+                      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <button class="btn">Light</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col-lg-6">
+              <section class="cards">
+                <div class="card">
+                  <div class="img_card img_card_1">
+                    <img src="images/ac.jpg">
+                  </div>
+                  <div class="img_card img_card_2">
+                    <div class="content_card">
+                      <h2>Lorem ipsum dolor sit amet</h2>
+                      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <button class="btn">Light</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer-template">
+          <div class="container px-md-5">
+            <div class="row row_cards mb-5">
+              <div class="col-md">
+                <div class="footer-template-widget mb-4 ml-md-4">
+                  <ul>
+            <img src="images/logo_200px.png" class="img">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius</p>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md">
+              </div>
+              <div class="col-md">
+                 <div class="footer-template-widget mb-4">
+                  <h2>Przydatne linki</h2>
+                  <ul>
+                    <a href="http://lo1.sandomierz.pl/"><p>Strona Szkoły <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+                <hr>
+                <a href="index.html"><p>Poczytaj <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+                <hr>
+                <a href="materialy.html"><p>Materiały <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+                <hr>
+                <a href="linki.html"><p>Linki & Narzędzia <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="footer-template-widget mb-4">
+                  <h2>Kontakt</h2>
+                  <div class=" mb-3">
+                    <ul>
+                  <li><p>ul.Jana Długosza 7</p></li>
+                    <li><p>Sandomierz, Polska</p></li>
+                    <p>Email: <span class="email"><b>ecg.vot@gmail.com</b></span></p>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row_cards">
+              <div class="col-md-3">
+              </div>
+              <div class="col-md-6">
+                <p>Theme © Coding by Michał Parzych, Piotr Wojtoń • Graphics by Hubert Żuber</p>
+              </div>
+              <div class="col-md-3">
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
-
-        <div class="container materials-items">
-          <div class="wrapper">
-
-            <section class="top-container">
-              <header class="showcase">
-                <h1>Materiały</h1>
-                <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ipsam! Nihil quo minima nulla atque!</p>
-              </header>
-
-                <div class="top-box top-box-a">
-                  <figure class="materials-item">
-                    <img class="materials-images" src="images/edytor.png" alt="materials item">
-                  <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
-                    <p class="materials-desc">Miejsce na ewentualny opis</p>
-                    <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
-                  </figcaption>
-                  <div class="materials-modal">
-                        <button class="modal-close">
-                          <svg x="0px" y="0px"
-                          viewbox="0 0 30 17" height="20" width="30">
-                          <g transform="translate(-15 -15)">
-                            <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 35.8,16.5 37,17.7 	"/>
-                          </g>
-                        </svg>
-                        </button>
-                        <div class="materials-header header-one">
-                          <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
-                          </div>
-                      </div>
-                        <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                      </div>
-                  </div>
-                  </figure>
-                </div>
-                <div class="top-box top-box-b">
-                  <figure class="materials-item">
-                    <img class="materials-images" src="images/koza.png" alt="materials item">
-                  <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
-                    <p class="materials-desc">Miejsce na ewentualny opis</p>
-                    <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
-                  </figcaption>
-                  <div class="materials-modal">
-                        <button class="modal-close">
-                          <svg x="0px" y="0px"
-                          viewbox="0 0 30 17" height="20" width="30">
-                          <g transform="translate(-15 -15)">
-                            <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 35.8,16.5 37,17.7 	"/>
-                          </g>
-                        </svg>
-                        </button>
-                        <div class="materials-header header-one">
-                          <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
-                          </div>
-                      </div>
-                        <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                      </div>
-                  </div>
-                  </figure>
-                </div>
-                <div class="top-box top-box-c">
-                  <figure class="materials-item">
-                    <img class="materials-images" src="images/koza.png" alt="materials item">
-                  <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
-                    <p class="materials-desc">Miejsce na ewentualny opis</p>
-                    <button  class="btn btn1 btn-lg materials-link" type="button">Dalej</button>
-                  </figcaption>
-                  <div class="materials-modal">
-                        <button class="modal-close">
-                          <svg x="0px" y="0px"
-                          viewbox="0 0 30 17" height="20" width="30">
-                          <g transform="translate(-15 -15)">
-                            <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 35.8,16.5 37,17.7 	"/>
-                          </g>
-                        </svg>
-                        </button>
-                        <div class="materials-header header-one">
-                          <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
-                          </div>
-                      </div>
-                        <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                      </div>
-                  </div>
-                  </figure>
-                </div>
-                <div class="top-box top-box-d">
-                  <figure class="materials-item">
-                    <img class="materials-images" src="images/koza.png" alt="materials item">
-                  <figcaption>
-                    <h2 class="materials-title">Edytor tekstu</h2>
-                    <p class="materials-desc">Miejsce na ewentualny opis</p>
-                    <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
-                  </figcaption>
-                  <div class="materials-modal">
-                        <button class="modal-close">
-                          <svg x="0px" y="0px"
-                          viewbox="0 0 30 17" height="20" width="30">
-                          <g transform="translate(-15 -15)">
-                            <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 35.8,16.5 37,17.7 	"/>
-                          </g>
-                        </svg>
-                        </button>
-                        <div class="materials-header header-one">
-                          <div class="materials-title-box div-alingment">
-                            <h2 class="materials-title">Edytor tekstu</h2>
-                            <p class="materials-subtitle">Ewentualny podtytuł</p>
-                          </div>
-                      </div>
-                        <div class="materials-content container">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-
-                      <div class="row container div-alingment d-flex justify-content-center">
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                          <button type="button" class="btn btn2">Warning</button>
-                        </div>
-                      </div>
-                  </div>
-                  </figure>
-                </div>
-            </section>
-            <section class="boxes">
-              <div class="box materials-items">
-                <figure class="materials-item">
-                  <img class="materials-images" src="images/koza2.png" alt="materials item">
-                <figcaption>
-                  <h2 class="materials-title-sm">Edytor tekstu</h2>
-                  <p class="materials-desc">Miejsce na ewentualny opis</p>
-                  <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
-                </figcaption>
-                <div class="materials-modal">
-                      <button class="modal-close">
-                        <svg x="0px" y="0px"
-                        viewbox="0 0 30 17" height="20" width="30">
-                        <g transform="translate(-15 -15)">
-                          <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 35.8,16.5 37,17.7 	"/>
-                        </g>
-                      </svg>
-                      </button>
-                      <div class="materials-header header-one">
-                        <div class="materials-title-box div-alingment">
-                          <h2 class="materials-title">Edytor tekstu</h2>
-                          <p class="materials-subtitle">Ewentualny podtytuł</p>
-                        </div>
-                    </div>
-                      <div class="materials-content container">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      </div>
-
-                    <div class="row container div-alingment d-flex justify-content-center">
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                    </div>
-                </div>
-                </figure>
-              </div>
-              <div class="box materials-items">
-                <figure class="materials-item">
-                  <img class="materials-images" src="images/koza2.png" alt="materials item">
-                <figcaption>
-                  <h2 class="materials-title-sm">Edytor tekstu</h2>
-                  <p class="materials-desc">Miejsce na ewentualny opis</p>
-                  <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
-                </figcaption>
-                <div class="materials-modal">
-                      <button class="modal-close">
-                        <svg x="0px" y="0px"
-                        viewbox="0 0 30 17" height="20" width="30">
-                        <g transform="translate(-15 -15)">
-                          <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 35.8,16.5 37,17.7 	"/>
-                        </g>
-                      </svg>
-                      </button>
-                      <div class="materials-header header-one">
-                        <div class="materials-title-box div-alingment">
-                          <h2 class="materials-title">Edytor tekstu</h2>
-                          <p class="materials-subtitle">Ewentualny podtytuł</p>
-                        </div>
-                    </div>
-                      <div class="materials-content container">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      </div>
-
-                    <div class="row container div-alingment d-flex justify-content-center">
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                    </div>
-                </div>
-                </figure>
-              </div>
-              <div class="box materials-items">
-                <figure class="materials-item">
-                  <img class="materials-images" src="images/koza2.png" alt="materials item">
-                <figcaption>
-                  <h2 class="materials-title-sm">Edytor tekstu</h2>
-                  <p class="materials-desc">Miejsce na ewentualny opis</p>
-                  <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
-                </figcaption>
-                <div class="materials-modal">
-                      <button class="modal-close">
-                        <svg x="0px" y="0px"
-                        viewbox="0 0 30 17" height="20" width="30">
-                        <g transform="translate(-15 -15)">
-                          <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 35.8,16.5 37,17.7 	"/>
-                        </g>
-                      </svg>
-                      </button>
-                      <div class="materials-header header-one">
-                        <div class="materials-title-box div-alingment">
-                          <h2 class="materials-title">Edytor tekstu</h2>
-                          <p class="materials-subtitle">Ewentualny podtytuł</p>
-                        </div>
-                    </div>
-                      <div class="materials-content container">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      </div>
-
-                    <div class="row container div-alingment d-flex justify-content-center">
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                    </div>
-                </div>
-                </figure>
-              </div>
-              <div class="box materials-items">
-                <figure class="materials-item">
-                  <img class="materials-images" src="images/koza2.png" alt="materials item">
-                <figcaption>
-                  <h2 class="materials-title-sm">Edytor tekstu</h2>
-                  <p class="materials-desc">Miejsce na ewentualny opis</p>
-                  <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
-                </figcaption>
-                <div class="materials-modal">
-                      <button class="modal-close">
-                        <svg x="0px" y="0px"
-                        viewbox="0 0 30 17" height="20" width="30">
-                        <g transform="translate(-15 -15)">
-                          <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 35.8,16.5 37,17.7 	"/>
-                        </g>
-                      </svg>
-                      </button>
-                      <div class="materials-header header-one">
-                        <div class="materials-title-box div-alingment">
-                          <h2 class="materials-title">Edytor tekstu</h2>
-                          <p class="materials-subtitle">Ewentualny podtytuł</p>
-                        </div>
-                    </div>
-                      <div class="materials-content container">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      </div>
-
-                    <div class="row container div-alingment d-flex justify-content-center">
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                    </div>
-                </div>
-                </figure>
-              </div>
-              <div class="box materials-items">
-                <figure class="materials-item">
-                  <img class="materials-images" src="images/koza2.png" alt="materials item">
-                <figcaption>
-                  <h2 class="materials-title-sm">Edytor tekstu</h2>
-                  <p class="materials-desc">Miejsce na ewentualny opis</p>
-                  <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
-                </figcaption>
-                <div class="materials-modal">
-                      <button class="modal-close">
-                        <svg x="0px" y="0px"
-                        viewbox="0 0 30 17" height="20" width="30">
-                        <g transform="translate(-15 -15)">
-                          <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 35.8,16.5 37,17.7 	"/>
-                        </g>
-                      </svg>
-                      </button>
-                      <div class="materials-header header-one">
-                        <div class="materials-title-box div-alingment">
-                          <h2 class="materials-title">Edytor tekstu</h2>
-                          <p class="materials-subtitle">Ewentualny podtytuł</p>
-                        </div>
-                    </div>
-                      <div class="materials-content container">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      </div>
-
-                    <div class="row container div-alingment d-flex justify-content-center">
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                    </div>
-                </div>
-                </figure>
-              </div>
-              <div class="box materials-items">
-                <figure class="materials-item">
-                  <img class="materials-images" src="images/koza2.png" alt="materials item">
-                <figcaption>
-                  <h2 class="materials-title-sm">Edytor tekstu</h2>
-                  <p class="materials-desc">Miejsce na ewentualny opis</p>
-                  <button  class="btn btn1 btn-lg materials-link" type="button" >Dalej</button>
-                </figcaption>
-                <div class="materials-modal">
-                      <button class="modal-close">
-                        <svg x="0px" y="0px"
-                        viewbox="0 0 30 17" height="20" width="30">
-                        <g transform="translate(-15 -15)">
-                          <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 35.8,16.5 37,17.7 	"/>
-                        </g>
-                      </svg>
-                      </button>
-                      <div class="materials-header header-one">
-                        <div class="materials-title-box div-alingment">
-                          <h2 class="materials-title">Edytor tekstu</h2>
-                          <p class="materials-subtitle">Ewentualny podtytuł</p>
-                        </div>
-                    </div>
-                      <div class="materials-content container">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      </div>
-
-                    <div class="row container div-alingment d-flex justify-content-center">
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                      <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn2">Warning</button>
-                      </div>
-                    </div>
-                </div>
-                </figure>
-              </div>
-            </section>
-          </div>
-          <div class="empty">
-
-          </div>
-        </div>
-    </article>
-  </section>
-
-  <footer class="footer_index">
-    <footer class="footer fixed-bottom">
-        <div class="container-fluid footer-stuff">
-          <div class="row">
-            <div class="col-1">
-            </div>
-            <div class="col-3 d-none d-lg-block">
-                <img src="images/logo_stopka.png" class="img">
-                <p class="footer_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius</p>
-            </div>
-            <div class="col-1">
-            </div>
-            <div class="col-3 d-none d-lg-block">
-              <h3><strong>Przydatne linki</strong></h3>
-              <hr class="footer_hr">
-              <a href="http://lo1.sandomierz.pl/"><p  class="footer_p">Strona Szkoły <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
-              <hr>
-              <a href="index.html"><p  class="footer_p">Poczytaj <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
-              <hr>
-              <a href="materialy.html"><p  class="footer_p">Materiały <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
-              <hr>
-              <a href="linki.html"><p  class="footer_p">Linki & Narzędzia <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
-            </div>
-            <div class="col-1">
-
-            </div>
-            <div class="col-3 d-none d-lg-block">
-              <h3><strong>Kontakt</strong></h3>
-              <hr class="footer_hr">
-              <p>ul.Jana Długosza 7</p>
-              <p>Sandomierz, Polska</p>
-              <p>Email: <span class="email"><b>ecg.vot@gmail.com</b></span></p>
-            </div>
-            <div class="fixed-bottom divbo">
-                <p class="text-center text-muted">Theme © Coding by Michał Parzych, Piotr Wojtoń • Graphics by Hubert Żuber</p>
-            </div>
-          </div>
-        </div>
-      </footer>
-      </footer>
 
       <!-- jQuery library -->
       <script src="js/jquery-3.3.1.min.js"></script>
-      <!-- Moveit library -->
-      <script src="js/moveit.js"></script>
-      <!-- Hamburger JavaScript -->
-      <script src="js/hamburger.js"></script>
       <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
       <script src="js/bootstrap.bundle.min.js"></script>
-      <!-- obsługa gridów -->
-      <script src="js/modal.js"></script>
 
 </body>
 </html>
