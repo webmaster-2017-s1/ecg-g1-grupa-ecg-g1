@@ -416,13 +416,12 @@ color: #aaa;
 .card-container {
 margin: 25px auto 0;
 position: relative;
-width: 770px;
+width: 550px;
 }
 
 .card {
 background-color: #fff;
 padding: 30px;
-position: relative;
 box-shadow: 0 0 5px rgba(75, 75, 75, .07);
 z-index: 1;
 }
@@ -430,11 +429,12 @@ z-index: 1;
 .card-body {
 display: inline-block;
 float: left;
-width: 310px;
+width: 210px;
+height: 350px;
 }
 
 .card-number {
-margin-top: 15px;
+margin-top: 5px;
 }
 
 .card-circle {
@@ -448,17 +448,9 @@ text-align: center;
 width: 25px;
 }
 
-.card-author {
-display: block;
-font-size: 12px;
-letter-spacing: .5px;
-margin: 15px 0 0;
-text-transform: uppercase;
-}
-
 .card-title {
 font-family: 'Cormorant Garamond', serif;
-font-size: 60px;
+font-size: 50px;
 font-weight: 300;
 line-height: 60px;
 margin: 10px 0;
@@ -484,7 +476,6 @@ text-transform: uppercase;
 
 .card-read:after {
 background-color: #b8bddd;
-content: "";
 display: block;
 height: 1px;
 position: absolute;
