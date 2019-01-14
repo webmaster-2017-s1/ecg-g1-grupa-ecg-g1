@@ -489,10 +489,9 @@ width: 25px;
 
 .card-title {
 font-family: 'Cormorant Garamond', serif;
-font-size: 50px;
-font-weight: 300;
-line-height: 60px;
-margin: 10px 0;
+font-size: 30px;
+font-weight: 250;
+line-height: 40px;
 }
 
 .card-description {
@@ -605,9 +604,8 @@ background: #f7f9fa;
   color: #000;
   font-size: 20px;
   height: 45px;
-  width: 55%;
+  width: 70%;
   padding: 5px;
-  left: 30%;
   display: inline-block;
   border: 2px solid #000;
   margin: 5px;
@@ -618,7 +616,25 @@ background: #f7f9fa;
   transition: all ease 0.5s;
 }
 
-.btn-index {
+.icon-box-white {
+  background-color: white;
+  position: relative;
+  color: #000;
+  font-size: 20px;
+  height: 45px;
+  width: 70%;
+  padding: 5px;
+  display: inline-block;
+  border: 2px solid #000;
+  margin: 5px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.btn-index  {
   background-color: #ccb78f;
   position: center;
   color: #000;
