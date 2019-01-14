@@ -4,19 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Szablon Bootstrapa</title>
+  <title>ecg.vot.pl</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
-
   <!-- Font Awesome, zob. How to Use: https://fontawesome.bootstrapcheatsheets.com -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" integrity="sha384-VY3F8aCQDLImi4L+tPX4XjtiJwXDwwyXNbkH7SHts0Jlo85t1R15MlXVBKLNx+dj" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,7 +20,7 @@
   <![endif]-->
 
   <!-- twoje style -->
-  <link rel="stylesheet" href="css/style_oryginal.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -37,1070 +31,226 @@
     instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.
   </noscript>
 
-  <!-- nieaktualna przeglądarka, zob. dostosowanie: https://browser-update.org/customize.html -->
+  <!-- nieaktualna przeglądarka, zob. dostosowanie: https://brow row_cardsser-update.org/customize.html -->
   <script>
     var $buoop = {notify:{e:-6,f:-4,o:-4,s:-2,c:-4},insecure:true,api:5};
     function $buo_f(){
       var e = document.createElement("script");
-      e.src = "http://browser-update.org/update.min.js";
+      e.src = "http://brow row_cardsser-update.org/update.min.js";
       document.body.appendChild(e);
     };
     try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
     catch(e){window.attachEvent("onload", $buo_f)}
   </script>
 
-  <!-- Nagłówek strony: menu, logo, breadcrumbs itp. oraz treść główna -->
 
-  <section class="content">
-    <article>
+  <aside id="aside" role="complementary" class="js-fullheight text-center">
+    <h1 id="logo">
+      <a href="index.html">
+        <span class="img d-none d-lg-block" style="background-image: url(images/logo_150px.png);"></span>
+        ecg.vot.pl</a>
+    </h1>
+    <nav id="main-menu" role="navigation">
+      <ul>
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="materialy.html">Materiały</a></li>
+        <li><a href="linux.html">Linux</a></li>
+        <li><a href="archiwum.html">Archiwum </a></li>
+        <li class="active"><a href="galerie.html">Galerie</a></li>
+        <li><a href="linki.html">Linki & Narzędzia</a></li>
+      </ul>
+    </nav>
+  </aside>
 
-      <div class="menu container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg_dark">
-      <!-- hamburger -->
-      <button class="btn btn-dark d-md-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div>
-          <svg width="100px" height="100px">
-            <path id="first" d="M 30 40 L 70 40 C 90 40 90 75 60 85 A 40 40 0 0 1 20 20 L 80 80"></path>
-            <path id="middle" d="M 30 50 L 70 50"></path>
-            <path id="second" d="M 70 60 L 30 60 C 10 60 10 20 40 15 A 40 38 0 1 1 20 80 L 80 20"></path>
-          </svg>
-          <div class="trigger"></div>
+  <div id="main">
+
+      <section class="ecg-section ecg-bread">
+        <div class="container">
+         <div class="row">
+            <div class="col-md-8">
+              <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Strona główna</a></span> <span class="mr-2"><span>Galerie</span></p>
+              <h1 class="bread">Galerie</h1>
+            </div>
+           </div>
         </div>
-      </button>
-      <!-- /hamburger -->
+      </section>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav navbar-nav m-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Poczytaj <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="materialy.html">Materiały <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active ">
-                <a class="nav-link" href="linux.html">Linux <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active ">
-                <a class="nav-link" href="archiwum.html">Archiwum <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active ">
-                <a class="nav-link" href="galerie.html">Galerie <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active" >
-                <a class="nav-link" href="linki.html">Linki & Narzędzia <span class="sr-only">(current)</span></a>
-              </li>
-            </ul>
+    <div style="height:150px;">
+
+    </div>
+
+	<div id="colorlib-main">
+			<section class="section">
+	    	<div class="container">
+	    		<div class="row d-flex">
+	    			<div class="col-lg-8">
+	    				<div class="row">
+			    			<div class="col-md-12">
+			    				<div class="arcive-entry d-md-flex">
+										<a href="single.html" class="img img-2" style="background-image: url(images/ac.jpg);"></a>
+										<div class="text text-2 p-4">
+				              <h3 class="mb-2"><a href="single.html">Lorem ipsum dolor sit amet</a></h3>
+				              <div class="meta-wrap">
+												<p class="meta">
+				              		<span>Jan 14, 2019</span>
+				              		<span><a href="single.html">Lorem ipsum</a></span>
+				              	</p>
+			              	</div>
+				              <p class="mb-4">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				              <a class="btn icon-box card-read" href="#">Dalej<span><i class="fa fa-angle-double-right g-absolute-centered--y g-right-0"></i></span></a>
+				            </div>
+									</div>
+			    			</div>
+			    			<div class="col-md-12">
+			    				<div class="arcive-entry d-md-flex">
+										<a href="single.html" class="img img-2" style="background-image: url(images/ac.jpg);"></a>
+										<div class="text text-2 p-4">
+				              <h3 class="mb-2"><a href="single.html">Lorem ipsum dolor sit amet</a></h3>
+				              <div class="meta-wrap">
+												<p class="meta">
+				              		<span>Jan 14, 2019</span>
+				              		<span><a href="single.html">Lorem ipsum</a></span>
+				              	</p>
+			              	</div>
+				              <p class="mb-4">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				              <a class="btn icon-box card-read" href="#">Dalej<span><i class="fa fa-angle-double-right g-absolute-centered--y g-right-0"></i></span></a>
+				            </div>
+									</div>
+			    			</div>
+			    			<div class="col-md-12">
+			    				<div class="arcive-entry d-md-flex">
+										<a href="single.html" class="img img-2" style="background-image: url(images/ac.jpg);"></a>
+										<div class="text text-2 p-4">
+				              <h3 class="mb-2"><a href="single.html">Lorem ipsum dolor sit amet</a></h3>
+				              <div class="meta-wrap">
+												<p class="meta">
+				              		<span>Jan 14, 2019</span>
+				              		<span><a href="single.html">Lorem ipsum</a></span>
+				              	</p>
+			              	</div>
+				              <p class="mb-4">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				              <a class="btn icon-box card-read" href="#">Dalej<span><i class="fa fa-angle-double-right g-absolute-centered--y g-right-0"></i></span></a>
+				            </div>
+									</div>
+			    			</div>
+
+
+                <div class="next">
+                  <a href="galerie.html" class="round round_active">1</i></a>
+                  <a href="galerie-str-2.html" class="round">2</i></a>
+                  <a href="galerie-str-3.html" class="round">3</i></a>
+                  <a href="galerie-str-2.html" class="round"><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></a>
+			    		    </div>
+			    		</div>
+
+			    	</div>
+	    			<div class="col-lg-4 sidebar  bg-light">
+	            <div class="sidebar-box ">
+	            	<h3 class="sidebar-heading">Galerie</h3>
+	              <ul class="categories">
+	                <li><a href="#">Lorem  <span><i class="fa fa-angle-double-right g-absolute-centered--y g-right-0"></i></span></a></li>
+	                <li><a href="#">Lorem  <span><i class="fa fa-angle-double-right g-absolute-centered--y g-right-0"></i></span></a></li>
+	                <li><a href="#">Lorem  <span><i class="fa fa-angle-double-right g-absolute-centered--y g-right-0"></i></span></a></li>
+	                <li><a href="#">Lorem  <span><i class="fa fa-angle-double-right g-absolute-centered--y g-right-0"></i></span></a></li>
+	                <li><a href="#">Lorem  <span><i class="fa fa-angle-double-right g-absolute-centered--y g-right-0"></i></span></a></li>
+	                <li><a href="#">Lorem  <span><i class="fa fa-angle-double-right g-absolute-centered--y g-right-0"></i></span></a></li>
+	                <li><a href="#">Lorem  <span><i class="fa fa-angle-double-right g-absolute-centered--y g-right-0"></i></span></a></li>
+	                <li><a href="#">Lorem  <span><i class="fa fa-angle-double-right g-absolute-centered--y g-right-0"></i></span></a></li>
+	                <li><a href="#">Lorem  <span><i class="fa fa-angle-double-right g-absolute-centered--y g-right-0"></i></span></a></li>
+	                <li><a href="#">Lorem  <span><i class="fa fa-angle-double-right g-absolute-centered--y g-right-0"></i></span></a></li>
+
+	              </ul>
+	            </div>
+
+
+	            <div class="sidebar-box ">
+	              <h3 class="sidebar-heading">Paragraph</h3>
+	              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut.</p>
+	            </div>
+
+              <div class="sidebar-box ftco-animate">
+	            	<h3 class="sidebar-heading">Archiwa</h3>
+	              <ul class="categories">
+	              	<li><a href="#">lorem <span>(10)</span></a></li>
+	              	<li><a href="#">lorem <span>(10)</span></a></li>
+	              	<li><a href="#">lorem <span>(10)</span></a></li>
+	              	<li><a href="#">lorem <span>(10)</span></a></li>
+	              	<li><a href="#">lorem <span>(10)</span></a></li>
+	              	<li><a href="#">lorem <span>(10)</span></a></li>
+	              	<li><a href="#">lorem <span>(10)</span></a></li>
+	              	<li><a href="#">lorem <span>(10)</span></a></li>
+	              	<li><a href="#">lorem <span>(10)</span></a></li>
+
+	              </ul>
+	            </div>
+
+
+	          </div>
+	    		</div>
+	    	</div>
+	    </section>
+
+    <div style="height:250px;">
+
+    </div>
+
+    <footer class="footer-template">
+          <div class="container px-md-5">
+            <div class="row row_cards mb-5">
+              <div class="col-md">
+                <div class="footer-template-widget mb-4 ml-md-4">
+                  <ul>
+            <img src="images/logo_200px.png" class="img">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius</p>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md">
+              </div>
+              <div class="col-md">
+                 <div class="footer-template-widget mb-4">
+                  <h2>Przydatne linki</h2>
+                  <ul>
+                    <a href="http://lo1.sandomierz.pl/"><p>Strona Szkoły <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+                <hr>
+                <a href="index.html"><p>Poczytaj <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+                <hr>
+                <a href="materialy.html"><p>Materiały <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+                <hr>
+                <a href="linki.html"><p>Linki & Narzędzia <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></p></a>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="footer-template-widget mb-4">
+                  <h2>Kontakt</h2>
+                  <div class=" mb-3">
+                    <ul>
+                  <li><p>ul.Jana Długosza 7</p></li>
+                    <li><p>Sandomierz, Polska</p></li>
+                    <p>Email: <span class="email"><b>ecg.vot@gmail.com</b></span></p>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row_cards">
+              <div class="col-md-3">
+              </div>
+              <div class="col-md-6">
+                <p>Theme © Coding by Michał Parzych, Piotr Wojtoń • Graphics by Hubert Żuber</p>
+              </div>
+              <div class="col-md-3">
+              </div>
+            </div>
           </div>
-        </nav>
+        </footer>
       </div>
-
-      <div class="container">
-       <h1 class="text-center mb-4">Galerie</h1>
-       <section class="gallery_section">
-
-         <div class="main-div">
-           <ul class="gallery_buttons">
-               <button id="btn_1" type="button" name="button">CMS Get Simple</button>
-               <button id="btn_2" type="button" name="button">Partycjonowanie z GParted</button>
-               <button id="btn_3" type="button" name="button">Partycjonowanie z cfdisk</button>
-               <button id="btn_4" type="button" name="button">Instalacja Ubuntu Server</button>
-               <button id="btn_5" type="button" name="button">Instalacja Debiana</button>
-               <button id="btn_6" type="button" name="button">Instalacja systemu CrunchBang</button>
-               <button id="btn_7" type="button" name="button">Instalacja Lubuntu</button>
-               <button id="btn_8" type="button" name="button">Konfiguracja środowiska XFCE 4.10</button>
-           </ul>
-         </div>
-
-         <div class="gallery-container">
-         <div class="tz-gallery">
-             <div id="gallery_1" class="main_div_gallery">
-               <ul>
-                 <div>
-                     <a class="lightbox" href="images/server2go.jpg">
-                         <img src="images/server2go.jpg">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/gs_instalacja1.jpg">
-                         <img src="images/gs_instalacja1.jpg">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/gs_instalacja2.jpg">
-                         <img src="images/gs_instalacja2.jpg">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/gs_instalacja3.jpg">
-                         <img src="images/gs_instalacja3.jpg">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/gs_instalacja4.jpg">
-                         <img src="images/gs_instalacja4.jpg">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/gs_instalacja5.jpg">
-                         <img src="images/gs_instalacja5.jpg">
-                     </a>
-                 </div>
-               </ul>
-             </div>
-             <div id="gallery_2" class="main_div_gallery">
-               <ul>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-               </ul>
-             </div>
-             <div id="gallery_3" class="main_div_gallery">
-                 <ul>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                 </ul>
-             </div>
-             <div id="gallery_4" class="main_div_gallery">
-               <ul>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-               <ul/>
-             </div>
-             <div id="gallery_5" class="main_div_gallery">
-               <ul>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-               <div>
-                   <a class="lightbox" href="images/koza.png">
-                       <img src="images/koza.png">
-                   </a>
-               </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-               </ul>
-             </div>
-             <div id="gallery_6" class="main_div_gallery">
-               <ul>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-               </ul>
-             </div>
-             <div id="gallery_7" class="main_div_gallery">
-               <ul>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                 <div>
-                     <a class="lightbox" href="images/koza.png">
-                         <img src="images/koza.png">
-                     </a>
-                 </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-                   <div>
-                       <a class="lightbox" href="images/koza.png">
-                           <img src="images/koza.png">
-                       </a>
-                   </div>
-               </ul>
-             </div>
-             <div id="gallery_8" class="main_div_gallery">
-               <ul>
-                     <div>
-                         <a class="lightbox" href="images/fce4_01.png">
-                             <img src="images/fce4_01.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_02.png">
-                             <img src="images/fce4_02.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_03.png">
-                             <img src="images/fce4_03.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_04.png">
-                             <img src="images/fce4_04.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_05.png">
-                             <img src="images/fce4_05.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_06.png">
-                             <img src="images/fce4_06.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_07.png">
-                             <img src="images/fce4_07.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_08.png">
-                             <img src="images/fce4_08.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_09.png">
-                             <img src="images/fce4_09.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_10.png">
-                             <img class="fce10" src="images/fce4_10.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_11.png">
-                             <img src="images/fce4_11.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_12.png">
-                             <img src="images/fce4_12.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_13.png">
-                             <img src="images/fce4_13.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_14.png">
-                             <img src="images/fce4_14.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_15.png">
-                             <img src="images/fce4_15.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_16.png">
-                             <img src="images/fce4_16.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_17.png">
-                             <img src="images/fce4_17.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_18.png">
-                             <img src="images/fce4_18.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_19.png">
-                             <img src="images/fce4_19.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_20.png">
-                             <img src="images/fce4_20.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_21.png">
-                             <img src="images/fce4_21.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_22.png">
-                             <img src="images/fce4_22.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_23.png">
-                             <img src="images/fce4_23.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_24.png">
-                             <img src="images/fce4_24.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_25.png">
-                             <img src="images/fce4_25.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_26.png">
-                             <img src="images/fce4_26.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_27.png">
-                             <img src="images/fce4_27.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_28.png">
-                             <img src="images/fce4_28.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_29.png">
-                             <img src="images/fce4_29.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_30.png">
-                             <img src="images/fce4_30.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_31.png">
-                             <img src="images/fce4_31.png">
-                         </a>
-                     </div>
-                     <div>
-                         <a class="lightbox" href="images/fce4_32.png">
-                             <img src="images/fce4_32.png">
-                         </a>
-                     </div>
-                   </ul>
-                 </div>
-             </div>
-         </div>
-       </section>
-     </div>
-     <a href="#" class="scrollToTop"><i class="fas fa-arrow-up"></i></a>
-
- </article>
-</section>
-
-
-
 
       <!-- jQuery library -->
       <script src="js/jquery-3.3.1.min.js"></script>
-      <!-- Moveit library -->
-
-      <!-- Hamburger JavaScript -->
-
       <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
       <script src="js/bootstrap.bundle.min.js"></script>
-
-      <script src="js/scroll.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-      <script>
-          baguetteBox.run('.tz-gallery');
-      </script>
 
 </body>
 </html>
