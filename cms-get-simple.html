@@ -11,6 +11,8 @@
 
   <!-- Font Awesome, zob. How to Use: https://fontawesome.bootstrapcheatsheets.com -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.css" >
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -72,6 +74,19 @@
               <h1 class="bread">CMS Get Simple</h1>
             </div>
            </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="row">
+           <a href="images/bridge03.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+             <img src="images/bridge03.png" class="img-fluid rounded" alt="">
+           </a>
+           <a href="images/bridge04.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+             <img src="images/bridge04.png" class="img-fluid rounded" alt="">
+           </a>
+          </div>
         </div>
       </section>
 
@@ -143,7 +158,16 @@
       <script src="js/jquery-3.3.1.min.js"></script>
       <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
       <script src="js/bootstrap.bundle.min.js"></script>
-
+      <!-- animacja galerii -->
+      <script type="text/javascript">
+        $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+          event.preventDefault();
+          $(this).ekkoLightbox();
+          });
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 
 </body>
 </html>
