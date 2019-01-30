@@ -24,7 +24,6 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -817,12 +816,12 @@ background: #f7f9fa;
 
 .social {
   padding: 0; }
-  
+
   .social li {
     list-style: none;
     margin: 0 10px 0 0;
     display: inline-block; }
-    
+
     .social li a {
       height: 75px;
       width: 75px;
@@ -839,9 +838,9 @@ background: #f7f9fa;
       float: left;
       background: black;
       border-radius: 50%;
-      position: relative; 
+      position: relative;
     color: #ccb78f; }
-      
+
       .social li a span i{
         position: absolute;
         font-size: 45px;
@@ -878,9 +877,9 @@ background: #f7f9fa;
           }
 
           code {
-            color:#ccb78f; 
+            color:#ccb78f;
             background-color: var(--primary);
-            padding: 3px; 
+            padding: 3px;
             text-decoration: none;
             font-weight: 400;
           }
