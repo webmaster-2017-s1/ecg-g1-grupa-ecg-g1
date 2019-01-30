@@ -78,6 +78,8 @@
     <div style="height:150px;"></div>
 
 	<div id="colorlib-main">
+
+
 		<section class="section">
 	    	<div class="container">
 	    		<div class="row d-flex">
@@ -423,7 +425,7 @@
 
                               <!-- squid -->
 
-                              <h3 class="materials_title_archives">Squid (serwer proxy)</h3>
+                              <h3 class="materials_title_archives" id="gallery_1">Squid (serwer proxy)</h3>
 				                      <h3 class="materials_title">Instalacja</h3>
                                 <br>
                               <p>Squid ma bardzo wiele zastosowań, my użyjemy go w roli serwera proxy, który wykorzystując cache przyśpiesza pobieranie danych z internetu. Instalujemy odpowiedni pakiet: <code>sudo apt-get install squid3</code></p>
@@ -565,15 +567,14 @@
                               	<li><code>cat /var/misc/dnsmasq.leases</code> - podgląd dzierżaw DHCP</li>
                               </ul>
                               <p>Zamiast śledzenia logów (<code>tail -f</code>), można wyświetlić koniec logu: <code>sudo tail -n100 /var/log/...</code>, cały log podglądniemy używając polecenia cat: <code>cat /var/log/...</code>. Możemy też przeszukać log i wyświetlić tylko linie zawierające interesujące nas słowo: <code>cat /var/log/syslog | grep error</code>.</p>
-                              <h3 class="materials_title_archives">	Narzędzia</h3>
-                              <h3 class="materials_title_archives">Podstawowe</h3>
+                              <h3 class="materials_title_archives">	Narzędzia Podstawowe</h3>
                               <ul>
                               	<li><code>ps -ef [-eF, axf, aux]</code> - wyświetlenie procesów w różnych formatach</li>
                               	<li><code>lsof -i -n -P</code> - wyświetlenie połączeń sieciowych</li>
                               	<li><code>netstat -tuap</code> - wyświetlenie połączeń sieciowych</li>
                               	<li><code>vmstat 5</code> - wyświetlanie statystyk użycia pamięci, przestrzeni wymiany itd. w odstępach 5-sekundowych</li>
                               </ul>
-                              <h3 class="materials_title_archives">Zaawansowane</h3>
+                              <h3 class="materials_title_archives"> Narzędzia Zaawansowane</h3>
                               <p>Przedstawione poniżej narzędzia wymagają znajomości zagadnień funkcjonownia sieci, m. in. wiedzy na temat wykorzystywanych protokołów (model TCP/IP), pojęć (np. pakiet, gniazdo, port) i technik (np. skanowanie portów, przechwytywanie pakietów) itp. Co do zasady należy uruchamiać je z uprawnieniami administratora, czyli w Ubuntu Server przez sudo, w Debianie jako root. Instalacja:</p>
                               <p><code>sudo apt-get install iptraf vnstat tcpdump tshark nmap</code></p>
                               <h3 class="materials_title_archives">Iptraf</h3>
@@ -649,20 +650,29 @@
 		            <div class="sidebar-box ">
 		              <h3 class="sidebar-heading">Paragraph</h3>
 		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut.</p>
-		            </div>
+                </div>
 
 	              	<div class="sidebar-box">
-		            	<h3 class="sidebar-heading">Galerie</h3>
+		            	<h3 class="sidebar-heading">ubuntu</h3>
 		             		<ul class="categories">
-		              			<li><a href="#">lorem <span>(10)</span></a></li>
-		              			<li><a href="#">lorem <span>(10)</span></a></li>
-		              			<li><a href="#">lorem <span>(10)</span></a></li>
-				              	<li><a href="#">lorem <span>(10)</span></a></li>
-				              	<li><a href="#">lorem <span>(10)</span></a></li>
-				              	<li><a href="#">lorem <span>(10)</span></a></li>
-				              	<li><a href="#">lorem <span>(10)</span></a></li>
-				              	<li><a href="#">lorem <span>(10)</span></a></li>
-				              	<li><a href="#">lorem <span>(10)</span></a></li>
+		              			<li><a id="btn_1">Założenia wstępne <span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Instalacja Ubuntu Server 12.04 LTS<span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Konfiguracja interfejsów sieciowych <span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Dnsmasq (serwer DHCP i DNS) <span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Routing i firewall<span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Squid (serwer proxy)<span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Dansguardian (filtrowanie treści) <span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Monitoring <span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Zarządzanie usługami <span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Logi <span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Narzędzia Podstawowe i Zaawansowane<span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Iptraf <span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Vnstat <span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Tcpdump <span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Tshark <span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Nmap <span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+		              			<li><a href="#">Dokumentacja  <span><i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i></span></a></li>
+
 
 		              		</ul>
 		            </div>
@@ -727,11 +737,15 @@
           </div>
         </footer>
     </div>
+    <a href="#" class="scrollToTop"><i class="fas fa-arrow-up"></i></a>
 
-      <!-- jQuery library -->
-      <script src="js/jquery-3.3.1.min.js"></script>
-      <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
-      <script src="js/bootstrap.bundle.min.js"></script>
+         <script src="js/jquery-3.3.1.min.js"></script>
+
+         <script src="js/bootstrap.bundle.min.js"></script>
+
+         <script src="js/scroll.js"></script>
+
+
 
 </body>
 </html>
