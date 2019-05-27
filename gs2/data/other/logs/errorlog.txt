@@ -1,0 +1,64 @@
+[29-Apr-2019 07:49:33 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:33 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:33 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:33 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:33 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:33 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:33 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:33 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:38 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:38 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:38 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:38 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:38 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:38 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:38 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:38 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:38 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:38 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[29-Apr-2019 07:49:38 Europe/Berlin] PHP Warning:  chmod(): Operation not permitted in /home/kl2ag2/public_html/gs2/admin/install.php on line 44
+[20-May-2019 07:35:51 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/filebrowser.php on line 125
+[20-May-2019 07:36:00 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/changedata.php on line 52
+[20-May-2019 07:36:01 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/upload.php on line 183
+[20-May-2019 07:36:01 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/upload.php on line 235
+[20-May-2019 07:36:01 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/upload.php on line 271
+[20-May-2019 07:36:01 Europe/Sarajevo] PHP Notice:  A non well formed numeric value encountered in /home/kl2ag2/public_html/gs2/admin/inc/basic.php on line 1198
+[20-May-2019 07:36:01 Europe/Sarajevo] PHP Notice:  A non well formed numeric value encountered in /home/kl2ag2/public_html/gs2/admin/inc/basic.php on line 1198
+[20-May-2019 07:39:19 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/changedata.php on line 52
+[20-May-2019 07:39:30 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/changedata.php on line 52
+[20-May-2019 07:41:38 Europe/Sarajevo] PHP Warning:  require_once(/home/kl2ag2/public_html/gs2/plugins/i18n_base/backend.class.php): failed to open stream: Permission denied in /home/kl2ag2/public_html/gs2/plugins/i18n_base.php on line 142
+[20-May-2019 07:41:38 Europe/Sarajevo] PHP Fatal error:  require_once(): Failed opening required '/home/kl2ag2/public_html/gs2/plugins/i18n_base/backend.class.php' (include_path='.:/usr/share/php') in /home/kl2ag2/public_html/gs2/plugins/i18n_base.php on line 142
+[20-May-2019 07:41:51 Europe/Sarajevo] PHP Warning:  require_once(/home/kl2ag2/public_html/gs2/plugins/i18n_base/backend.class.php): failed to open stream: Permission denied in /home/kl2ag2/public_html/gs2/plugins/i18n_base.php on line 142
+[20-May-2019 07:41:51 Europe/Sarajevo] PHP Fatal error:  require_once(): Failed opening required '/home/kl2ag2/public_html/gs2/plugins/i18n_base/backend.class.php' (include_path='.:/usr/share/php') in /home/kl2ag2/public_html/gs2/plugins/i18n_base.php on line 142
+[20-May-2019 07:42:26 Europe/Sarajevo] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; I18nNavigationItem has a deprecated constructor in /home/kl2ag2/public_html/gs2/plugins/i18n_navigation/frontend.class.php on line 349
+[20-May-2019 07:44:57 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/changedata.php on line 52
+[20-May-2019 07:46:31 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/changedata.php on line 52
+[20-May-2019 07:49:59 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/plugins/i18n_navigation/frontend.class.php on line 219
+[20-May-2019 07:52:56 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/plugins/i18n_navigation/frontend.class.php on line 219
+[20-May-2019 07:52:59 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/plugins/i18n_navigation/frontend.class.php on line 219
+[20-May-2019 07:53:01 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/plugins/i18n_navigation/frontend.class.php on line 219
+[20-May-2019 07:53:02 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/plugins/i18n_navigation/frontend.class.php on line 219
+[20-May-2019 08:00:07 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/upload.php on line 183
+[20-May-2019 08:00:07 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/upload.php on line 235
+[20-May-2019 08:00:07 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/upload.php on line 271
+[20-May-2019 08:00:07 Europe/Sarajevo] PHP Notice:  A non well formed numeric value encountered in /home/kl2ag2/public_html/gs2/admin/inc/basic.php on line 1198
+[20-May-2019 08:00:07 Europe/Sarajevo] PHP Notice:  A non well formed numeric value encountered in /home/kl2ag2/public_html/gs2/admin/inc/basic.php on line 1198
+[20-May-2019 08:00:47 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/changedata.php on line 52
+[20-May-2019 08:00:51 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/plugins/i18n_navigation/frontend.class.php on line 219
+[20-May-2019 08:00:52 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/plugins/i18n_navigation/frontend.class.php on line 219
+[20-May-2019 08:01:06 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/plugins/i18n_navigation/frontend.class.php on line 219
+[20-May-2019 08:01:14 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/plugins/i18n_navigation/frontend.class.php on line 219
+[20-May-2019 08:04:12 Europe/Sarajevo] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; I18nNavigationItem has a deprecated constructor in /home/kl2ag2/public_html/gs2/plugins/i18n_navigation/frontend.class.php on line 350
+[27-May-2019 07:16:13 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/upload.php on line 183
+[27-May-2019 07:16:13 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/upload.php on line 235
+[27-May-2019 07:16:13 Europe/Sarajevo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kl2ag2/public_html/gs2/admin/upload.php on line 271
+[27-May-2019 07:16:13 Europe/Sarajevo] PHP Notice:  A non well formed numeric value encountered in /home/kl2ag2/public_html/gs2/admin/inc/basic.php on line 1198
+[27-May-2019 07:16:13 Europe/Sarajevo] PHP Notice:  A non well formed numeric value encountered in /home/kl2ag2/public_html/gs2/admin/inc/basic.php on line 1198
+[27-May-2019 07:16:40 Europe/Sarajevo] PHP Notice:  Undefined offset: 0 in /home/kl2ag2/public_html/gs2/theme/moj_temat/sidebar.php on line 7
+[27-May-2019 07:16:40 Europe/Sarajevo] PHP Notice:  Undefined offset: 0 in /home/kl2ag2/public_html/gs2/theme/moj_temat/sidebar.php on line 10
+[27-May-2019 07:17:17 Europe/Sarajevo] PHP Notice:  Undefined offset: 0 in /home/kl2ag2/public_html/gs2/theme/moj_temat/sidebar.php on line 7
+[27-May-2019 07:17:17 Europe/Sarajevo] PHP Notice:  Undefined offset: 0 in /home/kl2ag2/public_html/gs2/theme/moj_temat/sidebar.php on line 10
+[27-May-2019 07:17:17 Europe/Sarajevo] PHP Notice:  Undefined offset: 0 in /home/kl2ag2/public_html/gs2/theme/moj_temat/sidebar.php on line 7
+[27-May-2019 07:17:17 Europe/Sarajevo] PHP Notice:  Undefined offset: 0 in /home/kl2ag2/public_html/gs2/theme/moj_temat/sidebar.php on line 10
+[27-May-2019 07:17:55 Europe/Sarajevo] PHP Notice:  Undefined offset: 0 in /home/kl2ag2/public_html/gs2/theme/moj_temat/sidebar.php on line 7
+[27-May-2019 07:17:55 Europe/Sarajevo] PHP Notice:  Undefined offset: 0 in /home/kl2ag2/public_html/gs2/theme/moj_temat/sidebar.php on line 10
